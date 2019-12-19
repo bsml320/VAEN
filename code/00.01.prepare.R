@@ -2,9 +2,9 @@ setwd("/work/")
 
 ### transcriptome data
 
-ccle = read.table("/DATA/CCLE/CCLE_DepMap_18q3_RNAseq_RPKM_20180718.gct", skip=2, sep="\t", header=T, as.is=T)
-original.TCGA.RPKM = read.delim("/DATA/TCGA/ACC/HiSeqV2", as.is=T)
-val.RPKM = read.table("/DATA/GSE65185/GSE65185_CuffnormFPKM.txt", header=T, as.is=T)
+ccle = read.table("/wor/data/CCLE/CCLE_DepMap_18q3_RNAseq_RPKM_20180718.gct", skip=2, sep="\t", header=T, as.is=T)
+original.TCGA.RPKM = read.delim("/wor/data/TCGA/ACC/HiSeqV2", as.is=T)
+val.RPKM = read.table("/wor/data/GSE65185/GSE65185_CuffnormFPKM.txt", header=T, as.is=T)
 
 genes = intersect(intersect(original.TCGA.RPKM[,1], ccle[,2]), val.RPKM[,1])
 print( length(genes) )
