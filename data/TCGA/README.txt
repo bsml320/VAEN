@@ -1,0 +1,1 @@
+This folder include multi-omics data for 33 cancer types that were downloaded from Xena. Each cancer type has one folder. In the folder, there are files for somatic mutations, gene expression (HiSeqV2), CNV, and clinical data.
