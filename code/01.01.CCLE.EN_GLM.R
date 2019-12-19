@@ -84,6 +84,11 @@ for(ksigmoid.1 in start:end){
 		
 		anno.1 = anno[which(anno$Compound==drugs[k] & anno[, "ActArea"] != -9 ),]
 		intersect(anno.1[,1], ss.PP) -> shared.samples
+		
+		### when training using solid cell lines only, apply the following two lines
+		### grep("HAEMATOPOIETIC", shared.samples) -> haema.ii
+		### shared.samples = shared.samples[-haema.ii]
+		
 		match(shared.samples, anno.1[,1]) -> ii.Y
 		anno.2 = anno.1[ii.Y, ]
 		Y = anno.2[, "ActArea"]
