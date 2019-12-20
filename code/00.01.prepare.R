@@ -102,7 +102,7 @@ cancer.types = setdiff(cancer.types, c("FPPP", "LUNG"))
 		dimnames(zeroone_normed.LUAD.RPKM) = dimnames(scaled.LUAD.RPKM)
 		LUAD.data = t(zeroone_normed.LUAD.RPKM)
 		RPKM.mat = rbind(RPKM.mat, LUAD.data)
-		cat(cancer, "\t", nrow(RPKM.mat), " ", ncol(RPKM.mat), sep="")
+		cat(cancer, "\t", nrow(RPKM.mat), " ", ncol(RPKM.mat), "\n", sep="")
 	}
 	
 	apply(RPKM.mat, 2, sum) -> x
@@ -118,7 +118,6 @@ cancer.types = setdiff(cancer.types, c("FPPP", "LUNG"))
 	
 	shared.LUAD.RPKM = non0.val.RPKM[match(mad.genes, non0.val.RPKM[,1]), -1]
 	rownames(shared.LUAD.RPKM) = mad.genes
-	shared.LUAD.RPKM = log2(shared.LUAD.RPKM + 1)
 	
 	### scale to z, per cancer
 	scaled.LUAD.RPKM = t(apply(shared.LUAD.RPKM, 1, scale )) ## by gene
