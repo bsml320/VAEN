@@ -1,7 +1,1 @@
-## Latent vectors from VAE models
-
-
-## Elastic-Net models
-
-
-## Predicted drug response
+This folder contains raw data files downloaded from public resources. Details are provided in each folder.
