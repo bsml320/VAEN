@@ -1,4 +1,6 @@
 This folder includes files for GDSC:
 
-v17.3_fitted_dose_response.txt
+v17.3_fitted_dose_response.xlsx --> Save the Excel sheet out as v17.3_fitted_dose_response.txt
+Screened_Compounds.xlsx --> Save the Excel sheet out as a text file so that R can read: Screened_Compounds.txt
+
 
