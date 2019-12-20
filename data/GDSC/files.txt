@@ -1,0 +1,4 @@
+This folder includes files for GDSC:
+
+v17.3_fitted_dose_response.txt
+
