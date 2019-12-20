@@ -176,7 +176,7 @@ for(kdrug in 1:length(drugs)){
 names(resistant.prop) = colnames(TCGA.drug.by.cancer.mat)
 
 PLX4720.pred.dr = cancer.predicted.dr[, which(drugs == "PLX.4720")]
-save(resistant.prop, sensitive.prop, PLX4720.pred.dr, file="PLX4720.RData")
+save(resistant.prop, sensitive.prop, PLX4720.pred.dr, file="GDSC.PLX4720.RData")
 
 save(obsd.drug.by.tissue.mat, pred.drug.by.tissue.mat, full.drug.by.tissue.mat, TCGA.drug.by.cancer.mat, TCGA.sensitive.mat, TCGA.resistant.mat, file="GDSC.lineage.RData")
 

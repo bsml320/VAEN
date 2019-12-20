@@ -1,5 +1,5 @@
 ### Prepare data for Figure 3BCD
-### This script will generate two files: CCLE.ActArea.lineage.RData and PLX4720.RData
+### This script will generate two files: CCLE.ActArea.lineage.RData and CCLE.PLX4720.RData
 
 library("MASS")
 library("magrittr")
@@ -187,7 +187,7 @@ for(kdrug in 1:length(drugs)){
 names(resistant.prop) = colnames(TCGA.drug.by.cancer.mat)
 
 PLX4720.pred.dr = cancer.predicted.dr[, 18]
-save(resistant.prop, sensitive.prop, PLX4720.pred.dr, file="PLX4720.RData")
+save(resistant.prop, sensitive.prop, PLX4720.pred.dr, file="CCLE.PLX4720.RData")
 
 rownames(TCGA.sensitive.mat) = rownames(pred.drug.by.tissue.mat)
 rownames(TCGA.resistant.mat) = rownames(pred.drug.by.tissue.mat)

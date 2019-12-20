@@ -1,13 +1,13 @@
 
-load("C:/Users/pjia/UTH/road/18-VAE/analysis/V15/result.EN/dr.GDSC/03.lineage/GDSC.lineage.RData")
+load("/work/Figures/Figure3/GDSC.lineage.RData")
 sapply(rownames(TCGA.sensitive.mat), function(u)gsub("\\.", "-", u)) -> new.name
 rownames(TCGA.sensitive.mat) = unlist(new.name)
 sapply(rownames(TCGA.resistant.mat), function(u)gsub("\\.", "-", u)) -> new.name
 rownames(TCGA.resistant.mat) = unlist(new.name)
 
-two.drugs.match = read.table("C:/Users/pjia/UTH/road/18-VAE/analysis/V11/result.EN/dr.GDSC/02.shared/drugs.match-2.txt", as.is=T, sep="\t")
+two.drugs.match = read.table("/work/data/drugs.match-2.txt", as.is=T, sep="\t")
 
-gdsc.anno = read.delim("C:/Users/pjia/UTH/road/18-VAE/DATA/GDSC/Screened_Compounds.txt", as.is=T)
+gdsc.anno = read.delim("/work/data/GDSC/Screened_Compounds.txt", as.is=T)
 which(gdsc.anno$TARGET_PATHWAY == "ERK MAPK signaling" ) -> ii.1
 which(gdsc.anno$TARGET_PATHWAY == "EGFR signaling") -> ii.2
 MAPK.inhibitor = sort(unique(gdsc.anno[ii.1, 2]))
@@ -18,7 +18,6 @@ mek.inhibitor = c(MAPK.inhibitor, EGFR.inhibitor)
 mek.inhibitor = c(MAPK.inhibitor, EGFR.inhibitor, setdiff(two.drugs.match[,3], c(MAPK.inhibitor, EGFR.inhibitor) ))
 mek.inhibitor[grep("Nutlin", mek.inhibitor)] = rownames(TCGA.sensitive.mat)[grep("Nutlin", rownames(TCGA.sensitive.mat))]
 
-TCGA.cutoff = 0.05/(33*251)
 TCGA.cutoff = 0.05
 
 ### way 2
@@ -115,7 +114,7 @@ mtext("(E)", side=2, at = 1.1, las=1, line=2)
 dev.off()
 
 ##############################################################################
-load("C:/Users/pjia/UTH/road/18-VAE/analysis/V15/result.EN/dr.GDSC/03.lineage/PLX4720.RData")
+load("/work/Figures/Figure3/GDSC.PLX4720.RData")
 rbind(cbind(Cancer = names(sensitive.prop), Prop = sensitive.prop, grp="Sensitive"), cbind(Cancer = names(resistant.prop), Prop = -resistant.prop, grp="Insensitive")) -> dat
 dat = as.data.frame(dat)
 dat[,2] = as.numeric(as.character(dat[,2]))

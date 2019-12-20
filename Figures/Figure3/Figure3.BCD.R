@@ -82,7 +82,7 @@ mtext("(C)", side=2, at = 1.1, las=1, line=2)
 dev.off()
 
 ##############################################################################
-load("/work/Figures/Figure3/PLX4720.RData")
+load("/work/Figures/Figure3/CCLE.PLX4720.RData")
 rbind(cbind(Cancer = names(sensitive.prop), Prop = sensitive.prop, grp="Sensitive"), cbind(Cancer = names(resistant.prop), Prop = -resistant.prop, grp="Insensitive")) -> dat
 dat = as.data.frame(dat)
 dat[,2] = as.numeric(as.character(dat[,2]))
