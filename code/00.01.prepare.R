@@ -77,7 +77,7 @@ ccle.train.mat = t(zeroone_normed.ccle.gene.mat)  ###
 print(dim(ccle.train.mat))
 
 ##################################################################### PANCAN
-cancer.types = dir("/data/mshao/TCGA/")
+cancer.types = dir("/work/data/TCGA/")
 sapply(cancer.types, nchar) -> ii
 cancer.types = cancer.types[which(ii <= 4)]
 cancer.types = setdiff(cancer.types, c("FPPP", "LUNG"))
@@ -86,7 +86,7 @@ cancer.types = setdiff(cancer.types, c("FPPP", "LUNG"))
 	RPKM.mat = c()
 	for(k in 1:length(cancer.types)){
 		cancer = cancer.types[k]
-		original.LUAD.RPKM = read.delim(paste("/data/mshao/TCGA/",cancer,"/HiSeqV2", sep=""), as.is=T)
+		original.LUAD.RPKM = read.delim(paste("/work/data/TCGA/",cancer,"/HiSeqV2", sep=""), as.is=T)
 		apply(original.LUAD.RPKM[,-1],1,sum) -> rowCheck
 		non0.LUAD.RPKM = original.LUAD.RPKM[which(rowCheck!=0),]
 		
