@@ -4,7 +4,8 @@ library("reshape2")
 library(gplots)
 
 ########################
-### RUN /work/result.EN/dr.CCLE/04-mix/12.TML/04.12.TumorMutationLoad.V15.mix.R
+### RUN /work/result.EN/dr.CCLE/04-mix/12.TML/04.12.CCLE.TumorMutationLoad.R
+########################
 
 dat.mat = read.table("/work/result.EN/dr.CCLE/04-mix/12.TML/CCLE.cancer.drug.tml.wilcox.txt", header=T, as.is=T)
 
