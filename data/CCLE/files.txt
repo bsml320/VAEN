@@ -1,3 +1,5 @@
-This folder contains the following files that can be downloaded from CCLE:
+This folder contains the following files that can be downloaded from CCLE (https://portals.broadinstitute.org/ccle/data):
 CCLE_NP24.2009_Drug_data_2015.02.24.csv
 CCLE_DepMap_18q3_RNAseq_RPKM_20180718.gct
+
+### login will be required but free.
