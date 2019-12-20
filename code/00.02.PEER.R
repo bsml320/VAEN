@@ -1,13 +1,14 @@
 setwd("/work/")
 library("peer")
 
+### read the data from 00.01.prepare.R
 TCGA.mat = read.table("TCGA.4VAE.tsv", header=T, as.is=T)
 CCLE.mat = read.table("CCLE.4VAE.tsv", header=T, as.is=T)
 VALI.mat = read.table("GSE65185.4VAE.tsv", header=T, as.is=T)
 
 comb.mat = rbind(CCLE.mat, TCGA.mat, VALI.mat)
 
-############ use the 2000 most variably expressed genes for PEER 
+### use the 2000 most variably expressed genes for PEER 
 apply(comb.mat, 2, var) -> geneVar
 
 geneVar = sort(geneVar, decreasing=T)
@@ -15,6 +16,7 @@ genes = names(geneVar)[1:2000]
 expr = comb.mat[, genes]
 dim(expr)
 
+### PEER
 model = PEER()
 PEER_setPhenoMean(model,as.matrix(expr))
 dim(PEER_getPhenoMean(model))
@@ -28,13 +30,13 @@ dim(weights)
 precision = PEER_getAlpha(model)
 residuals = PEER_getResiduals(model)
 
+
 tiff("peer.tif")
 plot(factors[,1], factors[,2])
 points(factors[1:1100,1], factors[1:1100,2], col="red")
 points(factors[1101:11559,1], factors[1101:11559,2], col="blue")
 points(factors[11560:11629,1], factors[11560:11629,2], col="cyan")
 dev.off()
-
 
 ######################### regress out the first 3 principal patterns
 resid.comb.mat = matrix(0, nrow=nrow(comb.mat), ncol=ncol(comb.mat))
