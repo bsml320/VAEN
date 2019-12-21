@@ -1,4 +1,4 @@
-setwd("/work/result.EN/dr.CCLE/Figures/Figure8/")
+setwd("/work/Figures/Figure8/")
 W5.files = dir("/work/result.EN/dr.CCLE/04-mix/09.Expr/W5/")
 
 STROMA.genes = read.table("/work/result.EN/dr.CCLE/04-mix/09.Expr/Lapatinib/STROMA.txt", as.is=T)
