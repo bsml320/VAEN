@@ -1,0 +1,28 @@
+{"longTitle":
+ "TCGA adrenocortical carcinoma (ACC) gene-level nonsilent somatic mutation (broad curated)",
+ "cohort":"TCGA Adrenocortical Cancer (ACC)",
+ "url":
+ "https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/acc/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/",
+ "dataSubType":"somatic non-silent mutation (gene-level)",
+ ":probeMap":"/probeMap/hugo_gencode_v24_gtf",
+ "security":"public",
+ "dataProducer":"Broad Institute Genome Sequencing Center",
+ "label":"somatic gene-level non-silent mutation (broad curated)",
+ "method":"MuTect",
+ "tags":["cancer"],
+ "path":"data/public/TCGA/ACC/mutation_curated_broad_gene",
+ "anatomical_origin":["Adrenal gland"],
+ "name":"TCGA_ACC_mutation_curated_broad_gene",
+ "wrangling_procedure":
+ "Download .maf file from TCGA DCC, processed into gene by sample matrix at UCSC, stored in the UCSC Xena repository",
+ "sample_type":["tumor"],
+ "redistribution":true,
+ "PLATFORM":"IlluminaGA",
+ "type":"genomicMatrix",
+ "wrangler":"xena TCGAscript maf processed on 2016-08-16",
+ "version":"2016-08-16",
+ "gdata_tags":["Broad Institute Genome Sequencing Center"],
+ "unit":"binary non-silent mutation",
+ "primary_disease":"adrenocortical cancer",
+ "description":
+ "TCGA adrenocortical carcinoma (ACC) somatic mutation data.  Sequencing data are generated on a IlluminaGA system. The calls are generated at Broad Institute Genome Sequencing Center using the MuTect method. <br><br> Red (=1) indicates that a non-silent somatic mutation (nonsense, missense, frame-shif indels, splice site mutations, stop codon readthroughs, change of start codon, inframe indels) was identified in the protein coding region of a gene, or any mutation identified in a non-coding gene. White (=0) indicates that none of the above mutation calls were made in this gene for the specific sample.<br><br>"}

@@ -1,0 +1,33 @@
+{"start_index":1,
+ "owner":"TCGA",
+ "longTitle":
+ "TCGA adrenocortical carcinoma (ACC) somatic mutation (bcm automated)",
+ "cohort":"TCGA Adrenocortical Cancer (ACC)",
+ "url":
+ "https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/acc/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/",
+ "dataSubType":"somatic mutation (SNPs and small INDELs)",
+ "security":"public",
+ "dataProducer":
+ "Baylor College of Medicine Human Genome Sequencing Center",
+ "label":"somatic mutation SNPs and small INDELs (bcm automated)",
+ "method":"Baylor pipeline",
+ "tags":["cancer"],
+ "path":"data/public/TCGA/ACC/mutation_bcm",
+ "anatomical_origin":["Adrenal gland"],
+ "name":"TCGA_ACC_mutation_bcm",
+ "wrangling_procedure":
+ "Download .maf file from TCGA DCC, removed any calls from WGS samples, processed into UCSC Xena mutation format, stored in the UCSC Xena repository",
+ "sample_type":["tumor"],
+ "assembly":"hg19",
+ "wholeGenome":true,
+ "redistribution":true,
+ "domain":"TCGA",
+ "PLATFORM":"IlluminaGA",
+ "type":"mutationVector",
+ "wrangler":"TCGAscript maf processed on 2016-04-25",
+ "version":"2016-04-25",
+ "gdata_tags":
+ ["Baylor College of Medicine Human Genome Sequencing Center"],
+ "primary_disease":"adrenocortical cancer",
+ "description":
+ "TCGA adrenocortical carcinoma (ACC) somatic mutation data. Sequencing data are generated on a IlluminaGA system. The calls are generated at Baylor College of Medicine Human Genome Sequencing Center using the Baylor pipeline method."}

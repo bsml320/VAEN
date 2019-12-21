@@ -1,0 +1,9 @@
+{"cohort":"TCGA Adrenocortical Cancer (ACC)",
+ ":clinicalFeature":"ACC_clinicalFeature",
+ "url":
+ "https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/acc/bcr/",
+ "label":"Phenotypes",
+ "version":"2016-04-27",
+ "dataSubType":"phenotype",
+ "type":"clinicalMatrix",
+ "name":"ACC_clinicalMatrix"}
