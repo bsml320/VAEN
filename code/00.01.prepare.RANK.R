@@ -1,9 +1,9 @@
-setwd("/data1_2/jiap/projects/18-CCLE-VAE/new/V15.2/NOPEER.RANK.Sigmoid")
+setwd("/path/to/work")
 
 ### transcriptome data
 
-ccle = read.table("/data1_2/jiap/projects/18-CCLE-VAE/DATA/CCLE_DepMap_18q3_RNAseq_RPKM_20180718.gct", skip=2, sep="\t", header=T, as.is=T)
-original.TCGA.RPKM = read.delim("/data/mshao/TCGA/ACC/HiSeqV2", as.is=T)
+ccle = read.table("/work/data/CCLE/CCLE_DepMap_18q3_RNAseq_RPKM_20180718.gct", skip=2, sep="\t", header=T, as.is=T)
+original.TCGA.RPKM = read.delim("/work/data/TCGA/ACC/HiSeqV2", as.is=T)
 
 genes = intersect(original.TCGA.RPKM[,1], ccle[,2])
 print( length(genes) )
@@ -80,7 +80,7 @@ RPKM.mat = c()
 cancer.type.list = list()
 for(k in 1:length(cancer.types)){
 	cancer = cancer.types[k]
-	original.TCGA.RPKM = read.delim(paste("/data/mshao/TCGA/",cancer,"/HiSeqV2", sep=""), as.is=T)
+	original.LUAD.RPKM = read.delim(paste("/work/data/TCGA/",cancer,"/HiSeqV2", sep=""), as.is=T)
 	
 	### exclude genes with rowSum == 0
 	apply(original.TCGA.RPKM[,-1],1,sum) -> rowCheck
