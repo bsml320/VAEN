@@ -1,4 +1,4 @@
-setwd("/work/result.EN/dr.GDSC/01/F1-W5-PCC/")
+setwd("/work/RANK.Sigmoid/result.EN/dr.GDSC/01/F1-W5-PCC/")
 
 library(MASS)
 library("magrittr")
@@ -9,7 +9,7 @@ library(vegan)
 #####################################################################################
 load("/work/data/TCGA.ss.mat.RData")
 #####################################################################################
-anno = read.delim("/work/data/GDSC//v17.3_fitted_dose_response.txt", as.is=T)
+anno = read.delim("/work/data/GDSC/v17.3_fitted_dose_response.txt", as.is=T)
 drugs = sort(unique(anno$DRUG_NAME))
 #####################################################################################
 
@@ -18,7 +18,9 @@ colnames(all.sample.size) = colnames(all.in_sample_R2.mat) = colnames(all.avg_CV
 
 all.mat = c()
 for(ksigmoid in 1:100){
-	load(paste("/work/result.EN/dr.GDSC/01/", ksigmoid, ".GDSC.model.list.RData", sep=""))
+	fn = paste("/work/RANK.Sigmoid/result.EN/dr.GDSC/01/", ksigmoid, ".GDSC.model.list.RData", sep="")
+	if(!file.exists(fn))next
+	load(fn)
 	for(kdrug in 1:length(drugs)){
 		drug = drugs[kdrug]
 		model.list[[ drugs[kdrug] ]] -> res.list
@@ -37,13 +39,14 @@ for(ksigmoid in 1:100){
 		all.sample.size[ksigmoid, kdrug]      = nrow(Ys)
 		all.in_sample_R2.mat[ksigmoid, kdrug] = recall
 		all.avg_CV_R2.mat[ksigmoid, kdrug]    = precision
-		all.F1_R2.mat[ksigmoid, kdrug]        = 2 * precision * recall/(precision + recall)
+		#all.F1_R2.mat[ksigmoid, kdrug]        = 2 * precision * recall/(precision + recall)
+		all.F1_R2.mat[ksigmoid, kdrug]        = as.numeric(res.list$model_summary[7])
 	}
 	cat(ksigmoid, ".", sep="")
 }
 
 #####################################################################################
-#####################################################################################
+### best
 
 TCGA.pred.mat = c()
 all.model_summary = c()
@@ -53,29 +56,16 @@ for(k in 1:length(drugs)){
 	
 	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
 	tmp = tmp[order(tmp[,4], decreasing=T),]
-	holdout.R2 = rbind(holdout.R2, c(drug, tmp[1,4]) )
 	
-	candi = tmp[1:10,1]
-	pred.mat = c()
-	for(best.index in candi){
-		load( paste("/work/result.EN/dr.GDSC/01/", best.index ,".GDSC.model.list.RData", sep="") )
-		model.list[[ drug ]] -> res.list
-		model = res.list$model
-		beta = coef(model, model$lambda.min)
-		
-		TCGA.pred = read.table(paste("/work/result/", best.index, ".TCGA.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
-		TCGA.test.data = TCGA.pred[,-1]
-		fit <- res.list$model
-		TCGA.probabilities = predict(fit, as.matrix(TCGA.test.data), s = 'lambda.min')
-		
-		pred.mat = cbind(pred.mat, scale(TCGA.probabilities))
-		cat(".", sep="")
-	}
-	apply(pred.mat, 1, mean) -> TCGA.probabilities
-	cor(pred.mat) -> mm
-	mm[lower.tri(mm)] = NA
-	diag(mm) = NA
-	cat(mean(as.vector(mm), na.rm=T))
+	best.index = tmp[1,1]
+	
+	load( paste("/work/RANK.Sigmoid/result.EN/dr.GDSC/01/", best.index ,".GDSC.model.list.RData", sep="") )
+	model.list[[ drug ]] -> res.list
+	fit <- res.list$model
+	
+	TCGA.pred = read.table(paste("/work/RANK.Sigmoid/result/", best.index, ".TCGA.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+	TCGA.test.data = TCGA.pred[,-1]
+	TCGA.probabilities = predict(fit, as.matrix(TCGA.test.data), s = 'lambda.min')
 	
 	TCGA.pred.mat = cbind(TCGA.pred.mat, TCGA.probabilities)
 	cat("...", drug, ".", sep="")
@@ -87,65 +77,34 @@ TCGA.pred.mat[,1] = ss
 match(TCGA.pred.mat[,1], TCGA.ss.mat[,1]) -> ii
 TCGA.pred.mat[,2] = TCGA.ss.mat[ii, 2]
 colnames(TCGA.pred.mat) = c("Sample", "Cancer", drugs)
-write.table(TCGA.pred.mat, file=paste("F1-W5-PCC.avgtop10.pred_TCGA.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
-
-write.table(holdout.R2, file="GDSC.best.holdout.R2.txt", quote=F, sep="\t", row.names=FALSE)
-
+write.table(TCGA.pred.mat, file="F1-W5-PCC.best.pred_TCGA.txt", quote=F, sep="\t", row.names=FALSE)
 ############################################################################################
 
-pdf("F1-W5-PCC.ROC.pdf", width=5, height=5)
+GDSC.pred.full.mat = c()
 for(k in 1:length(drugs)){
 	drug = drugs[k]
-	plot(x=all.in_sample_R2.mat[,k], y=all.avg_CV_R2.mat[,k], main=drugs[k], xlab="Self in_sample PCC", ylab="avg PCC (in_sample)", col=rep("lightgreen",200), pch=20, cex=.6 )
+	
 	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
 	tmp = tmp[order(tmp[,4], decreasing=T),]
-	idx = tmp[1:10,1]
-	points(all.in_sample_R2.mat[idx,k], all.avg_CV_R2.mat[idx,k], pch=4, col="red")
+	
+	best.index = tmp[1,1]
+	load(                    paste("/work/RANK.Sigmoid/result.EN/dr.GDSC/01/", best.index ,".GDSC.model.list.RData", sep="") )
+	model.list[[ drug ]] -> res.list
+		
+	GDSC.latent = read.table(paste("/work/RANK.Sigmoid/result/", best.index, ".CCLE.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+	GDSC.latent.data = GDSC.latent[,-1]
+	fit <- res.list$model
+	GDSC.probabilities = predict(fit, as.matrix(GDSC.latent.data), s = 'lambda.min')
+	
+	GDSC.pred.full.mat = cbind(GDSC.pred.full.mat, GDSC.probabilities)
+	cat(drug, ".", sep="")
 }
-dev.off()
+
+self.pred.mat = cbind(CELLINE=GDSC.latent[,1], GDSC.pred.full.mat)
+colnames(self.pred.mat) = c("CELLINE", drugs)
+write.table(self.pred.mat, file=paste("F1-W5-PCC.best.pred_GDSC.full.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 
 ############################################################################################
-
-GDSC.PCC = c()
-for(kdrug in 1:length(drugs)){
-	drug = drugs[kdrug]
-	if(drug == "X17.AAG")drug = "17-AAG"
-	gsub("\\.", "-", drug) -> drug
-	
-	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
-	tmp = tmp[order(tmp[,4], decreasing=T),]
-	
-	pred.mat = c()
-	for(best.index in tmp[1:10,1]){
-		load( paste("/work/result.EN/dr.GDSC/01/", best.index ,".GDSC.model.list.RData", sep="") )
-		model.list[[ drug ]] -> res.list
-		Ys = res.list$Ys
-		which(Ys[,1]!=-9) -> ii
-		
-		avg = mean(Ys[ii, 2])
-		sd2 = sd(Ys[ii, 2])
-		scaled.Y = (Ys[,2] - avg)/sd2
-		scaled.Y[-ii] = -9
-		
-		pred.mat = cbind(pred.mat, scaled.Y)
-	}
-	Ys[,2] = apply(pred.mat, 1, mean) 
-	which(Ys[,1]!=-9) -> ii
-	cor(Ys[ii, 1], Ys[ii, 2]) -> pcc
-	GDSC.PCC = rbind(GDSC.PCC, c(drug, pcc) )
-	
-	if(kdrug == 1){
-		self.prediction.mat = Ys
-	} else {
-		self.prediction.mat = cbind(self.prediction.mat, Ys[,2])
-	}
-}
-
-write.table(GDSC.PCC, file="F1-W5-PCC.avgtop10.GDSC.PCC.txt", quote=F, sep="\t", row.names=FALSE)
-self.prediction.mat[,1] = rownames(Ys)
-colnames(self.prediction.mat) = c("CELLLINE", drugs)
-write.table(self.prediction.mat, file="F1-W5-PCC.avgtop10.pred_GDSC.txt", quote=F, sep="\t", row.names=FALSE)
-
 ############################################################################################
 
 calc_R2 <- function(y, y_pred) {
@@ -165,7 +124,7 @@ for(kdrug in 1:length(drugs)){
 	tmp = tmp[order(tmp[,4], decreasing=T),]
 	best.index = tmp[1,1]
 	
-	load( paste("/work/result.EN/dr.GDSC/01/", best.index ,".GDSC.model.list.RData", sep="") )
+	load( paste("/work/RANK.Sigmoid/result.EN/dr.GDSC/01/", best.index ,".GDSC.model.list.RData", sep="") )
 	model.list[[ drug ]] -> res.list
 	Ys = res.list$Ys
 	which(Ys[,1]!=-9) -> ii
@@ -189,34 +148,3 @@ colnames(self.prediction.mat) = c("CELLLINE", drugs)
 write.table(self.prediction.mat, file="F1-W5-PCC.best.pred_GDSC.txt", quote=F, sep="\t", row.names=FALSE)
 
 ############################################################################################
-
-GDSC.pred.full.mat = c()
-for(k in 1:length(drugs)){
-	drug = drugs[k]
-	
-	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
-	tmp = tmp[order(tmp[,4], decreasing=T),]
-	
-	pred.mat = c()
-	for(best.index in tmp[1:10,1]){
-		load(                  paste("/work/result.EN/dr.GDSC/01/", best.index ,".GDSC.model.list.RData", sep="") )
-		model.list[[ drug ]] -> res.list
-		
-		GDSC.latent = read.table(paste("/work/result/", best.index, ".CCLE.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
-		GDSC.latent.data = GDSC.latent[,-1]
-		fit <- res.list$model
-		GDSC.probabilities = predict(fit, as.matrix(GDSC.latent.data), s = 'lambda.min')
-		pred.mat = cbind(pred.mat, scale(GDSC.probabilities))
-	}
-	apply(pred.mat, 1, mean) -> GDSC.probabilities
-	
-	GDSC.pred.full.mat = cbind(GDSC.pred.full.mat, GDSC.probabilities)
-	cat(drug, ".", sep="")
-}
-
-self.pred.mat = cbind(CELLINE=GDSC.latent[,1], GDSC.pred.full.mat)
-colnames(self.pred.mat) = c("CELLINE", drugs)
-write.table(self.pred.mat, file=paste("F1-W5-PCC.avgtop10.pred_GDSC.full.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
-
-############################################################################################
-save(all.mat, all.sample.size, all.in_sample_R2.mat, all.avg_CV_R2.mat, all.F1_R2.mat,F1.all.res.mat, file="F1-W5-PCC.info.RData")
