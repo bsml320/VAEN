@@ -1,9 +1,9 @@
-setwd("/path/to/GitHub/result.EN/dr.CCLE/")
+setwd("/path/to/VAEN/result.EN/dr.CCLE/")
 library(gplots)
 
 #############################################################################################################
 
-load(paste("/path/to/GitHub/result.EN/dr.CCLE/01/1.CCLE.model.list.RData", sep=""))
+load(paste("/path/to/VAEN/result.EN/dr.CCLE/01/1.CCLE.model.list.RData", sep=""))
 ccle.model.list = model.list
 
 obsd.ccle.mat = c()
@@ -28,7 +28,7 @@ heatmap.2(x1, trace="none", col=bluered(75) ) -> ccle.ori.h2
 #############################################################################################################
 ### predicted CCLE
 
-self.pred = read.table(  paste("/path/to/GitHub/result.EN/dr.CCLE/VAEN_CCLE.A.pred_CCLE.txt", sep=""), as.is=T, header=T, sep="\t")
+self.pred = read.table(  paste("/path/to/VAEN/result.EN/dr.CCLE/VAEN_CCLE.A.pred_CCLE.txt", sep=""), as.is=T, header=T, sep="\t")
 dim(self.pred)
 colnames(self.pred) -> dd
 dd[dd=="X17.AAG"] = "17-AAG"
@@ -45,7 +45,7 @@ heatmap.2(x1, trace="none", col=bluered(75)) -> ccle.pred.h2
 #############################################################################################################
 ### imputed CCLE
 
-self.pred = read.table(  paste("/path/to/GitHub/result.EN/dr.CCLE/VAEN_CCLE.A.pred_CCLE.full.txt", sep=""), as.is=T, header=T, sep="\t")
+self.pred = read.table(  paste("/path/to/VAEN/result.EN/dr.CCLE/VAEN_CCLE.A.pred_CCLE.full.txt", sep=""), as.is=T, header=T, sep="\t")
 dim(self.pred)
 colnames(self.pred) -> dd
 dd[dd=="X17.AAG"] = "17-AAG"
@@ -62,7 +62,7 @@ heatmap.2(x1, trace="none", col=bluered(75)) -> ccle.imputed.h2
 #############################################################################################################
 ### predicted TCGA
 
-drug.ccle = read.table(file="/path/to/GitHub/result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
+drug.ccle = read.table(file="/path/to/VAEN/result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
 colnames(drug.ccle) -> dd
 dd[dd=="X17.AAG"] = "17-AAG"
 colnames(drug.ccle) = gsub("\\.", "-", dd)
@@ -84,7 +84,7 @@ for(ct in 1:length(cancer.types)){
 ccle = cancer.drug.ccle
 
 
-cc = read.table("/path/to/GitHub/DATA/TCGA.color.txt", as.is=T, sep="\t", comment.char="")
+cc = read.table("/path/to/VAEN/DATA/TCGA.color.txt", as.is=T, sep="\t", comment.char="")
 rowBar = rep("", nrow(ccle))
 for(ct in 1:length(cancer.types)){
 	cancer = cancer.types[ct]

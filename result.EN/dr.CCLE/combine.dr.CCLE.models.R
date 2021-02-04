@@ -1,7 +1,7 @@
-setwd("/path/to/GitHub/result.EN/dr.CCLE/")
-load("/path/to/result.EN/dr.CCLE/CCLE.A.info.RData")
+setwd("/path/to/VAEN/result.EN/dr.CCLE/")
+load("/path/to/VAEN/result.EN/dr.CCLE/CCLE.A.info.RData")
 
-anno = read.csv("/path/to/DATA/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
+anno = read.csv("/path/to/VAEN/DATA/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
 drugs = sort(unique(anno$Compound))
 
 dr.ccle.models = list()
@@ -13,7 +13,7 @@ for(kdrug in 1:length(drugs)){
 	tmp = tmp[order(tmp[,4], decreasing=T),]
 	best.index = tmp[1,1]
 	
-	load( paste("/path/to/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.RData", sep="") )
+	load( paste("/path/to/VAEN/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.RData", sep="") )
 	model.list[[ drug ]] -> res.list
 	res.list[[ "best_index" ]] = best.index
 	dr.ccle.models[[ drug ]] = res.list
@@ -25,7 +25,7 @@ save(dr.ccle.models, file="dr.CCLE.A.models.RData")
 ##########################################################################
 ##########################################################################
 
-load("/path/to/result.EN/dr.CCLE/CCLE.S.info.RData")
+load("/path/to/VAEN/result.EN/dr.CCLE/CCLE.S.info.RData")
 
 dr.ccle.models = list()
 for(kdrug in 1:length(drugs)){
@@ -36,7 +36,7 @@ for(kdrug in 1:length(drugs)){
 	tmp = tmp[order(tmp[,4], decreasing=T),]
 	best.index = tmp[1,1]
 	
-	load( paste("/path/to/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.S.RData", sep="") )
+	load( paste("/path/to/VAEN/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.S.RData", sep="") )
 	model.list[[ drug ]] -> res.list
 	res.list[[ "best_index" ]] = best.index
 	dr.ccle.models[[ drug ]] = res.list

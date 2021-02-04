@@ -1,4 +1,4 @@
-setwd("/path/to/GitHub/result.EN/dr.CCLE/")
+setwd("/path/to/VAEN/result.EN/dr.CCLE/")
 
 library("MASS")
 library("magrittr")
@@ -7,9 +7,9 @@ library("modEvA")
 library("vegan")
 
 #####################################################################################
-load("/path/to/GitHub/DATA/TCGA.ss.mat.RData")
+load("/path/to/VAEN/DATA/TCGA.ss.mat.RData")
 #####################################################################################
-anno = read.csv("/path/to/GitHub/DATA/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
+anno = read.csv("/path/to/VAEN/DATA/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
 drugs = sort(unique(anno$Compound))
 #####################################################################################
 
@@ -18,9 +18,9 @@ colnames(all.sample.size) = colnames(all.in_sample_R2.mat) = colnames(all.avg_CV
 
 all.mat = c()
 for(ksigmoid in 1:100){
-	fn = paste("/path/to/GitHub/result.EN/dr.CCLE/01/", ksigmoid, ".CCLE.model.list.RData", sep="")
+	fn = paste("/path/to/VAEN/result.EN/dr.CCLE/01/", ksigmoid, ".CCLE.model.list.RData", sep="")
 	if(!file.exists(fn))next
-	load(paste("/path/to/GitHub/result.EN/dr.CCLE/01/", ksigmoid, ".CCLE.model.list.RData", sep=""))
+	load(paste("/path/to/VAEN/result.EN/dr.CCLE/01/", ksigmoid, ".CCLE.model.list.RData", sep=""))
 	for(kdrug in 1:length(drugs)){
 		drug = drugs[kdrug]
 		model.list[[ drugs[kdrug] ]] -> res.list
@@ -90,11 +90,11 @@ for(k in 1:length(drugs)){
 	
 	best.index = tmp[1,1]
 	
-	load( paste("/path/to/GitHub/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.RData", sep="") )
+	load( paste("/path/to/VAEN/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.RData", sep="") )
 	model.list[[ drug ]] -> res.list
 	fit <- res.list$model
 	
-	TCGA.pred = read.table(paste("/path/to/GitHub/result/", best.index, ".TCGA.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+	TCGA.pred = read.table(paste("/path/to/VAEN/result/", best.index, ".TCGA.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 	TCGA.test.data = TCGA.pred[,-1]
 	TCGA.probabilities = predict(fit, as.matrix(TCGA.test.data), s = 'lambda.min')
 	
@@ -124,7 +124,7 @@ for(kdrug in 1:length(drugs)){
 	pred.mat = c()
 	best.index = tmp[1,1]
 	
-	load( paste("/path/to/GitHub/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.RData", sep="") )
+	load( paste("/path/to/VAEN/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.RData", sep="") )
 	model.list[[ drug ]] -> res.list
 	Ys = res.list$Ys
 		
@@ -150,10 +150,10 @@ for(k in 1:length(drugs)){
 	pred.mat = c()
 	best.index = tmp[1,1]
 	
-	load(                  paste("/path/to/GitHub/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.RData", sep="") )
+	load(                  paste("/path/to/VAEN/result.EN/dr.CCLE/01/", best.index ,".CCLE.model.list.RData", sep="") )
 	model.list[[ drug ]] -> res.list
 	
-	CCLE.latent = read.table(paste("/path/to/GitHub/result/", best.index, ".CCLE.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+	CCLE.latent = read.table(paste("/path/to/VAEN/result/", best.index, ".CCLE.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 	CCLE.latent.data = CCLE.latent[,-1]
 	fit <- res.list$model
 	CCLE.probabilities = predict(fit, as.matrix(CCLE.latent.data), s = 'lambda.min')
