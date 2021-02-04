@@ -1,0 +1,827 @@
+#"Supplemental Table 1. The list of samples used on each platform with associated subtype calls from each technology platforms, and clinical data. Note that not all samples were characterized on each platform."																
+Complete TCGA ID	Gender	Age at Initial Pathologic Diagnosis	ER Status	PR Status	HER2 Final Status	Tumor	Tumor--T1 Coded	Node	Node-Coded	Metastasis	Metastasis-Coded	AJCC Stage	Converted Stage	Survival Data Form	Vital Status	Days to Date of Last Contact	Days to date of Death	OS event	OS Time	PAM50 mRNA	SigClust Unsupervised mRNA	SigClust Intrinsic mRNA	miRNA Clusters	methylation Clusters	RPPA Clusters	CN Clusters	Integrated Clusters (with PAM50)	Integrated Clusters (no exp)	Integrated Clusters (unsup exp)
+TCGA-A2-A0T2	FEMALE	66	Negative	Negative	Negative	T3	T_Other	N3	Positive	M1	Positive	Stage IV	No_Conversion	followup	DECEASED	240	240	1	240	Basal-like	0	-13	3	5	Basal	3	2	2	2
+TCGA-A2-A04P	FEMALE	36	Negative	Negative	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	DECEASED	547	547	1	547	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-A1-A0SK	FEMALE	54	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	DECEASED	594	967	1	967	Basal-like	-6	-13	5	5	Basal	1	2	2	2
+TCGA-A2-A0CM	FEMALE	40	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	DECEASED	754	754	1	754	Basal-like	-12	-13	4	4	Basal	4	2	1	1
+TCGA-AR-A1AR	FEMALE	50	Negative	Negative	Negative	T1	T1	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	DECEASED	[Not Available]	523	1	523	Basal-like	0	-13	5	5	NA	1	NA	NA	NA
+TCGA-B6-A0WX	FEMALE	40	Negative	Negative	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	DECEASED	653	653	1	653	Basal-like	0	-13	4	5	X	1	2	2	2
+TCGA-BH-A1F0	FEMALE	80	Negative	Indeterminate	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	[Not Available]	785	1	785	Basal-like	-12	-13	6	5	NA	1	NA	NA	NA
+TCGA-B6-A0I6	FEMALE	49	Negative	Negative	Not Available	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	DECEASED	991	997	1	997	Basal-like	0	-13	4	5	Basal	NA	NA	NA	NA
+TCGA-BH-A18V	FEMALE	48	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	DECEASED	1555	1555	1	1555	Basal-like	-12	-13	5	5	Basal	1	2	2	2
+TCGA-BH-A18Q	FEMALE	56	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	DECEASED	1692	1692	1	1692	Basal-like	-12	-13	5	5	Basal	1	2	2	2
+TCGA-BH-A18K	FEMALE	46	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	DECEASED	2547	2762	1	2762	Basal-like	-12	-13	5	2	NA	2	NA	NA	NA
+TCGA-BH-A0HL	FEMALE	56	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	72	NA	0	72	Basal-like	0	-13	4	3	LumA/B	NA	NA	NA	NA
+TCGA-BH-A0E0	FEMALE	38	Negative	Negative	Negative	T3	T_Other	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	LIVING	133	NA	0	133	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-BH-A0RX	FEMALE	59	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	170	NA	0	170	Basal-like	-12	-13	4	5	ReacII	4	2	3	2
+TCGA-A7-A13D	FEMALE	46	Negative	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	267	NA	0	267	Basal-like	0	-13	5	5	ReacII	3	2	2	2
+TCGA-BH-A0E6	FEMALE	69	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	292	NA	0	292	Basal-like	0	-13	4	1	ReacI	1	3	1	4
+TCGA-AO-A0J4	FEMALE	41	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	294	NA	0	294	Basal-like	-12	-13	4	5	NA	1	NA	NA	NA
+TCGA-A7-A0CE	FEMALE	57	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	309	NA	0	309	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-A7-A13E	FEMALE	62	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	326	NA	0	326	Basal-like	-12	-13	5	4	Basal	1	NA	NA	NA
+TCGA-A7-A0DA	FEMALE	62	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	373	NA	0	373	Basal-like	0	-13	4	5	X	1	2	2	2
+TCGA-D8-A142	FEMALE	74	Negative	Negative	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	425	NA	0	425	Basal-like	0	-13	3	5	X	1	2	2	2
+TCGA-D8-A143	FEMALE	51	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	431	NA	0	431	Basal-like	0	-13	NA	5	Basal	3	NA	NA	NA
+TCGA-AQ-A04J	FEMALE	45	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	499	NA	0	499	Basal-like	-12	-13	4	5	NA	1	NA	NA	NA
+TCGA-BH-A0HN	FEMALE	67	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	516	NA	0	516	Basal-like	0	-13	6	2	ReacI	NA	NA	NA	NA
+TCGA-A2-A0T0	FEMALE	59	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	533	NA	0	533	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-A2-A0YE	FEMALE	48	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	553	NA	0	553	Basal-like	-12	-13	NA	5	X	3	NA	NA	NA
+TCGA-A2-A0YJ	FEMALE	39	Positive	Negative	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	565	NA	0	565	Basal-like	-12	-13	NA	5	Basal	3	NA	NA	NA
+TCGA-A2-A0D0	FEMALE	60	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	643	NA	0	643	Basal-like	-12	-13	5	5	Basal	1	2	2	2
+TCGA-A2-A04U	FEMALE	47	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	670	NA	0	670	Basal-like	0	-13	5	5	Basal	NA	NA	NA	NA
+TCGA-AO-A0J6	FEMALE	61	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	775	NA	0	775	Basal-like	-12	-13	2	5	Basal	1	2	2	2
+TCGA-A2-A0YM	FEMALE	67	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	964	NA	0	964	Basal-like	-12	-13	5	5	Basal	3	2	2	2
+TCGA-A2-A0D2	FEMALE	45	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIA	followup	LIVING	1027	NA	0	1027	Basal-like	-12	-13	4	5	Basal	3	2	2	2
+TCGA-BH-A0B3	FEMALE	53	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1203	NA	0	1203	Basal-like	-12	-13	4	5	Basal	1	2	2	2
+TCGA-A2-A04Q	FEMALE	48	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	1275	NA	0	1275	Basal-like	-12	-13	4	1	ReacII	3	3	1	2
+TCGA-A2-A0SX	FEMALE	48	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	1288	NA	0	1288	Basal-like	-12	-13	4	5	Basal	1	2	2	2
+TCGA-AO-A0JL	FEMALE	59	Negative	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1319	NA	0	1319	Basal-like	0	-13	5	5	Basal	3	2	2	2
+TCGA-AO-A12F	FEMALE	36	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1471	NA	0	1471	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-BH-A0B9	FEMALE	44	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	1572	NA	0	1572	Basal-like	-12	-13	5	5	Basal	1	2	2	2
+TCGA-A2-A04T	FEMALE	62	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2246	NA	0	2246	Basal-like	-12	-13	5	5	Basal	1	NA	NA	NA
+TCGA-B6-A0RT	FEMALE	39	Negative	Negative	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	2721	NA	0	2721	Basal-like	-12	-13	3	5	ReacII	1	2	2	2
+TCGA-AO-A128	FEMALE	61	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2877	NA	0	2877	Basal-like	0	-13	6	5	Basal	3	NA	NA	NA
+TCGA-AO-A129	FEMALE	29	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	2923	NA	0	2923	Basal-like	-12	-13	3	5	Basal	1	2	2	2
+TCGA-AO-A124	FEMALE	38	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	3119	NA	0	3119	Basal-like	-12	-13	3	5	Basal	3	NA	NA	NA
+TCGA-B6-A0RU	FEMALE	49	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	3991	NA	0	3991	Basal-like	-11	-13	6	5	Basal	1	2	2	2
+TCGA-B6-A0IQ	FEMALE	40	Negative	Negative	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	4284	NA	0	4284	Basal-like	-12	-13	5	5	Basal	1	2	2	2
+TCGA-B6-A0I2	FEMALE	45	Performed but Not Available	Performed but Not Available	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	4360	NA	0	4360	Basal-like	-12	-13	3	5	ReacII	3	2	2	2
+TCGA-B6-A0IJ	FEMALE	42	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	5383	NA	0	5383	Basal-like	-12	-13	5	5	Basal	3	2	2	2
+TCGA-B6-A0X1	FEMALE	48	Negative	Negative	Not Available	T2	T_Other	N2	Positive	M1	Positive	Stage IV	No_Conversion	followup	LIVING	5671	NA	0	5671	Basal-like	-12	-13	NA	5	Basal	3	NA	NA	NA
+TCGA-B6-A0RE	FEMALE	61	Negative	Negative	Negative	TX		N0	Negative	M0	Negative	[Not Available]	No_Conversion	followup	LIVING	6434	NA	0	6434	Basal-like	-12	-13	4	5	NA	1	NA	NA	NA
+TCGA-A2-A0ST	FEMALE	62	Negative	Negative	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	1643	NA	0	1643	Basal-like	-12	-13	3	5	Basal	1	2	2	2
+TCGA-AR-A0TP	FEMALE	43	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	2392	NA	0	2392	Basal-like	-11	-13	3	5	Basal	1	2	2	2
+TCGA-A1-A0SO	FEMALE	67	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	852	NA	0	852	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-A8-A07C	FEMALE	57	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	580	NA	0	580	Basal-like	-12	-13	5	5	NA	2	NA	NA	NA
+TCGA-A8-A07O	FEMALE	51	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	304	NA	0	304	Basal-like	-12	-13	4	5	Basal	1	2	2	2
+TCGA-A8-A07R	FEMALE	80	Negative	Negative	Equivocal	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	273	NA	0	273	Basal-like	-12	-13	4	5	Basal	3	2	2	2
+TCGA-A8-A07U	FEMALE	66	Negative	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	303	NA	0	303	Basal-like	-12	-13	4	5	NA	3	NA	NA	NA
+TCGA-A8-A08H	FEMALE	66	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	Basal-like	-8	-5	4	1	ReacI	1	3	1	4
+TCGA-A8-A08R	FEMALE	52	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	30	NA	0	30	Basal-like	-12	-13	4	5	NA	4	NA	NA	NA
+TCGA-AN-A04D	FEMALE	58	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	52	NA	0	52	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-AN-A0AL	FEMALE	41	Negative	Negative	Negative	T4	T_Other	N0	Negative	M0	Negative	Stage IIIB	No_Conversion	enrollment	LIVING	197	NA	0	197	Basal-like	0	-13	3	5	Basal	1	2	2	2
+TCGA-AN-A0AR	FEMALE	55	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	9	NA	0	9	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-AN-A0AT	FEMALE	62	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	10	NA	0	10	Basal-like	-12	-13	NA	5	Basal	1	NA	NA	NA
+TCGA-AN-A0FJ	FEMALE	59	Positive	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IV	No_Conversion	enrollment	LIVING	241	NA	0	241	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-AN-A0FL	FEMALE	62	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	230	NA	0	230	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-AN-A0FX	FEMALE	52	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	10	NA	0	10	Basal-like	-11	-13	4	4	ReacII	1	2	1	1
+TCGA-AN-A0G0	FEMALE	56	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	16	NA	0	16	Basal-like	0	-13	3	5	Basal	NA	NA	NA	NA
+TCGA-AN-A0XU	FEMALE	54	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	10	NA	0	10	Basal-like	-12	-13	4	5	Basal	1	2	2	2
+TCGA-AR-A0TS	FEMALE	46	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	1138	NA	0	1138	Basal-like	-12	-13	5	5	Basal	4	2	2	2
+TCGA-AR-A0TU	FEMALE	35	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	360	NA	0	360	Basal-like	-12	-13	NA	5	Basal	4	NA	NA	NA
+TCGA-AR-A0U0	FEMALE	73	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	8	NA	0	8	Basal-like	-12	-13	NA	1	Basal	1	NA	NA	NA
+TCGA-AR-A0U1	FEMALE	36	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	185	NA	0	185	Basal-like	0	-13	6	5	Basal	1	2	2	2
+TCGA-AR-A0U4	FEMALE	54	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	1627	NA	0	1627	Basal-like	-12	-13	5	5	ReacII	1	2	2	2
+TCGA-AR-A1AH	FEMALE	51	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	2298	NA	0	2298	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-AR-A1AI	FEMALE	47	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1881	NA	0	1881	Basal-like	-12	-13	3	5	Basal	1	2	2	2
+TCGA-AR-A1AJ	FEMALE	83	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1604	NA	0	1604	Basal-like	-12	-13	4	5	ReacI	3	2	1	2
+TCGA-AR-A1AQ	FEMALE	49	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1309	NA	0	1309	Basal-like	-12	-13	3	5	Basal	1	2	2	2
+TCGA-AR-A1AY	FEMALE	65	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	614	NA	0	614	Basal-like	-12	-13	5	5	Basal	1	2	2	2
+TCGA-BH-A0AV	FEMALE	52	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1180	NA	0	1180	Basal-like	0	-13	4	5	ReacII	1	2	2	2
+TCGA-BH-A0BG	FEMALE	73	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	756	NA	0	756	Basal-like	-12	-13	4	5	NA	1	NA	NA	NA
+TCGA-BH-A0BL	FEMALE	35	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1339	NA	0	1339	Basal-like	-12	-13	4	5	NA	3	NA	NA	NA
+TCGA-BH-A0BW	FEMALE	71	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	355	NA	0	355	Basal-like	-12	-13	3	5	Basal	1	2	2	2
+TCGA-BH-A0DL	FEMALE	64	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1467	NA	0	1467	Basal-like	0	-13	4	5	Basal	3	2	2	2
+TCGA-BH-A0WA	FEMALE	82	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	372	NA	0	372	Basal-like	-12	-13	5	5	NA	1	NA	NA	NA
+TCGA-BH-A18G	FEMALE	81	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage X	No_Conversion	enrollment	LIVING	61	NA	0	61	Basal-like	0	-13	4	4	Basal	3	NA	NA	NA
+TCGA-C8-A12K	FEMALE	80	Not Performed	Not Performed	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	0	NA	0	0	Basal-like	-12	-13	3	5	Basal	1	2	2	2
+TCGA-C8-A12V	FEMALE	55	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	Basal-like	-12	-13	3	5	Basal	1	2	2	2
+TCGA-C8-A131	FEMALE	82	Negative	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	0	NA	0	0	Basal-like	0	-13	5	1	ReacII	1	2	2	2
+TCGA-C8-A134	FEMALE	52	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	0	NA	0	0	Basal-like	-12	-13	6	4	Basal	1	2	2	2
+TCGA-D8-A147	FEMALE	45	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage X	Stage IIA	enrollment	LIVING	2	NA	0	2	Basal-like	-12	-13	5	5	Basal	1	2	2	2
+TCGA-E2-A14N	FEMALE	37	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1350	NA	0	1350	Basal-like	-12	-13	6	5	NA	4	NA	NA	NA
+TCGA-E2-A14R	FEMALE	62	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	845	NA	0	845	Basal-like	-12	-13	5	5	NA	1	NA	NA	NA
+TCGA-E2-A14X	FEMALE	55	Negative	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	692	NA	0	692	Basal-like	-12	-13	3	5	ReacII	4	2	3	2
+TCGA-E2-A14Y	FEMALE	35	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	688	NA	0	688	Basal-like	0	-13	5	2	ReacII	2	3	3	3
+TCGA-E2-A150	FEMALE	48	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	591	NA	0	591	Basal-like	-12	-13	3	5	X	1	2	2	2
+TCGA-E2-A158	FEMALE	43	Negative	Negative	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	450	NA	0	450	Basal-like	0	-13	5	5	Basal	1	2	2	2
+TCGA-E2-A159	FEMALE	50	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	515	NA	0	515	Basal-like	-10	-13	3	5	Basal	1	2	2	2
+TCGA-E2-A1AZ	FEMALE	63	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1964	NA	0	1964	Basal-like	-12	-13	NA	5	Basal	4	NA	NA	NA
+TCGA-E2-A1B5	FEMALE	46	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	774	NA	0	774	Basal-like	-12	-13	6	1	ReacI	3	3	3	4
+TCGA-A8-A08L	FEMALE	89	Positive	Negative	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	DECEASED	304	304	1	304	HER2-enriched	-6	-2	1	4	X	1	1	5	2
+TCGA-BH-A1EV	FEMALE	45	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	DECEASED	[Not Available]	365	1	365	HER2-enriched	-5	-1	7	2	NA	2	NA	NA	NA
+TCGA-B6-A0I9	FEMALE	62	Indeterminate	Positive	Positive	T3	T_Other	N0	Negative	M1	Positive	Stage IV	No_Conversion	followup	DECEASED	369	369	1	369	HER2-enriched	-5	-2	4	4	Her2	5	1	1	1
+TCGA-A8-A09X	FEMALE	62	Negative	Negative	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	DECEASED	426	426	1	426	HER2-enriched	-5	-11	3	4	Her2	3	1	2	1
+TCGA-B6-A0IK	FEMALE	63	Negative	Negative	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	No_Conversion	followup	DECEASED	571	571	1	571	HER2-enriched	-5	-11	4	4	ReacII	5	1	1	1
+TCGA-BH-A18P	FEMALE	60	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	DECEASED	921	921	1	921	HER2-enriched	-1	-1	5	4	X	2	1	1	3
+TCGA-A8-A08J	FEMALE	52	Positive	Negative	Negative	T4	T_Other	N3	Positive	M1	Positive	Stage IV	Stage IV	enrollment	DECEASED	1127	1127	1	1127	HER2-enriched	-5	-2	4	4	Her2	5	1	1	1
+TCGA-BH-A18R	FEMALE	50	Indeterminate	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IB	No_Conversion	enrollment	DECEASED	1099	1141	1	1141	HER2-enriched	0	-2	4	4	Her2	3	1	1	1
+TCGA-AR-A1AT	FEMALE	62	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	DECEASED	[Not Available]	1272	1	1272	HER2-enriched	-5	-11	4	1	Her2	NA	NA	NA	NA
+TCGA-B6-A0RS	FEMALE	38	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	DECEASED	3062	3062	1	3062	HER2-enriched	0	0	4	5	NA	1	NA	NA	NA
+TCGA-BH-A0DZ	FEMALE	43	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	495	NA	0	495	HER2-enriched	-3	-2	4	4	NA	5	NA	NA	NA
+TCGA-A2-A0T1	FEMALE	55	Negative	Negative	Positive	T3	T_Other	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	LIVING	520	NA	0	520	HER2-enriched	-5	-11	4	5	Her2	4	1	1	1
+TCGA-AO-A0J2	FEMALE	41	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	585	NA	0	585	HER2-enriched	-9	-11	4	5	Basal	3	2	2	2
+TCGA-BH-A0AW	FEMALE	56	Positive	Negative	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	622	NA	0	622	HER2-enriched	-5	-11	5	1	NA	3	NA	NA	NA
+TCGA-BH-A0EE	FEMALE	68	Negative	Negative	Positive	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	943	NA	0	943	HER2-enriched	-9	-11	7	1	Basal	5	1	2	3
+TCGA-A2-A0D1	FEMALE	76	Negative	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1051	NA	0	1051	HER2-enriched	-6	-2	1	3	Basal	1	1	2	2
+TCGA-AO-A03N	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1645	NA	0	1645	HER2-enriched	-3	-2	6	2	Her2	3	4	3	3
+TCGA-A2-A0CY	FEMALE	63	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1673	NA	0	1673	HER2-enriched	-3	0	7	5	LumA/B	1	NA	NA	NA
+TCGA-A2-A04X	FEMALE	34	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1686	NA	0	1686	HER2-enriched	-5	-2	4	1	NA	3	NA	NA	NA
+TCGA-A2-A0CX	FEMALE	52	Positive	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1728	NA	0	1728	HER2-enriched	-5	-11	NA	4	Her2	3	NA	NA	NA
+TCGA-A2-A04W	FEMALE	50	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1948	NA	0	1948	HER2-enriched	-5	-11	4	1	Her2	3	NA	NA	NA
+TCGA-AO-A12D	FEMALE	43	Negative	Negative	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	1948	NA	0	1948	HER2-enriched	-10	-11	3	5	Her2	3	1	2	2
+TCGA-A2-A0CL	FEMALE	37	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1963	NA	0	1963	HER2-enriched	-5	-2	4	1	Basal	3	1	1	1
+TCGA-AO-A0JE	FEMALE	53	Negative	Negative	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1965	NA	0	1965	HER2-enriched	-5	-11	4	4	Her2	5	1	1	1
+TCGA-A2-A0EQ	FEMALE	64	Negative	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2426	NA	0	2426	HER2-enriched	-5	-2	5	4	Basal	4	4	1	1
+TCGA-AO-A03L	FEMALE	34	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	2442	NA	0	2442	HER2-enriched	-4	-2	1	4	Basal	5	1	1	3
+TCGA-B6-A0RH	FEMALE	51	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	5748	NA	0	5748	HER2-enriched	-5	-1	6	2	ReacII	2	3	3	3
+TCGA-A8-A075	FEMALE	42	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	517	NA	0	517	HER2-enriched	-5	-2	1	5	X	2	1	5	2
+TCGA-A8-A076	FEMALE	66	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1641	NA	0	1641	HER2-enriched	-5	-2	4	3	Her2	4	1	1	1
+TCGA-A8-A07B	FEMALE	69	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1004	NA	0	1004	HER2-enriched	-3	-1	2	3	NA	5	NA	NA	NA
+TCGA-A8-A07I	FEMALE	69	Positive	Negative	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	426	NA	0	426	HER2-enriched	-5	-2	4	3	Her2	3	1	1	1
+TCGA-A8-A081	FEMALE	80	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	HER2-enriched	-5	-2	3	4	Her2	5	1	1	1
+TCGA-A8-A08B	FEMALE	52	Positive	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	702	NA	0	702	HER2-enriched	-5	-1	7	1	NA	3	NA	NA	NA
+TCGA-A8-A08X	FEMALE	43	Negative	Negative	Positive	T4	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	1034	NA	0	1034	HER2-enriched	-10	-13	3	1	Her2	3	1	2	2
+TCGA-A8-A092	FEMALE	48	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	518	NA	0	518	HER2-enriched	-3	-2	4	2	NA	2	NA	NA	NA
+TCGA-A8-A094	FEMALE	75	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	HER2-enriched	-5	-11	3	1	Basal	1	1	2	2
+TCGA-A8-A09G	FEMALE	79	Positive	Negative	Positive	T3	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	0	NA	0	0	HER2-enriched	-5	-11	3	1	Her2	2	1	3	2
+TCGA-A8-A0A7	FEMALE	57	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	30	NA	0	30	HER2-enriched	-5	-2	4	1	Her2	3	1	1	1
+TCGA-AN-A04C	FEMALE	51	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	54	NA	0	54	HER2-enriched	-9	-11	5	4	NA	3	NA	NA	NA
+TCGA-AN-A0FV	FEMALE	58	Negative	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	10	NA	0	10	HER2-enriched	-5	-11	4	2	Her2	1	1	1	1
+TCGA-AR-A0TX	FEMALE	64	Positive	Positive	Positive	T1	T1	N1	Positive	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	15	NA	0	15	HER2-enriched	-5	-11	1	1	ReacII	1	1	2	2
+TCGA-BH-A0B7	FEMALE	42	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1733	NA	0	1733	HER2-enriched	-8	-11	3	5	Her2	3	1	2	2
+TCGA-BH-A0HY	FEMALE	60	Positive	Negative	Not Available	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	867	NA	0	867	HER2-enriched	-5	-1	4	3	ReacII	NA	NA	NA	NA
+TCGA-C8-A12L	FEMALE	67	Negative	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	HER2-enriched	-9	-11	4	4	Her2	1	1	1	1
+TCGA-C8-A12P	FEMALE	55	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	0	NA	0	0	HER2-enriched	-10	-11	4	1	Her2	3	1	1	1
+TCGA-C8-A12Q	FEMALE	78	Negative	Negative	Positive	T1	T1	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	enrollment	LIVING	0	NA	0	0	HER2-enriched	-5	-11	4	2	Her2	5	1	1	1
+TCGA-C8-A12T	FEMALE	43	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	HER2-enriched	-1	-2	4	4	ReacII	4	1	1	1
+TCGA-C8-A12Z	FEMALE	45	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	0	NA	0	0	HER2-enriched	-5	-11	4	4	Her2	2	1	1	1
+TCGA-C8-A130	FEMALE	52	Positive	Positive	Equivocal	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	0	NA	0	0	HER2-enriched	0	-2	4	2	Her2	1	1	1	1
+TCGA-C8-A135	FEMALE	64	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	0	NA	0	0	HER2-enriched	-5	-11	7	1	Her2	1	1	2	2
+TCGA-C8-A137	FEMALE	34	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	3	NA	0	3	HER2-enriched	-5	-11	NA	4	Her2	5	NA	NA	NA
+TCGA-C8-A138	FEMALE	54	Positive	Negative	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	7	NA	0	7	HER2-enriched	-5	-2	1	2	Basal	2	1	3	2
+TCGA-C8-A1HF	FEMALE	48	Negative	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	HER2-enriched	-5	-11	6	2	NA	2	NA	NA	NA
+TCGA-D8-A13Z	FEMALE	51	Negative	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage X	Stage IIIA	enrollment	LIVING	210	NA	0	210	HER2-enriched	-10	-13	4	1	Basal	1	1	2	2
+TCGA-E2-A14P	FEMALE	79	Negative	Negative	Positive	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	487	NA	0	487	HER2-enriched	-5	-11	4	1	Her2	3	1	1	1
+TCGA-E2-A14V	FEMALE	53	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	748	NA	0	748	HER2-enriched	-5	-1	4	4	Her2	5	1	1	1
+TCGA-E2-A152	FEMALE	56	Positive	Negative	Positive	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	588	NA	0	588	HER2-enriched	-5	-1	5	1	Her2	1	1	2	2
+TCGA-E2-A1B0	FEMALE	50	Negative	Negative	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1271	NA	0	1271	HER2-enriched	-10	-13	4	5	ReacI	3	2	1	2
+TCGA-A2-A0CU	FEMALE	73	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	DECEASED	139	157	1	157	Luminal A	-3	0	2	2	LumA/B	5	3	3	3
+TCGA-AR-A0TR	FEMALE	68	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	No_Conversion	enrollment	DECEASED	21	160	1	160	Luminal A	-3	-12	7	2	LumA/B	1	3	3	3
+TCGA-BH-A18T	FEMALE	70	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	224	224	1	224	Luminal A	-3	0	2	5	ReacII	1	2	2	2
+TCGA-B6-A0I8	FEMALE	46	Not Performed	Not Performed	Not Available	T1	T1	N0	Negative	M0	Negative	[Not Available]	No_Conversion	followup	DECEASED	749	749	1	749	Luminal A	-3	0	4	2	Her2	NA	NA	NA	NA
+TCGA-B6-A0X4	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	DECEASED	776	859	1	859	Luminal A	-3	-12	1	2	NA	3	NA	NA	NA
+TCGA-A8-A06U	FEMALE	80	Positive	Positive	Equivocal	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	DECEASED	882	882	1	882	Luminal A	-5	-2	4	4	LumA/B	NA	NA	NA	NA
+TCGA-BH-A0EA	FEMALE	72	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	831	993	1	993	Luminal A	-7	-5	6	1	ReacI	2	3	3	4
+TCGA-BH-A18N	FEMALE	88	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	No_Conversion	enrollment	DECEASED	1148	1148	1	1148	Luminal A	-3	-12	6	2	LumA	3	3	3	3
+TCGA-BH-A1EU	FEMALE	83	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	DECEASED	[Not Available]	1286	1	1286	Luminal A	-7	-5	6	1	NA	1	NA	NA	NA
+TCGA-B6-A0X7	FEMALE	62	Positive	Positive	Negative	T1	T1	N0	Negative	NA	NA	[Not Available]	No_Conversion	enrollment	DECEASED	1791	1791	1	1791	Luminal A	-3	-5	3	2	NA	2	NA	NA	NA
+TCGA-A2-A04V	FEMALE	39	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	1920	1920	1	1920	Luminal A	-3	0	2	2	LumA/B	2	3	3	3
+TCGA-BH-A18S	FEMALE	79	Positive	Positive	Not Available	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	DECEASED	2009	2009	1	2009	Luminal A	-3	-12	7	2	LumA/B	5	3	3	3
+TCGA-BH-A18M	FEMALE	39	Positive	Positive	Positive	T3	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIIA	enrollment	DECEASED	2207	2207	1	2207	Luminal A	-7	-5	6	1	ReacI	2	3	3	4
+TCGA-B6-A0RM	FEMALE	57	Positive	Positive	Negative	TX		N0	Negative	NA	NA	[Not Available]	No_Conversion	followup	DECEASED	2373	2373	1	2373	Luminal A	-3	-10	2	2	LumA	4	3	3	3
+TCGA-BH-A1ET	FEMALE	55	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IIA	Stage I	enrollment	DECEASED	[Completed]	2520	1	2520	Luminal A	-7	-12	6	2	NA	2	NA	NA	NA
+TCGA-B6-A0IN	FEMALE	45	Positive	Negative	Not Available	T1	T1	N0	Negative	NA	NA	[Not Available]	No_Conversion	followup	DECEASED	2573	2573	1	2573	Luminal A	-3	-2	1	4	NA	3	NA	NA	NA
+TCGA-BH-A1EO	FEMALE	68	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	[Not Available]	2798	1	2798	Luminal A	-3	-5	6	4	NA	3	NA	NA	NA
+TCGA-B6-A0WS	FEMALE	58	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	[Not Available]	Stage I	followup	DECEASED	[Not Available]	2965	1	2965	Luminal A	-4	0	7	1	NA	4	NA	NA	NA
+TCGA-B6-A0RP	FEMALE	73	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIIB	No_Conversion	followup	DECEASED	3126	3126	1	3126	Luminal A	-4	-12	4	2	LumA	4	3	3	3
+TCGA-B6-A0IH	FEMALE	81	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	followup	DECEASED	[Not Available]	3418	1	3418	Luminal A	-7	-5	6	4	NA	2	NA	NA	NA
+TCGA-B6-A0WY	FEMALE	40	Positive	Negative	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	DECEASED	3410	3460	1	3460	Luminal A	-3	-5	4	1	NA	4	NA	NA	NA
+TCGA-BH-A1ES	FEMALE	35	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	DECEASED	[Not Available]	3462	1	3462	Luminal A	-3	-9	5	4	NA	5	NA	NA	NA
+TCGA-B6-A0X0	FEMALE	54	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	DECEASED	[Not Available]	3945	1	3945	Luminal A	-3	-5	7	2	LumA	2	3	3	3
+TCGA-B6-A0RQ	FEMALE	68	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	DECEASED	[Not Available]	4273	1	4273	Luminal A	-7	-5	6	1	ReacI	1	3	3	4
+TCGA-B6-A0IG	FEMALE	50	Positive	Positive	Not Available	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	DECEASED	4456	4456	1	4456	Luminal A	0	-2	7	4	Her2	NA	NA	NA	NA
+TCGA-BH-A0HO	FEMALE	48	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	76	NA	0	76	Luminal A	-3	-12	2	2	NA	2	NA	NA	NA
+TCGA-BH-A0DS	FEMALE	71	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	77	NA	0	77	Luminal A	-7	-5	6	3	LumA	3	3	4	5
+TCGA-BH-A0DQ	FEMALE	42	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	98	NA	0	98	Luminal A	0	-5	6	2	NA	5	NA	NA	NA
+TCGA-BH-A0HK	FEMALE	81	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	178	NA	0	178	Luminal A	0	0	7	3	LumA/B	2	3	3	3
+TCGA-A7-A0CG	FEMALE	78	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	230	NA	0	230	Luminal A	-7	-5	7	1	ReacI	2	3	3	4
+TCGA-A7-A0CH	FEMALE	79	Performed but Not Available	Performed but Not Available	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	232	NA	0	232	Luminal A	-3	-12	2	2	LumA	2	3	3	3
+TCGA-A7-A0DB	FEMALE	56	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	266	NA	0	266	Luminal A	-7	-5	4	1	LumA	2	3	3	3
+TCGA-A7-A0D9	FEMALE	37	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	272	NA	0	272	Luminal A	-3	-3	5	2	ReacII	4	3	3	3
+TCGA-AO-A0J8	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	277	NA	0	277	Luminal A	-3	-12	2	1	ReacI	2	3	3	4
+TCGA-BH-A0GZ	FEMALE	62	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	328	NA	0	328	Luminal A	-3	0	2	4	NA	3	NA	NA	NA
+TCGA-AO-A0JA	FEMALE	36	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	LIVING	346	NA	0	346	Luminal A	-4	-4	1	4	NA	2	NA	NA	NA
+TCGA-AO-A0JF	FEMALE	68	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	354	NA	0	354	Luminal A	-7	-5	7	2	ReacI	2	3	3	4
+TCGA-A7-A0CD	FEMALE	66	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	372	NA	0	372	Luminal A	-3	-10	2	3	LumA	3	3	4	3
+TCGA-D8-A145	FEMALE	80	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	410	NA	0	410	Luminal A	-7	-5	6	2	ReacI	1	3	3	4
+TCGA-BH-A0HP	FEMALE	65	Positive	Negative	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	414	NA	0	414	Luminal A	-7	-5	6	1	ReacI	2	3	3	4
+TCGA-BH-A0DK	FEMALE	49	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	423	NA	0	423	Luminal A	-4	-4	2	3	LumA/B	2	3	4	3
+TCGA-BH-A0E2	FEMALE	49	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	435	NA	0	435	Luminal A	-3	-8	NA	4	LumA/B	2	NA	NA	NA
+TCGA-A2-A0YI	FEMALE	62	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	441	NA	0	441	Luminal A	-4	-12	4	1	ReacI	3	3	1	4
+TCGA-A2-A0YL	FEMALE	48	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	445	NA	0	445	Luminal A	-7	-5	6	1	ReacI	2	3	3	4
+TCGA-AO-A0JG	FEMALE	49	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	449	NA	0	449	Luminal A	-7	-5	1	4	LumA/B	5	3	1	3
+TCGA-A2-A0YF	FEMALE	67	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	469	NA	0	469	Luminal A	-3	-12	1	2	ReacII	2	3	3	3
+TCGA-BH-A0DP	FEMALE	60	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	476	NA	0	476	Luminal A	-7	-5	2	4	ReacI	2	3	1	4
+TCGA-BH-A0E1	FEMALE	52	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	477	NA	0	477	Luminal A	-3	-12	6	2	ReacII	2	3	3	3
+TCGA-A2-A0T5	FEMALE	39	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIA	followup	LIVING	531	NA	0	531	Luminal A	-3	-5	6	2	LumA	2	NA	NA	NA
+TCGA-A2-A0T6	FEMALE	50	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	575	NA	0	575	Luminal A	-7	-5	2	4	ReacI	2	3	1	4
+TCGA-BH-A0HI	FEMALE	78	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	619	NA	0	619	Luminal A	-3	-12	7	2	NA	2	NA	NA	NA
+TCGA-A2-A0T7	FEMALE	51	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	631	NA	0	631	Luminal A	0	-3	4	1	ReacI	2	3	3	4
+TCGA-BH-A0BJ	FEMALE	41	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	660	NA	0	660	Luminal A	-7	-5	7	2	ReacI	3	3	3	4
+TCGA-BH-A0H7	FEMALE	65	Positive	Positive	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	701	NA	0	701	Luminal A	-3	-3	4	4	ReacII	3	3	1	3
+TCGA-BH-A0HF	FEMALE	77	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	727	NA	0	727	Luminal A	-7	-5	4	2	NA	NA	NA	NA	NA
+TCGA-BH-A0EB	FEMALE	69	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	745	NA	0	745	Luminal A	-4	-12	NA	1	LumA	2	NA	NA	NA
+TCGA-BH-A0H6	FEMALE	82	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	No_Conversion	followup	LIVING	747	NA	0	747	Luminal A	-3	-5	2	2	ReacI	4	3	3	3
+TCGA-A2-A0YD	FEMALE	63	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	769	NA	0	769	Luminal A	-7	-5	4	1	LumA	2	3	3	3
+TCGA-BH-A0HB	FEMALE	55	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	806	NA	0	806	Luminal A	-3	-8	4	1	NA	5	NA	NA	NA
+TCGA-BH-A0HX	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	829	NA	0	829	Luminal A	-3	-10	4	4	LumA/B	4	3	1	3
+TCGA-AO-A12H	FEMALE	69	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	862	NA	0	862	Luminal A	-3	-12	2	2	LumA/B	1	3	3	3
+TCGA-E2-A10E	FEMALE	64	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	865	NA	0	865	Luminal A	-3	-12	4	4	LumA/B	2	3	1	3
+TCGA-A2-A0D3	FEMALE	42	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	875	NA	0	875	Luminal A	-3	-5	6	4	LumA	2	3	3	3
+TCGA-E2-A10F	FEMALE	47	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	878	NA	0	878	Luminal A	-4	-5	4	4	NA	2	NA	NA	NA
+TCGA-AO-A03V	FEMALE	41	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	886	NA	0	886	Luminal A	-3	0	7	2	NA	1	NA	NA	NA
+TCGA-A2-A0EW	FEMALE	53	Positive	Positive	Negative	T1	T1	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	LIVING	904	NA	0	904	Luminal A	-7	-5	6	2	ReacI	2	3	3	4
+TCGA-BH-A0GY	FEMALE	67	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	923	NA	0	923	Luminal A	-3	-3	5	2	ReacI	3	3	3	3
+TCGA-A2-A0EV	FEMALE	80	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	968	NA	0	968	Luminal A	-4	0	4	2	ReacI	3	3	3	4
+TCGA-BH-A0BC	FEMALE	60	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	LIVING	974	NA	0	974	Luminal A	-4	-4	4	2	ReacI	2	3	3	4
+TCGA-A2-A0YC	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	989	NA	0	989	Luminal A	-3	-12	4	4	ReacII	2	3	1	3
+TCGA-A2-A0EU	FEMALE	79	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	1043	NA	0	1043	Luminal A	-3	-10	2	2	ReacI	4	3	3	3
+TCGA-A2-A0ET	FEMALE	58	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1066	NA	0	1066	Luminal A	-3	-10	1	4	NA	3	NA	NA	NA
+TCGA-A2-A04Y	FEMALE	53	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1099	NA	0	1099	Luminal A	-3	-2	5	1	LumA	5	3	2	3
+TCGA-BH-A0HQ	FEMALE	56	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1121	NA	0	1121	Luminal A	-3	-5	2	4	NA	NA	NA	NA	NA
+TCGA-A2-A0ES	FEMALE	52	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1127	NA	0	1127	Luminal A	-7	-5	6	1	ReacII	4	3	3	4
+TCGA-BH-A0BA	FEMALE	51	Positive	Positive	Negative	T3	T_Other	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	LIVING	1132	NA	0	1132	Luminal A	0	-5	6	4	ReacI	3	3	1	4
+TCGA-E2-A10B	FEMALE	67	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1141	NA	0	1141	Luminal A	-3	-12	4	4	LumA	3	3	1	3
+TCGA-BH-A0B1	FEMALE	66	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1148	NA	0	1148	Luminal A	-3	-3	6	NA	LumA/B	NA	NA	NA	NA
+TCGA-BH-A0DH	FEMALE	63	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1156	NA	0	1156	Luminal A	-3	0	1	3	X	2	3	5	3
+TCGA-BH-A0B4	MALE	65	Positive	Positive	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1191	NA	0	1191	Luminal A	-3	-3	6	4	ReacII	5	3	1	3
+TCGA-BH-A0H9	FEMALE	69	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1247	NA	0	1247	Luminal A	-3	-3	6	5	LumA/B	1	2	2	2
+TCGA-AO-A0J9	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	LIVING	1255	NA	0	1255	Luminal A	-3	-2	2	4	ReacI	2	3	1	4
+TCGA-AO-A12G	FEMALE	75	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1265	NA	0	1265	Luminal A	0	-1	2	4	LumA/B	2	3	1	3
+TCGA-A2-A0SY	FEMALE	62	Positive	Positive	Positive	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1347	NA	0	1347	Luminal A	-7	-5	6	4	NA	2	NA	NA	NA
+TCGA-BH-A0E7	FEMALE	79	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1362	NA	0	1362	Luminal A	-3	-12	2	2	LumA	4	3	3	3
+TCGA-AO-A03M	FEMALE	29	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	1455	NA	0	1455	Luminal A	-5	-2	7	1	ReacII	1	NA	NA	NA
+TCGA-BH-A0BV	FEMALE	78	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1519	NA	0	1519	Luminal A	-4	0	7	4	LumA/B	5	3	1	3
+TCGA-BH-A0B8	FEMALE	64	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IB	Stage I	followup	LIVING	1569	NA	0	1569	Luminal A	-3	-10	7	3	NA	NA	NA	NA	NA
+TCGA-A2-A0CZ	FEMALE	46	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1615	NA	0	1615	Luminal A	-7	-5	2	1	ReacII	4	3	3	4
+TCGA-A2-A0SU	FEMALE	66	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1661	NA	0	1661	Luminal A	0	0	2	2	LumA/B	2	3	3	3
+TCGA-AO-A12E	FEMALE	51	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	1742	NA	0	1742	Luminal A	-7	-5	1	3	LumA/B	3	3	4	3
+TCGA-E2-A106	FEMALE	34	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IB	No_Conversion	followup	LIVING	1807	NA	0	1807	Luminal A	-3	0	4	4	NA	4	NA	NA	NA
+TCGA-A2-A0CV	FEMALE	41	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1929	NA	0	1929	Luminal A	-7	-5	6	2	LumA/B	2	3	3	4
+TCGA-AO-A12C	FEMALE	42	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1993	NA	0	1993	Luminal A	-7	-5	6	4	ReacI	2	NA	NA	NA
+TCGA-B6-A0RG	FEMALE	26	Negative	Negative	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	2082	NA	0	2082	Luminal A	-3	0	4	2	ReacII	2	3	3	3
+TCGA-A2-A0CS	FEMALE	73	Positive	Positive	Negative	T4	T_Other	N3	Positive	M1	Positive	Stage IV	No_Conversion	followup	LIVING	2298	NA	0	2298	Luminal A	-3	-12	4	2	LumA	2	3	3	3
+TCGA-A2-A0EO	FEMALE	54	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	2441	NA	0	2441	Luminal A	-7	-5	2	4	LumA	2	3	1	4
+TCGA-A2-A0CQ	FEMALE	62	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	2694	NA	0	2694	Luminal A	-3	-12	2	4	LumA/B	2	3	1	3
+TCGA-A2-A0EN	FEMALE	70	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2717	NA	0	2717	Luminal A	-7	-5	2	1	NA	2	NA	NA	NA
+TCGA-AO-A12A	FEMALE	47	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2754	NA	0	2754	Luminal A	-7	-5	6	2	LumA	2	3	3	4
+TCGA-A2-A0CP	FEMALE	60	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	2813	NA	0	2813	Luminal A	-7	-5	4	1	X	4	3	1	4
+TCGA-AO-A126	FEMALE	39	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2850	NA	0	2850	Luminal A	-3	0	6	4	Her2	5	3	1	3
+TCGA-AO-A125	FEMALE	72	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	3018	NA	0	3018	Luminal A	-3	-12	3	4	NA	2	NA	NA	NA
+TCGA-A2-A0EM	FEMALE	73	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	3093	NA	0	3093	Luminal A	-3	-12	2	2	NA	2	NA	NA	NA
+TCGA-A2-A04N	FEMALE	66	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	3188	NA	0	3188	Luminal A	-3	-5	6	2	LumA	4	3	3	3
+TCGA-AQ-A04L	FEMALE	48	Positive	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	3344	NA	0	3344	Luminal A	-5	-1	3	3	ReacI	1	2	2	2
+TCGA-B6-A0IO	FEMALE	66	Positive	Indeterminate	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	3350	NA	0	3350	Luminal A	-3	0	1	2	X	3	3	3	3
+TCGA-B6-A0IP	FEMALE	74	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	3374	NA	0	3374	Luminal A	0	-5	2	4	NA	2	NA	NA	NA
+TCGA-B6-A0WZ	FEMALE	50	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	3941	NA	0	3941	Luminal A	-3	-12	4	4	NA	2	NA	NA	NA
+TCGA-B6-A0I5	FEMALE	49	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	4549	NA	0	4549	Luminal A	-3	-5	6	1	NA	2	NA	NA	NA
+TCGA-B6-A0RV	FEMALE	42	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	4788	NA	0	4788	Luminal A	0	-5	6	1	ReacII	4	3	3	4
+TCGA-B6-A0RO	FEMALE	71	Positive	Positive	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	No_Conversion	followup	LIVING	4928	NA	0	4928	Luminal A	-3	0	1	2	ReacI	3	3	3	3
+TCGA-B6-A0RN	FEMALE	60	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	5261	NA	0	5261	Luminal A	-3	-5	2	4	ReacI	2	3	1	4
+TCGA-B6-A0WT	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	5739	NA	0	5739	Luminal A	-4	-2	4	2	NA	3	NA	NA	NA
+TCGA-B6-A0IA	FEMALE	51	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	6718	NA	0	6718	Luminal A	-3	-12	4	2	NA	4	NA	NA	NA
+TCGA-B6-A0RI	FEMALE	44	Positive	Positive	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	No_Conversion	followup	LIVING	7125	NA	0	7125	Luminal A	-3	-7	4	2	NA	2	NA	NA	NA
+TCGA-A1-A0SE	FEMALE	56	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1320	NA	0	1320	Luminal A	-7	-5	6	1	NA	2	NA	NA	NA
+TCGA-A2-A0EX	FEMALE	46	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	549	NA	0	549	Luminal A	-7	-5	4	4	ReacI	4	3	1	4
+TCGA-AO-A0JJ	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	1512	NA	0	1512	Luminal A	-7	-5	7	1	LumA/B	2	3	3	4
+TCGA-E2-A105	FEMALE	79	Positive	Positive	Equivocal	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1163	NA	0	1163	Luminal A	-3	-10	1	3	NA	5	NA	NA	NA
+TCGA-A1-A0SD	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	437	NA	0	437	Luminal A	-3	-9	6	1	NA	2	NA	NA	NA
+TCGA-A1-A0SH	FEMALE	39	Negative	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1437	NA	0	1437	Luminal A	-7	-5	4	2	Her2	5	1	1	1
+TCGA-A1-A0SJ	FEMALE	39	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	426	NA	0	426	Luminal A	-3	-3	4	4	ReacI	3	3	1	3
+TCGA-A8-A06P	FEMALE	63	Positive	Positive	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	396	NA	0	396	Luminal A	-3	-5	4	2	ReacI	4	3	3	3
+TCGA-A8-A06T	FEMALE	75	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1249	NA	0	1249	Luminal A	-3	-10	2	4	NA	4	NA	NA	NA
+TCGA-A8-A06Y	FEMALE	66	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	791	NA	0	791	Luminal A	-3	0	2	4	LumA	4	3	1	3
+TCGA-A8-A07E	FEMALE	81	Positive	Positive	Negative	T4	T_Other	N3	Positive	M0	Negative	Stage X	Stage IIIC	enrollment	LIVING	608	NA	0	608	Luminal A	-3	-4	1	4	ReacII	2	3	1	3
+TCGA-A8-A07F	FEMALE	65	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	576	NA	0	576	Luminal A	-1	-1	4	4	ReacI	2	3	1	4
+TCGA-A8-A07G	FEMALE	65	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	576	NA	0	576	Luminal A	-7	-5	4	1	NA	3	NA	NA	NA
+TCGA-A8-A07J	FEMALE	35	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	365	NA	0	365	Luminal A	-7	-5	4	1	NA	2	NA	NA	NA
+TCGA-A8-A07P	FEMALE	68	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	334	NA	0	334	Luminal A	-3	-10	2	3	LumA/B	4	3	4	3
+TCGA-A8-A083	FEMALE	67	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	Luminal A	-3	-12	2	2	LumA	2	3	3	3
+TCGA-A8-A086	FEMALE	59	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	396	NA	0	396	Luminal A	-3	-9	5	2	LumA	5	3	2	3
+TCGA-A8-A08A	FEMALE	89	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	30	NA	0	30	Luminal A	-3	-12	2	2	LumA	2	3	3	3
+TCGA-A8-A08C	FEMALE	65	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	607	NA	0	607	Luminal A	-3	-12	NA	2	NA	2	NA	NA	NA
+TCGA-A8-A08O	FEMALE	45	Positive	Positive	Negative	T2	T_Other	N3	Positive	M1	Positive	Stage IV	Stage IV	enrollment	LIVING	942	NA	0	942	Luminal A	-7	-5	6	2	ReacI	2	3	3	4
+TCGA-A8-A08T	FEMALE	64	Positive	Positive	Negative	T2	T_Other	N1	Positive	M1	Positive	Stage IV	Stage IV	enrollment	LIVING	2830	NA	0	2830	Luminal A	-3	-5	2	4	LumA	4	3	1	3
+TCGA-A8-A08Z	FEMALE	76	Positive	Positive	Negative	T4	T_Other	N3	Positive	M0	Negative	Stage IIIB	Stage IIIC	enrollment	LIVING	1217	NA	0	1217	Luminal A	-3	-5	4	2	LumA	2	3	3	3
+TCGA-A8-A090	FEMALE	74	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	Luminal A	-3	0	2	4	NA	4	NA	NA	NA
+TCGA-A8-A091	FEMALE	61	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	580	NA	0	580	Luminal A	-3	-10	2	4	LumA/B	4	3	1	3
+TCGA-A8-A093	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	545	NA	0	545	Luminal A	-3	-12	2	4	NA	3	NA	NA	NA
+TCGA-A8-A099	FEMALE	76	Positive	Positive	Positive	T4	T_Other	N3	Positive	M0	Negative	Stage X	Stage IIIC	enrollment	LIVING	304	NA	0	304	Luminal A	-3	-12	1	3	LumA/B	2	3	4	3
+TCGA-A8-A09A	FEMALE	40	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage X	Stage IIA	enrollment	LIVING	304	NA	0	304	Luminal A	-3	-3	4	4	LumA	4	3	1	3
+TCGA-A8-A09B	FEMALE	58	Positive	Positive	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	Stage IIIB	enrollment	LIVING	365	NA	0	365	Luminal A	-3	0	4	4	LumA	4	3	1	3
+TCGA-A8-A09T	FEMALE	68	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage X	Stage I	enrollment	LIVING	578	NA	0	578	Luminal A	-3	-12	2	2	NA	4	NA	NA	NA
+TCGA-A8-A09V	FEMALE	51	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	457	NA	0	457	Luminal A	-3	-12	NA	2	NA	2	NA	NA	NA
+TCGA-A8-A0A1	FEMALE	84	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	365	NA	0	365	Luminal A	-7	-5	4	4	NA	2	NA	NA	NA
+TCGA-A8-A0A2	FEMALE	66	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	578	NA	0	578	Luminal A	-3	0	2	3	NA	2	NA	NA	NA
+TCGA-A8-A0A4	FEMALE	73	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	396	NA	0	396	Luminal A	-7	-5	3	4	ReacII	2	3	1	3
+TCGA-A8-A0A6	FEMALE	64	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	640	NA	0	640	Luminal A	-4	-5	1	4	NA	2	NA	NA	NA
+TCGA-A8-A0AD	FEMALE	83	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1157	NA	0	1157	Luminal A	-3	-12	2	2	NA	2	NA	NA	NA
+TCGA-AN-A03X	FEMALE	74	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	10	NA	0	10	Luminal A	-3	0	4	3	NA	4	NA	NA	NA
+TCGA-AN-A046	FEMALE	68	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	10	NA	0	10	Luminal A	-3	0	4	4	NA	2	NA	NA	NA
+TCGA-AN-A04A	FEMALE	36	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	enrollment	LIVING	89	NA	0	89	Luminal A	-3	-5	4	2	LumA/B	5	3	3	3
+TCGA-AN-A0FD	FEMALE	71	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	195	NA	0	195	Luminal A	-3	-8	4	2	LumA/B	1	3	3	3
+TCGA-AN-A0FN	FEMALE	61	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IB	No_Conversion	enrollment	LIVING	218	NA	0	218	Luminal A	-7	-5	4	1	NA	1	NA	NA	NA
+TCGA-AN-A0FS	FEMALE	55	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IB	No_Conversion	enrollment	LIVING	191	NA	0	191	Luminal A	-7	-5	2	2	ReacII	2	3	3	4
+TCGA-AN-A0FT	FEMALE	63	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	183	NA	0	183	Luminal A	-3	-2	5	3	Her2	3	3	4	5
+TCGA-AN-A0FW	FEMALE	67	Positive	Indeterminate	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	enrollment	LIVING	11	NA	0	11	Luminal A	-3	-4	1	3	LumA/B	3	3	4	3
+TCGA-AN-A0FZ	FEMALE	45	Positive	Negative	Equivocal	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	enrollment	LIVING	10	NA	0	10	Luminal A	-3	-3	4	2	LumA/B	3	3	3	3
+TCGA-AN-A0XL	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	10	NA	0	10	Luminal A	-7	-5	6	2	NA	5	NA	NA	NA
+TCGA-AN-A0XN	FEMALE	68	Negative	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	10	NA	0	10	Luminal A	-3	-5	4	3	ReacI	4	3	1	3
+TCGA-AN-A0XO	FEMALE	59	Positive	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	375	NA	0	375	Luminal A	-3	-7	4	4	LumA/B	2	3	1	3
+TCGA-AN-A0XP	FEMALE	69	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	9	NA	0	9	Luminal A	-3	-12	4	2	LumA	2	3	3	3
+TCGA-AN-A0XS	FEMALE	63	Negative	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	10	NA	0	10	Luminal A	-4	-5	4	2	LumA	4	3	3	3
+TCGA-AN-A0XT	FEMALE	54	Positive	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	10	NA	0	10	Luminal A	-3	0	7	5	LumA/B	2	3	3	3
+TCGA-AN-A0XV	FEMALE	67	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	162	NA	0	162	Luminal A	0	0	2	4	NA	4	NA	NA	NA
+TCGA-AR-A0TW	FEMALE	50	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage III	No_Conversion	enrollment	LIVING	739	NA	0	739	Luminal A	-5	-2	NA	4	Basal	4	NA	NA	NA
+TCGA-AR-A1AK	FEMALE	70	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1558	NA	0	1558	Luminal A	0	-5	4	1	ReacI	3	3	1	4
+TCGA-AR-A1AL	FEMALE	60	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	1485	NA	0	1485	Luminal A	0	-4	6	2	ReacI	2	3	3	4
+TCGA-AR-A1AN	FEMALE	46	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1329	NA	0	1329	Luminal A	-7	-5	6	5	NA	1	NA	NA	NA
+TCGA-AR-A1AP	FEMALE	80	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1215	NA	0	1215	Luminal A	0	0	4	4	LumA/B	2	3	1	3
+TCGA-AR-A1AS	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	1242	NA	0	1242	Luminal A	-3	-7	4	2	LumA	3	3	3	3
+TCGA-AR-A1AU	FEMALE	39	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	1409	NA	0	1409	Luminal A	-7	-3	6	2	ReacI	4	3	3	4
+TCGA-AR-A1AW	FEMALE	65	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1072	NA	0	1072	Luminal A	-3	-12	3	1	ReacII	3	3	2	2
+TCGA-AR-A1AX	FEMALE	64	Positive	Positive	Positive	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1103	NA	0	1103	Luminal A	-5	0	6	5	ReacII	4	3	3	1
+TCGA-BH-A0AZ	FEMALE	47	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	867	NA	0	867	Luminal A	-7	-5	4	2	ReacI	2	3	3	4
+TCGA-BH-A0B0	FEMALE	56	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1427	NA	0	1427	Luminal A	-7	-5	6	1	ReacI	2	3	3	4
+TCGA-BH-A0BM	FEMALE	54	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	1117	NA	0	1117	Luminal A	-7	-5	6	2	ReacI	2	3	3	4
+TCGA-BH-A0BO	FEMALE	54	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1085	NA	0	1085	Luminal A	-7	-5	6	1	ReacI	1	3	3	4
+TCGA-BH-A0BP	FEMALE	76	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1481	NA	0	1481	Luminal A	-7	-5	4	4	ReacI	2	3	1	4
+TCGA-BH-A0BQ	FEMALE	39	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	826	NA	0	826	Luminal A	-7	-5	6	1	Her2	2	3	3	4
+TCGA-BH-A0BR	FEMALE	59	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1632	NA	0	1632	Luminal A	-3	-4	4	4	ReacI	1	3	1	3
+TCGA-BH-A0BS	FEMALE	55	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1640	NA	0	1640	Luminal A	-2	0	7	2	LumA/B	2	3	3	3
+TCGA-BH-A0BT	FEMALE	56	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1386	NA	0	1386	Luminal A	-3	-12	6	2	ReacII	4	3	3	3
+TCGA-BH-A0C1	FEMALE	61	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1338	NA	0	1338	Luminal A	-1	-1	5	4	ReacII	2	3	1	3
+TCGA-BH-A0DE	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	948	NA	0	948	Luminal A	-7	-5	6	4	NA	5	NA	NA	NA
+TCGA-BH-A0DG	FEMALE	30	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	713	NA	0	713	Luminal A	-4	-4	4	1	ReacI	3	3	1	4
+TCGA-BH-A0DI	FEMALE	63	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	673	NA	0	673	Luminal A	-7	-5	4	1	ReacI	5	3	1	4
+TCGA-BH-A0DO	FEMALE	78	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	525	NA	0	525	Luminal A	-7	-5	6	1	NA	2	NA	NA	NA
+TCGA-BH-A0DT	FEMALE	41	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1170	NA	0	1170	Luminal A	-7	-5	6	1	LumA	2	3	3	4
+TCGA-BH-A0DX	FEMALE	62	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1442	NA	0	1442	Luminal A	-7	-4	6	1	NA	1	NA	NA	NA
+TCGA-BH-A0E9	FEMALE	53	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1405	NA	0	1405	Luminal A	-7	-5	6	1	ReacI	3	3	3	4
+TCGA-BH-A0EI	FEMALE	51	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	743	NA	0	743	Luminal A	-7	-5	4	4	LumA	5	3	1	3
+TCGA-BH-A0H3	FEMALE	46	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1149	NA	0	1149	Luminal A	-4	-2	6	2	NA	2	NA	NA	NA
+TCGA-BH-A0H5	FEMALE	45	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1080	NA	0	1080	Luminal A	-5	-2	3	1	Basal	1	1	2	2
+TCGA-BH-A0HA	FEMALE	31	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	856	NA	0	856	Luminal A	-7	-5	6	2	ReacI	1	3	3	4
+TCGA-BH-A0W4	FEMALE	46	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	175	NA	0	175	Luminal A	-7	-5	4	2	LumA	2	3	3	3
+TCGA-BH-A0W5	FEMALE	77	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	543	NA	0	543	Luminal A	-4	-5	4	1	LumA	4	3	1	3
+TCGA-BH-A0W7	FEMALE	49	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	558	NA	0	558	Luminal A	-4	-4	4	1	NA	4	NA	NA	NA
+TCGA-BH-A18H	FEMALE	63	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IB	Stage I	enrollment	LIVING	0	NA	0	0	Luminal A	-5	-2	6	1	LumA/B	3	3	3	1
+TCGA-BH-A18I	FEMALE	53	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	220	NA	0	220	Luminal A	-4	-5	4	2	NA	4	NA	NA	NA
+TCGA-C8-A12N	FEMALE	58	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	Luminal A	-3	-12	6	2	ReacI	4	3	3	3
+TCGA-C8-A12O	FEMALE	50	Positive	Positive	Not Available	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	Luminal A	0	-2	4	1	Her2	NA	NA	NA	NA
+TCGA-C8-A12Y	FEMALE	44	Not Performed	Not Performed	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	Luminal A	-3	0	6	2	LumA	2	3	3	3
+TCGA-C8-A132	FEMALE	56	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	0	NA	0	0	Luminal A	-4	-2	5	1	Her2	5	3	2	3
+TCGA-C8-A133	FEMALE	65	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	0	NA	0	0	Luminal A	-3	-12	1	2	LumA/B	1	3	3	3
+TCGA-C8-A1HI	FEMALE	40	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	2	NA	0	2	Luminal A	0	-5	6	2	NA	2	NA	NA	NA
+TCGA-D8-A141	FEMALE	40	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage X	Stage IIA	enrollment	LIVING	113	NA	0	113	Luminal A	-4	-5	4	1	NA	2	NA	NA	NA
+TCGA-E2-A14Q	FEMALE	50	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	Stage IIB	enrollment	LIVING	974	NA	0	974	Luminal A	-7	0	2	2	LumA	2	3	3	4
+TCGA-E2-A14T	FEMALE	52	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	890	NA	0	890	Luminal A	-3	0	1	2	LumA/B	NA	NA	NA	NA
+TCGA-E2-A14Z	FEMALE	64	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	518	NA	0	518	Luminal A	-2	0	6	1	LumA	1	3	3	2
+TCGA-E2-A153	FEMALE	51	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIB	Stage IIA	enrollment	LIVING	586	NA	0	586	Luminal A	-3	-12	4	1	LumA	2	3	3	3
+TCGA-E2-A154	FEMALE	68	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	325	NA	0	325	Luminal A	-3	-12	6	4	LumA	2	3	3	3
+TCGA-E2-A156	FEMALE	61	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	481	NA	0	481	Luminal A	-3	-12	2	2	LumA	2	3	3	3
+TCGA-E2-A15C	FEMALE	61	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	496	NA	0	496	Luminal A	-4	-5	2	2	ReacI	4	3	3	3
+TCGA-E2-A15D	FEMALE	47	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	315	NA	0	315	Luminal A	-3	-5	4	1	LumA	NA	NA	NA	NA
+TCGA-E2-A15E	FEMALE	40	Positive	Positive	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	517	NA	0	517	Luminal A	-7	-5	6	2	Her2	4	3	3	4
+TCGA-E2-A15F	FEMALE	64	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage I	Stage IIA	enrollment	LIVING	468	NA	0	468	Luminal A	-3	-3	4	2	ReacI	NA	NA	NA	NA
+TCGA-E2-A15G	FEMALE	76	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	315	NA	0	315	Luminal A	-3	-12	1	1	LumA	2	3	3	3
+TCGA-E2-A15H	FEMALE	38	Positive	Positive	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	42	NA	0	42	Luminal A	0	0	4	2	Her2	2	3	3	1
+TCGA-E2-A15I	FEMALE	44	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	411	NA	0	411	Luminal A	-7	-5	7	2	NA	2	NA	NA	NA
+TCGA-E2-A15J	FEMALE	51	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	463	NA	0	463	Luminal A	-3	-12	4	4	LumA/B	2	3	1	3
+TCGA-E2-A15O	FEMALE	89	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage I	Stage IIA	enrollment	LIVING	395	NA	0	395	Luminal A	-3	0	2	4	LumA	4	3	1	3
+TCGA-E2-A15P	FEMALE	61	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	315	NA	0	315	Luminal A	-7	-5	2	2	ReacI	2	3	3	4
+TCGA-E2-A15R	FEMALE	64	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIIA	Stage IIA	enrollment	LIVING	330	NA	0	330	Luminal A	-3	-10	5	3	LumA/B	4	3	4	3
+TCGA-E2-A1B1	FEMALE	45	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1361	NA	0	1361	Luminal A	-7	-5	4	5	ReacI	3	3	1	2
+TCGA-E2-A1B4	FEMALE	74	Positive	Positive	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	911	NA	0	911	Luminal A	-3	-12	6	2	LumA/B	2	3	3	3
+TCGA-E2-A1B6	FEMALE	44	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	338	NA	0	338	Luminal A	-7	-5	6	5	Basal	1	2	2	2
+TCGA-E2-A1BC	FEMALE	63	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	297	NA	0	297	Luminal A	-7	-5	6	2	ReacI	2	3	3	4
+TCGA-E2-A1BD	FEMALE	53	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	317	NA	0	317	Luminal A	-3	-7	6	4	LumA	2	3	3	3
+TCGA-A2-A0SV	FEMALE	63	Positive	Positive	Negative	T2	T_Other	N2	Positive	M1	Positive	Stage IV	No_Conversion	followup	DECEASED	825	825	1	825	Luminal B	-3	-2	6	2	Basal	5	4	3	3
+TCGA-AO-A03O	FEMALE	69	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	DECEASED	993	2483	1	2483	Luminal B	-5	-2	1	4	LumA/B	3	4	1	1
+TCGA-A2-A0SW	FEMALE	82	Positive	Negative	Negative	T2	T_Other	N2	Positive	M1	Positive	Stage IV	No_Conversion	followup	DECEASED	1364	1364	1	1364	Luminal B	-5	-2	3	4	Basal	4	4	1	1
+TCGA-B6-A0WW	FEMALE	58	Positive	Positive	Negative	T2	T_Other	N1	Positive	NA	NA	[Not Available]	No_Conversion	followup	DECEASED	546	557	1	557	Luminal B	-3	0	2	4	NA	4	NA	NA	NA
+TCGA-BH-A18J	FEMALE	56	Positive	Positive	Negative	T4	T_Other	N2	Positive	M1	Positive	Stage IV	No_Conversion	enrollment	DECEASED	611	611	1	611	Luminal B	-3	-1	4	1	ReacII	2	4	3	3
+TCGA-BH-A18L	FEMALE	50	Positive	Positive	Not Available	T3	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIIA	enrollment	DECEASED	372	811	1	811	Luminal B	-5	-10	1	4	ReacII	5	4	1	1
+TCGA-A8-A06X	FEMALE	77	Positive	Negative	Positive	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	enrollment	DECEASED	943	943	1	943	Luminal B	-5	-2	NA	3	LumA/B	1	NA	NA	NA
+TCGA-B6-A0IC	FEMALE	90	Positive	Positive	Negative	T2	T_Other	N0	Negative	NA	NA	[Not Available]	No_Conversion	followup	DECEASED	1542	1542	1	1542	Luminal B	-3	-12	2	2	NA	2	NA	NA	NA
+TCGA-BH-A18U	FEMALE	72	Positive	Positive	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	DECEASED	1317	1563	1	1563	Luminal B	-5	-2	5	3	ReacI	3	4	4	5
+TCGA-BH-A1EW	FEMALE	38	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	No_Conversion	enrollment	DECEASED	[Not Available]	1694	1	1694	Luminal B	-3	-3	6	1	NA	3	NA	NA	NA
+TCGA-AR-A0TY	FEMALE	54	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	No_Conversion	enrollment	DECEASED	544	1699	1	1699	Luminal B	-5	-2	4	4	LumA/B	1	4	1	1
+TCGA-B6-A0X5	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	DECEASED	2097	2097	1	2097	Luminal B	-3	0	1	4	NA	4	NA	NA	NA
+TCGA-B6-A0WV	FEMALE	67	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	DECEASED	2422	2422	1	2422	Luminal B	-3	0	4	4	NA	5	NA	NA	NA
+TCGA-B6-A0RL	FEMALE	60	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	DECEASED	2469	2469	1	2469	Luminal B	-3	-10	5	3	LumA/B	2	4	4	3
+TCGA-AR-A0U2	FEMALE	47	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage III	No_Conversion	enrollment	DECEASED	1608	2551	1	2551	Luminal B	-5	-10	5	2	ReacII	5	NA	NA	NA
+TCGA-B6-A0IB	FEMALE	64	Positive	Positive	Negative	T3	T_Other	N3	Positive	M1	Positive	Stage IV	No_Conversion	followup	DECEASED	3941	3941	1	3941	Luminal B	-3	0	1	4	LumA/B	4	4	1	3
+TCGA-AO-A0J7	FEMALE	71	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	260	NA	0	260	Luminal B	-3	0	2	4	LumA/B	2	4	1	3
+TCGA-AO-A0J3	FEMALE	67	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	302	NA	0	302	Luminal B	-3	-10	1	3	LumA/B	5	4	4	3
+TCGA-D8-A13Y	FEMALE	52	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	No_Conversion	followup	LIVING	362	NA	0	362	Luminal B	-6	-2	1	2	Basal	5	4	3	2
+TCGA-A7-A13F	FEMALE	44	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	387	NA	0	387	Luminal B	-3	0	4	4	LumA/B	3	4	1	3
+TCGA-BH-A0HU	FEMALE	52	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	392	NA	0	392	Luminal B	-3	-2	4	2	Her2	2	4	3	1
+TCGA-D8-A140	FEMALE	62	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	403	NA	0	403	Luminal B	-5	-10	6	3	LumA/B	NA	NA	NA	NA
+TCGA-A7-A0CJ	FEMALE	57	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	409	NA	0	409	Luminal B	-3	-6	2	3	LumA/B	1	4	4	3
+TCGA-AQ-A04H	FEMALE	61	Positive	Positive	Positive	T2	T_Other	N2	Positive	NA	NA	Stage IIIA	No_Conversion	followup	LIVING	439	NA	0	439	Luminal B	-3	-10	7	3	NA	5	NA	NA	NA
+TCGA-BH-A0H0	FEMALE	69	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	461	NA	0	461	Luminal B	-3	-10	2	4	NA	2	NA	NA	NA
+TCGA-BH-A0BD	FEMALE	47	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	554	NA	0	554	Luminal B	0	0	4	4	NA	4	NA	NA	NA
+TCGA-A2-A0T3	FEMALE	37	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IA	Stage IIA	followup	LIVING	569	NA	0	569	Luminal B	-3	0	7	3	ReacII	3	4	4	5
+TCGA-A2-A0T4	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	624	NA	0	624	Luminal B	-7	-5	4	4	ReacI	2	3	1	4
+TCGA-A2-A0YH	FEMALE	53	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	658	NA	0	658	Luminal B	-5	-2	4	2	LumA/B	4	4	3	3
+TCGA-A2-A0YG	FEMALE	63	Positive	Positive	Positive	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	No_Conversion	followup	LIVING	665	NA	0	665	Luminal B	-5	-2	4	4	Her2	5	4	1	1
+TCGA-A2-A0EY	FEMALE	62	Positive	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	735	NA	0	735	Luminal B	-5	-2	1	4	Her2	3	4	1	1
+TCGA-A2-A0D4	FEMALE	37	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	767	NA	0	767	Luminal B	-3	-10	5	3	LumA/B	5	4	4	3
+TCGA-BH-A0AY	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	777	NA	0	777	Luminal B	-3	-1	4	1	ReacI	3	3	1	4
+TCGA-E2-A107	FEMALE	54	Positive	Negative	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1046	NA	0	1046	Luminal B	-3	0	4	4	LumA/B	2	4	1	3
+TCGA-AO-A0JI	FEMALE	56	Positive	Negative	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	1172	NA	0	1172	Luminal B	-3	-10	2	3	LumA/B	4	4	4	3
+TCGA-E2-A10C	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1219	NA	0	1219	Luminal B	-5	-2	7	4	ReacI	3	4	1	1
+TCGA-E2-A10A	FEMALE	41	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	1229	NA	0	1229	Luminal B	-3	0	1	2	LumA/B	2	4	3	3
+TCGA-BH-A0C0	FEMALE	62	Positive	Positive	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	followup	LIVING	1270	NA	0	1270	Luminal B	-5	-2	4	4	Basal	3	4	1	1
+TCGA-E2-A109	FEMALE	64	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1417	NA	0	1417	Luminal B	-5	-10	6	3	LumA/B	5	4	4	1
+TCGA-AO-A0JC	FEMALE	64	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	1547	NA	0	1547	Luminal B	-5	-2	2	5	LumA	1	2	2	2
+TCGA-BH-A0HW	FEMALE	62	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	1560	NA	0	1560	Luminal B	-3	-10	2	2	LumA/B	4	4	3	3
+TCGA-AO-A0JD	FEMALE	59	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1813	NA	0	1813	Luminal B	-2	-2	5	2	Basal	2	4	3	3
+TCGA-AO-A0JM	FEMALE	40	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1826	NA	0	1826	Luminal B	-5	-2	5	3	ReacII	3	4	4	5
+TCGA-A2-A0CW	FEMALE	67	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1947	NA	0	1947	Luminal B	-5	-2	NA	1	LumA/B	1	NA	NA	NA
+TCGA-A2-A0ER	FEMALE	63	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IB	No_Conversion	followup	LIVING	2262	NA	0	2262	Luminal B	-3	-10	2	2	ReacII	5	NA	NA	NA
+TCGA-A2-A0CT	FEMALE	71	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2288	NA	0	2288	Luminal B	-3	-10	2	3	LumA/B	5	4	4	3
+TCGA-AO-A12B	FEMALE	63	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2359	NA	0	2359	Luminal B	-3	-12	3	2	LumA/B	3	4	3	3
+TCGA-A2-A04R	FEMALE	36	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	2499	NA	0	2499	Luminal B	-3	-10	4	4	NA	5	NA	NA	NA
+TCGA-B6-A0IM	FEMALE	75	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	3836	NA	0	3836	Luminal B	-3	-10	4	4	NA	4	NA	NA	NA
+TCGA-AO-A03P	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	2576	NA	0	2576	Luminal B	-5	-10	NA	2	LumA/B	3	NA	NA	NA
+TCGA-A1-A0SM	MALE	77	Positive	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	242	NA	0	242	Luminal B	-3	-1	4	4	NA	2	NA	NA	NA
+TCGA-A8-A06N	FEMALE	66	Positive	Negative	Negative	T4	T_Other	N0	Negative	M0	Negative	Stage IIIB	Stage IIIB	enrollment	LIVING	0	NA	0	0	Luminal B	-3	-10	2	4	LumA/B	3	4	1	3
+TCGA-A8-A06O	FEMALE	60	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	396	NA	0	396	Luminal B	-3	-2	4	4	NA	5	NA	NA	NA
+TCGA-A8-A06Q	FEMALE	63	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	enrollment	LIVING	31	NA	0	31	Luminal B	-3	-2	7	4	NA	3	NA	NA	NA
+TCGA-A8-A06R	FEMALE	69	Positive	Negative	Equivocal	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	546	NA	0	546	Luminal B	-5	-2	4	4	ReacI	NA	NA	NA	NA
+TCGA-A8-A06Z	FEMALE	84	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	31	NA	0	31	Luminal B	-3	-10	1	5	Her2	5	4	1	3
+TCGA-A8-A079	FEMALE	69	Positive	Positive	Negative	T4	T_Other	N3	Positive	M0	Negative	Stage IIIB	Stage IIIC	enrollment	LIVING	274	NA	0	274	Luminal B	-3	-6	5	3	LumA/B	5	4	4	3
+TCGA-A8-A07L	FEMALE	58	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	517	NA	0	517	Luminal B	-3	-10	5	4	NA	4	NA	NA	NA
+TCGA-A8-A07S	FEMALE	73	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	242	NA	0	242	Luminal B	-3	-12	7	2	LumA	2	NA	NA	NA
+TCGA-A8-A07W	FEMALE	76	Positive	Positive	Negative	T2	T_Other	N0	Negative	M1	Positive	Stage IV	Stage IV	enrollment	LIVING	304	NA	0	304	Luminal B	-5	-2	4	4	LumA/B	3	4	1	1
+TCGA-A8-A07Z	FEMALE	85	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	853	NA	0	853	Luminal B	-3	-12	2	2	LumA	3	4	3	3
+TCGA-A8-A082	FEMALE	58	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	549	NA	0	549	Luminal B	-3	-9	5	4	LumA	4	4	1	3
+TCGA-A8-A084	FEMALE	81	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	458	NA	0	458	Luminal B	-5	-1	3	3	X	1	2	2	2
+TCGA-A8-A085	MALE	44	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1124	NA	0	1124	Luminal B	-3	-10	2	4	LumA/B	5	4	1	3
+TCGA-A8-A08F	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	549	NA	0	549	Luminal B	-3	-2	NA	2	NA	4	NA	NA	NA
+TCGA-A8-A08G	FEMALE	41	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	606	NA	0	606	Luminal B	-3	-10	4	2	LumA/B	3	4	3	3
+TCGA-A8-A08I	FEMALE	53	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	365	NA	0	365	Luminal B	-5	-2	3	2	NA	4	NA	NA	NA
+TCGA-A8-A08P	FEMALE	70	Positive	Positive	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	942	NA	0	942	Luminal B	-5	-2	NA	4	ReacII	3	NA	NA	NA
+TCGA-A8-A095	FEMALE	45	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1276	NA	0	1276	Luminal B	-3	-7	4	4	ReacII	3	NA	NA	NA
+TCGA-A8-A096	FEMALE	73	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	Luminal B	-4	-12	4	4	NA	2	NA	NA	NA
+TCGA-A8-A097	FEMALE	65	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	365	NA	0	365	Luminal B	-2	0	4	2	NA	5	NA	NA	NA
+TCGA-A8-A09C	FEMALE	69	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage X	Stage IIA	enrollment	LIVING	31	NA	0	31	Luminal B	-3	0	2	2	LumA	4	4	3	3
+TCGA-A8-A09D	FEMALE	47	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	396	NA	0	396	Luminal B	-3	-3	1	1	NA	5	NA	NA	NA
+TCGA-A8-A09I	FEMALE	84	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1006	NA	0	1006	Luminal B	-5	-2	4	3	Her2	5	4	1	1
+TCGA-A8-A09M	FEMALE	75	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	457	NA	0	457	Luminal B	-5	-2	5	4	LumA/B	5	4	1	1
+TCGA-A8-A09N	FEMALE	57	Positive	Positive	Positive	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	31	NA	0	31	Luminal B	-3	0	7	4	NA	1	NA	NA	NA
+TCGA-A8-A09Q	FEMALE	83	Positive	Positive	Negative	T4	T_Other	N2	Positive	M0	Negative	Stage IIIB	Stage IIIB	enrollment	LIVING	761	NA	0	761	Luminal B	-5	-2	4	3	NA	2	NA	NA	NA
+TCGA-A8-A09R	FEMALE	82	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	273	NA	0	273	Luminal B	-3	0	4	4	Her2	5	4	1	1
+TCGA-A8-A09W	FEMALE	70	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIB	Stage IIIC	enrollment	LIVING	30	NA	0	30	Luminal B	-5	-2	NA	4	Her2	2	NA	NA	NA
+TCGA-A8-A09Z	FEMALE	83	Positive	Negative	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	Luminal B	-5	0	2	4	Basal	2	NA	NA	NA
+TCGA-A8-A0A9	FEMALE	80	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	396	NA	0	396	Luminal B	-3	0	2	3	NA	3	NA	NA	NA
+TCGA-A8-A0AB	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	517	NA	0	517	Luminal B	-3	-1	2	4	NA	2	NA	NA	NA
+TCGA-AN-A03Y	FEMALE	66	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	10	NA	0	10	Luminal B	-3	-1	5	4	NA	3	NA	NA	NA
+TCGA-AN-A041	FEMALE	29	Positive	Negative	Equivocal	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	7	NA	0	7	Luminal B	-3	-2	4	4	LumA	5	4	1	3
+TCGA-AN-A049	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	19	NA	0	19	Luminal B	-3	0	3	4	ReacI	5	4	1	3
+TCGA-AN-A0AJ	FEMALE	79	Positive	Positive	Positive	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	243	NA	0	243	Luminal B	-5	-2	4	3	LumA	5	4	1	1
+TCGA-AN-A0AK	FEMALE	76	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	223	NA	0	223	Luminal B	-5	-10	1	4	Basal	1	NA	NA	NA
+TCGA-AN-A0AM	FEMALE	56	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	5	NA	0	5	Luminal B	-5	-2	4	4	LumA/B	3	4	1	1
+TCGA-AN-A0AS	FEMALE	70	Positive	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	enrollment	LIVING	9	NA	0	9	Luminal B	-3	-1	2	2	Basal	3	4	3	3
+TCGA-AN-A0FF	FEMALE	32	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	No_Conversion	enrollment	LIVING	140	NA	0	140	Luminal B	-3	0	1	4	LumA	3	4	1	3
+TCGA-AN-A0FK	FEMALE	88	Positive	Positive	Negative	T4	T_Other	N0	Negative	M0	Negative	Stage IIIB	No_Conversion	enrollment	LIVING	212	NA	0	212	Luminal B	-3	-12	4	2	LumA	2	4	3	3
+TCGA-AN-A0FY	FEMALE	55	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IB	No_Conversion	enrollment	LIVING	10	NA	0	10	Luminal B	-3	-2	5	2	LumA	3	4	3	3
+TCGA-AN-A0XR	FEMALE	55	Positive	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	10	NA	0	10	Luminal B	-3	-12	4	3	NA	2	NA	NA	NA
+TCGA-AN-A0XW	FEMALE	36	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	170	NA	0	170	Luminal B	-4	-2	4	2	Her2	5	4	1	1
+TCGA-AR-A0TQ	FEMALE	27	Positive	Negative	Positive	T3	T_Other	N1	Positive	M0	Negative	Stage III	No_Conversion	enrollment	LIVING	1500	NA	0	1500	Luminal B	-5	-2	4	4	Her2	3	4	1	1
+TCGA-AR-A0TT	FEMALE	53	Positive	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage III	No_Conversion	enrollment	LIVING	1679	NA	0	1679	Luminal B	-5	-2	4	1	LumA/B	3	4	1	1
+TCGA-AR-A0TV	FEMALE	66	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	904	NA	0	904	Luminal B	-5	-10	2	4	LumA/B	1	4	1	1
+TCGA-AR-A0TZ	FEMALE	43	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage III	No_Conversion	enrollment	LIVING	1313	NA	0	1313	Luminal B	-3	-10	2	3	ReacII	5	4	4	3
+TCGA-AR-A0U3	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	No_Conversion	enrollment	LIVING	2263	NA	0	2263	Luminal B	-3	0	7	3	LumA/B	4	4	4	3
+TCGA-AR-A1AV	MALE	68	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	1295	NA	0	1295	Luminal B	-5	-2	7	3	LumA/B	3	4	4	5
+TCGA-BH-A0AU	FEMALE	45	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	746	NA	0	746	Luminal B	-3	-3	6	2	ReacI	1	3	3	4
+TCGA-BH-A0B5	FEMALE	40	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1471	NA	0	1471	Luminal B	-3	-7	7	4	ReacII	2	4	1	3
+TCGA-BH-A0BF	FEMALE	56	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	781	NA	0	781	Luminal B	-5	-2	4	1	Basal	2	4	3	1
+TCGA-BH-A0BZ	FEMALE	59	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1492	NA	0	1492	Luminal B	-5	-2	6	4	X	4	4	1	1
+TCGA-BH-A0C3	FEMALE	47	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1464	NA	0	1464	Luminal B	0	-4	6	2	Her2	3	4	3	3
+TCGA-BH-A0C7	FEMALE	48	Positive	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1305	NA	0	1305	Luminal B	-3	0	4	4	LumA/B	5	4	1	3
+TCGA-BH-A0DD	MALE	58	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1393	NA	0	1393	Luminal B	-3	-6	4	4	LumA/B	3	4	1	3
+TCGA-BH-A0W3	FEMALE	58	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	No_Conversion	enrollment	LIVING	180	NA	0	180	Luminal B	-3	-12	5	2	NA	2	NA	NA	NA
+TCGA-BH-A18F	FEMALE	50	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	268	NA	0	268	Luminal B	-7	-4	6	1	ReacI	2	3	3	4
+TCGA-C8-A12M	FEMALE	70	Positive	Negative	Not Available	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	Luminal B	-5	-10	4	3	LumA/B	5	4	4	1
+TCGA-C8-A12U	FEMALE	46	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IB	Stage IIB	enrollment	LIVING	0	NA	0	0	Luminal B	-5	-2	5	4	Basal	5	4	1	1
+TCGA-C8-A12W	FEMALE	49	Positive	Positive	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	Stage IIIB	enrollment	LIVING	0	NA	0	0	Luminal B	-5	-2	4	4	ReacII	3	4	1	1
+TCGA-C8-A12X	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	Luminal B	-3	-10	1	3	LumA/B	4	4	4	3
+TCGA-C8-A1HG	FEMALE	50	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	Luminal B	-5	-2	3	5	NA	4	NA	NA	NA
+TCGA-C8-A1HL	FEMALE	38	Positive	Negative	Positive	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	2	NA	0	2	Luminal B	-3	-2	4	2	NA	5	NA	NA	NA
+TCGA-C8-A1HM	FEMALE	74	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	6	NA	0	6	Luminal B	-5	-2	4	4	NA	3	NA	NA	NA
+TCGA-C8-A1HN	FEMALE	56	Positive	Positive	Equivocal	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	2	NA	0	2	Luminal B	-5	-10	7	2	NA	NA	NA	NA	NA
+TCGA-E2-A14O	FEMALE	76	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1172	NA	0	1172	Luminal B	-3	0	4	4	LumA/B	2	4	1	3
+TCGA-E2-A14S	FEMALE	65	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	834	NA	0	834	Luminal B	-3	-10	2	4	LumA/B	4	4	1	3
+TCGA-E2-A14W	FEMALE	78	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	833	NA	0	833	Luminal B	-3	0	7	2	Her2	5	4	3	3
+TCGA-E2-A155	FEMALE	58	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	553	NA	0	553	Luminal B	-3	-10	5	3	LumA/B	1	4	4	3
+TCGA-E2-A15A	FEMALE	45	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	502	NA	0	502	Luminal B	-5	-2	4	4	Her2	4	4	1	1
+TCGA-E2-A15K	FEMALE	58	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	Stage IIB	enrollment	LIVING	34	NA	0	34	Luminal B	-3	-12	4	2	LumA	2	4	3	3
+TCGA-E2-A15L	FEMALE	65	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	331	NA	0	331	Luminal B	-3	-12	NA	2	ReacI	2	NA	NA	NA
+TCGA-E2-A15M	FEMALE	66	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	234	NA	0	234	Luminal B	-4	-4	6	1	ReacI	3	3	3	4
+TCGA-E2-A15S	FEMALE	34	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	274	NA	0	274	Luminal B	-3	-10	6	4	LumA/B	NA	NA	NA	NA
+TCGA-E2-A15T	FEMALE	65	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	267	NA	0	267	Luminal B	-3	-10	2	4	LumA/B	NA	NA	NA	NA
+TCGA-AO-A03U	FEMALE	31	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	DECEASED	1727	1796	1	1796	Normal-like	0	-5	4	5	Basal	1	2	2	2
+TCGA-B6-A0IE	FEMALE	38	Negative	Negative	Negative	TX		N1	Positive	M0	Negative	[Not Available]	No_Conversion	followup	DECEASED	1998	1998	1	1998	Normal-like	-3	-2	4	1	NA	3	NA	NA	NA
+TCGA-A2-A0YK	FEMALE	61	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	587	NA	0	587	Normal-like	-7	-5	6	1	ReacII	5	3	3	4
+TCGA-E2-A108	FEMALE	64	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	837	NA	0	837	Normal-like	-8	-5	4	1	ReacI	4	3	1	4
+TCGA-AO-A0JB	FEMALE	50	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	No_Conversion	followup	LIVING	1150	NA	0	1150	Normal-like	-3	-2	2	5	Basal	1	2	2	2
+TCGA-AO-A03R	FEMALE	57	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	followup	LIVING	1707	NA	0	1707	Normal-like	0	0	2	2	NA	4	NA	NA	NA
+TCGA-AO-A03T	FEMALE	42	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	No_Conversion	enrollment	LIVING	1187	NA	0	1187	Normal-like	-3	-2	4	2	NA	5	NA	NA	NA
+TCGA-AR-A1AO	FEMALE	47	Positive	Negative	Negative	T1	T1	N1	Positive	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1324	NA	0	1324	Normal-like	-8	-5	4	5	Basal	1	2	2	2
+TCGA-A2-A0YT	FEMALE	56	Positive	Negative	Negative	T4	T_Other	N2	Positive	M0	Negative	Stage IIIB	No_Conversion	followup	DECEASED	669	723	1	723	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-AQ-A0Y5	FEMALE	70	Positive	Positive	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	followup	DECEASED	[Not Available]	161	1	161	NA	NA	NA	4	4	NA	3	NA	NA	NA
+TCGA-EW-A1P8	FEMALE	58	Negative	Negative	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	DECEASED	239	239	1	239	NA	NA	NA	5	5	NA	3	NA	NA	NA
+TCGA-E2-A1LK	FEMALE	84	Negative	Negative	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIC	Stage IIIA	enrollment	DECEASED	[Not Available]	266	1	266	NA	NA	NA	5	3	NA	4	NA	NA	NA
+TCGA-BH-A1EY	FEMALE	79	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	[Not Available]	538	1	538	NA	NA	NA	1	4	NA	2	NA	NA	NA
+TCGA-BH-A1F8	FEMALE	90	Positive	Positive	Negative	T4	T_Other	N2	Positive	M0	Negative	Stage IIIB	Stage IIIC	enrollment	DECEASED	[Not Available]	749	1	749	NA	NA	NA	4	4	NA	1	NA	NA	NA
+TCGA-BH-A1F2	FEMALE	53	Positive	Positive	Positive	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	Stage 	enrollment	DECEASED	[Not Available]	959	1	959	NA	NA	NA	6	2	NA	5	NA	NA	NA
+TCGA-BH-A1FD	FEMALE	68	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	DECEASED	[Not Available]	1008	1	1008	NA	NA	NA	NA	3	NA	4	NA	NA	NA
+TCGA-BH-A1FH	FEMALE	47	Positive	Negative	Negative	T2	T_Other	N1	Positive	M1	Positive	Stage IV	No_Conversion	enrollment	DECEASED	[Not Available]	1123	1	1123	NA	NA	NA	6	1	NA	4	NA	NA	NA
+TCGA-BH-A203	FEMALE	78	Performed but Not Available	Performed but Not Available	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	DECEASED	[Not Available]	1174	1	1174	NA	NA	NA	NA	3	NA	3	NA	NA	NA
+TCGA-BH-A1FM	FEMALE	44	Positive	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	DECEASED	[Not Available]	1388	1	1388	NA	NA	NA	4	3	NA	1	NA	NA	NA
+TCGA-BH-A1EX	FEMALE	67	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	DECEASED	[Not Available]	1508	1	1508	NA	NA	NA	5	4	NA	3	NA	NA	NA
+TCGA-BH-A1FL	FEMALE	69	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIIA	enrollment	DECEASED	[Not Available]	1673	1	1673	NA	NA	NA	6	4	NA	2	NA	NA	NA
+TCGA-BH-A208	FEMALE	48	Performed but Not Available	Performed but Not Available	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	DECEASED	[Not Available]	1759	1	1759	NA	NA	NA	NA	5	NA	3	NA	NA	NA
+TCGA-GM-A2D9	FEMALE	69	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	DECEASED	[Not Available]	1812	1	1812	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-BH-A1FJ	FEMALE	66	Negative	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	DECEASED	[Not Available]	1927	1	1927	NA	NA	NA	2	4	NA	3	NA	NA	NA
+TCGA-BH-A1EN	FEMALE	78	Negative	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	[Not Available]	2052	1	2052	NA	NA	NA	3	3	NA	3	NA	NA	NA
+TCGA-BH-A1FN	FEMALE	34	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	[Not Available]	2192	1	2192	NA	NA	NA	4	5	NA	1	NA	NA	NA
+TCGA-BH-A1FU	FEMALE	44	Negative	Negative	Positive	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	DECEASED	[Not Available]	2192	1	2192	NA	NA	NA	6	1	NA	4	NA	NA	NA
+TCGA-BH-A1FE	FEMALE	31	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	DECEASED	[Not Available]	2273	1	2273	NA	NA	NA	6	4	NA	2	NA	NA	NA
+TCGA-BH-A204	FEMALE	80	Performed but Not Available	Performed but Not Available	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	DECEASED	[Not Available]	2534	1	2534	NA	NA	NA	NA	3	NA	4	NA	NA	NA
+TCGA-BH-A1F5	FEMALE	62	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	DECEASED	[Not Available]	2712	1	2712	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-AR-A256	FEMALE	45	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	DECEASED	2854	2854	1	2854	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-BH-A1F6	FEMALE	51	Negative	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	DECEASED	[Not Available]	2965	1	2965	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-BH-A1FC	FEMALE	78	Negative	Negative	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	DECEASED	[Not Available]	3471	1	3471	NA	NA	NA	3	4	NA	4	NA	NA	NA
+TCGA-BH-A1FB	FEMALE	60	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	DECEASED	[Not Available]	3669	1	3669	NA	NA	NA	6	1	NA	4	NA	NA	NA
+TCGA-BH-A1FG	FEMALE	88	Positive	Positive	Not Available	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	DECEASED	[Not Available]	3738	1	3738	NA	NA	NA	2	2	NA	4	NA	NA	NA
+TCGA-BH-A209	FEMALE	77	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	DECEASED	[Not Available]	3959	1	3959	NA	NA	NA	NA	3	NA	4	NA	NA	NA
+TCGA-BH-A1FR	FEMALE	73	Positive	Positive	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	No_Conversion	enrollment	DECEASED	[Not Available]	4398	1	4398	NA	NA	NA	1	2	NA	1	NA	NA	NA
+TCGA-AO-A1KS	FEMALE	69	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	16	NA	0	16	NA	NA	NA	5	4	NA	5	NA	NA	NA
+TCGA-A7-A13G	FEMALE	79	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	348	NA	0	348	NA	NA	NA	3	2	NA	2	NA	NA	NA
+TCGA-D8-A1JS	FEMALE	77	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	371	NA	0	371	NA	NA	NA	3	4	NA	2	NA	NA	NA
+TCGA-A7-A0DC	FEMALE	63	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	386	NA	0	386	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-D8-A1JT	FEMALE	70	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	405	NA	0	405	NA	NA	NA	4	4	NA	4	NA	NA	NA
+TCGA-A7-A26E	FEMALE	71	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	followup	LIVING	421	NA	0	421	NA	NA	NA	7	4	NA	2	NA	NA	NA
+TCGA-D8-A1JH	FEMALE	56	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	426	NA	0	426	NA	NA	NA	6	4	NA	1	NA	NA	NA
+TCGA-D8-A1JU	FEMALE	51	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	followup	LIVING	447	NA	0	447	NA	NA	NA	6	5	NA	2	NA	NA	NA
+TCGA-AO-A1KO	FEMALE	46	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	448	NA	0	448	NA	NA	NA	6	5	NA	1	NA	NA	NA
+TCGA-AO-A1KT	FEMALE	78	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	541	NA	0	541	NA	NA	NA	4	3	NA	2	NA	NA	NA
+TCGA-AO-A0J5	FEMALE	48	Positive	Negative	Negative	T4	T_Other	N1	Positive	M1	Positive	Stage IV	No_Conversion	followup	LIVING	704	NA	0	704	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-B6-A1KC	FEMALE	67	Positive	Negative	Not Available	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	Stage IIB	followup	LIVING	1326	NA	0	1326	NA	NA	NA	5	3	NA	4	NA	NA	NA
+TCGA-AO-A1KQ	MALE	84	Positive	Positive	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	Stage IIIB	followup	LIVING	1519	NA	0	1519	NA	NA	NA	4	2	NA	4	NA	NA	NA
+TCGA-B6-A1KI	FEMALE	63	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	followup	LIVING	2236	NA	0	2236	NA	NA	NA	2	1	NA	2	NA	NA	NA
+TCGA-AO-A1KP	FEMALE	77	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	followup	LIVING	2513	NA	0	2513	NA	NA	NA	6	4	NA	2	NA	NA	NA
+TCGA-B6-A1KF	FEMALE	68	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	followup	LIVING	3088	NA	0	3088	NA	NA	NA	5	4	NA	1	NA	NA	NA
+TCGA-B6-A1KN	FEMALE	57	Negative	Negative	Positive	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	Stage IIIC	followup	LIVING	4233	NA	0	4233	NA	NA	NA	6	3	NA	5	NA	NA	NA
+TCGA-D8-A1XO	FEMALE	56	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	242	NA	0	242	NA	NA	NA	7	1	NA	2	NA	NA	NA
+TCGA-D8-A1XT	FEMALE	61	Negative	Negative	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	193	NA	0	193	NA	NA	NA	4	4	NA	1	NA	NA	NA
+TCGA-A1-A0SP	FEMALE	40	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	583	NA	0	583	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-D8-A1J8	FEMALE	77	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	256	NA	0	256	NA	NA	NA	4	3	NA	2	NA	NA	NA
+TCGA-D8-A1JF	FEMALE	79	Negative	Negative	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	96	NA	0	96	NA	NA	NA	3	1	NA	3	NA	NA	NA
+TCGA-D8-A1JG	FEMALE	62	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	187	NA	0	187	NA	NA	NA	3	4	NA	1	NA	NA	NA
+TCGA-D8-A1XS	MALE	48	Positive	Positive	Positive	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	18	NA	0	18	NA	NA	NA	4	2	NA	3	NA	NA	NA
+TCGA-A1-A0SB	FEMALE	70	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	259	NA	0	259	NA	NA	NA	3	5	NA	1	NA	NA	NA
+TCGA-A1-A0SF	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1463	NA	0	1463	NA	NA	NA	6	4	NA	3	NA	NA	NA
+TCGA-A1-A0SG	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	433	NA	0	433	NA	NA	NA	5	2	NA	4	NA	NA	NA
+TCGA-A1-A0SI	FEMALE	52	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	634	NA	0	634	NA	NA	NA	7	5	NA	3	NA	NA	NA
+TCGA-A1-A0SN	FEMALE	50	Positive	Positive	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIIA	Stage IIA	enrollment	LIVING	1196	NA	0	1196	NA	NA	NA	4	3	NA	5	NA	NA	NA
+TCGA-A1-A0SQ	FEMALE	45	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	553	NA	0	553	NA	NA	NA	2	2	NA	3	NA	NA	NA
+TCGA-A2-A1FV	FEMALE	74	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	460	NA	0	460	NA	NA	NA	6	3	NA	4	NA	NA	NA
+TCGA-A2-A1FW	FEMALE	62	Positive	Negative	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	221	NA	0	221	NA	NA	NA	6	4	NA	3	NA	NA	NA
+TCGA-A2-A1FX	FEMALE	61	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	935	NA	0	935	NA	NA	NA	4	4	NA	4	NA	NA	NA
+TCGA-A2-A1FZ	FEMALE	63	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	409	NA	0	409	NA	NA	NA	6	4	NA	3	NA	NA	NA
+TCGA-A2-A1G0	FEMALE	49	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	380	NA	0	380	NA	NA	NA	6	2	NA	3	NA	NA	NA
+TCGA-A2-A1G1	FEMALE	85	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	371	NA	0	371	NA	NA	NA	6	5	NA	4	NA	NA	NA
+TCGA-A2-A1G4	FEMALE	71	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	372	NA	0	372	NA	NA	NA	5	4	NA	4	NA	NA	NA
+TCGA-A2-A1G6	FEMALE	50	Negative	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	132	NA	0	132	NA	NA	NA	6	5	NA	1	NA	NA	NA
+TCGA-A2-A259	FEMALE	70	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	1285	NA	0	1285	NA	NA	NA	NA	1	NA	4	NA	NA	NA
+TCGA-A2-A25A	FEMALE	44	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	2968	NA	0	2968	NA	NA	NA	NA	4	NA	2	NA	NA	NA
+TCGA-A2-A25B	FEMALE	39	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	258	NA	0	258	NA	NA	NA	5	4	NA	5	NA	NA	NA
+TCGA-A2-A25C	FEMALE	50	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	285	NA	0	285	NA	NA	NA	5	4	NA	3	NA	NA	NA
+TCGA-A2-A25D	FEMALE	90	Positive	Negative	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	243	NA	0	243	NA	NA	NA	NA	4	NA	4	NA	NA	NA
+TCGA-A2-A25E	FEMALE	34	Positive	Positive	Equivocal	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	2511	NA	0	2511	NA	NA	NA	5	4	NA	5	NA	NA	NA
+TCGA-A2-A25F	FEMALE	66	Negative	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	113	NA	0	113	NA	NA	NA	NA	1	NA	1	NA	NA	NA
+TCGA-A7-A26F	FEMALE	55	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	257	NA	0	257	NA	NA	NA	5	4	NA	3	NA	NA	NA
+TCGA-A7-A26G	FEMALE	50	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	209	NA	0	209	NA	NA	NA	4	5	NA	3	NA	NA	NA
+TCGA-A7-A26H	FEMALE	72	Positive	Negative	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	64	NA	0	64	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-A7-A26I	FEMALE	65	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	122	NA	0	122	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-A7-A26J	FEMALE	49	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	67	NA	0	67	NA	NA	NA	6	4	NA	3	NA	NA	NA
+TCGA-A8-A08S	FEMALE	71	Positive	Positive	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	580	NA	0	580	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-A8-A09E	FEMALE	73	Positive	Positive	Equivocal	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	Stage IIIB	enrollment	LIVING	942	NA	0	942	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-A8-A09K	FEMALE	68	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	911	NA	0	911	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-AC-A23C	FEMALE	62	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	[Not Available]	Stage IIB	enrollment	LIVING	29	NA	0	29	NA	NA	NA	7	4	NA	3	NA	NA	NA
+TCGA-AC-A23E	FEMALE	50	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	[Not Available]	Stage IIB	enrollment	LIVING	72	NA	0	72	NA	NA	NA	NA	2	NA	2	NA	NA	NA
+TCGA-AC-A23H	FEMALE	90	Positive	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	[Not Available]	Stage IIA	enrollment	LIVING	81	NA	0	81	NA	NA	NA	NA	3	NA	3	NA	NA	NA
+TCGA-AO-A1KR	FEMALE	51	Negative	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	2140	NA	0	2140	NA	NA	NA	3	5	NA	1	NA	NA	NA
+TCGA-AQ-A1H2	FEMALE	84	Positive	Positive	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	197	NA	0	197	NA	NA	NA	1	2	NA	5	NA	NA	NA
+TCGA-AQ-A1H3	FEMALE	49	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	138	NA	0	138	NA	NA	NA	6	4	NA	2	NA	NA	NA
+TCGA-AR-A24H	FEMALE	65	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	3333	NA	0	3333	NA	NA	NA	NA	3	NA	2	NA	NA	NA
+TCGA-AR-A24K	FEMALE	46	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1548	NA	0	1548	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-AR-A24L	FEMALE	26	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	2221	NA	0	2221	NA	NA	NA	4	2	NA	5	NA	NA	NA
+TCGA-AR-A24M	FEMALE	38	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	1990	NA	0	1990	NA	NA	NA	7	4	NA	3	NA	NA	NA
+TCGA-AR-A24N	FEMALE	54	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	2074	NA	0	2074	NA	NA	NA	3	3	NA	2	NA	NA	NA
+TCGA-AR-A24O	FEMALE	43	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	1997	NA	0	1997	NA	NA	NA	7	1	NA	2	NA	NA	NA
+TCGA-AR-A24P	FEMALE	47	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	26	NA	0	26	NA	NA	NA	2	4	NA	2	NA	NA	NA
+TCGA-AR-A24Q	FEMALE	49	Positive	Negative	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	2008	NA	0	2008	NA	NA	NA	6	5	NA	1	NA	NA	NA
+TCGA-AR-A24R	FEMALE	45	Positive	Positive	Negative	T1	T1	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	1745	NA	0	1745	NA	NA	NA	5	3	NA	5	NA	NA	NA
+TCGA-AR-A24S	FEMALE	61	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1888	NA	0	1888	NA	NA	NA	4	2	NA	1	NA	NA	NA
+TCGA-AR-A24T	FEMALE	46	Positive	Positive	Negative	T3	T_Other	N3	Positive	M0	Negative	Stage III	Stage IIIC	enrollment	LIVING	1620	NA	0	1620	NA	NA	NA	2	4	NA	2	NA	NA	NA
+TCGA-AR-A24U	FEMALE	47	Negative	Negative	Positive	T1	T1	N1	Positive	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1623	NA	0	1623	NA	NA	NA	7	1	NA	4	NA	NA	NA
+TCGA-AR-A24V	FEMALE	52	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	1648	NA	0	1648	NA	NA	NA	4	4	NA	5	NA	NA	NA
+TCGA-AR-A24X	FEMALE	52	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1465	NA	0	1465	NA	NA	NA	2	4	NA	2	NA	NA	NA
+TCGA-AR-A24Z	FEMALE	57	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1574	NA	0	1574	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-AR-A250	FEMALE	58	Positive	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	1707	NA	0	1707	NA	NA	NA	4	3	NA	3	NA	NA	NA
+TCGA-AR-A251	FEMALE	51	Positive	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	1373	NA	0	1373	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-AR-A252	FEMALE	50	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1236	NA	0	1236	NA	NA	NA	1	1	NA	3	NA	NA	NA
+TCGA-AR-A254	FEMALE	50	Positive	Positive	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	1212	NA	0	1212	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-AR-A255	FEMALE	62	Positive	Positive	Positive	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1058	NA	0	1058	NA	NA	NA	NA	3	NA	5	NA	NA	NA
+TCGA-BH-A0B2	FEMALE	43	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	1242	NA	0	1242	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-BH-A0DV	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1374	NA	0	1374	NA	NA	NA	6	1	ReacII	3	NA	NA	NA
+TCGA-BH-A201	FEMALE	64	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	209	NA	0	209	NA	NA	NA	6	4	NA	5	NA	NA	NA
+TCGA-BH-A202	FEMALE	60	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	22	NA	0	22	NA	NA	NA	6	4	NA	2	NA	NA	NA
+TCGA-BH-A28Q	FEMALE	46	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	196	NA	0	196	NA	NA	NA	NA	4	NA	2	NA	NA	NA
+TCGA-C8-A1HE	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	2	4	NA	2	NA	NA	NA
+TCGA-C8-A1HJ	FEMALE	53	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	5	NA	0	5	NA	NA	NA	5	5	NA	1	NA	NA	NA
+TCGA-C8-A1HK	FEMALE	53	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	7	NA	0	7	NA	NA	NA	1	4	NA	5	NA	NA	NA
+TCGA-C8-A1HO	FEMALE	34	Positive	Positive	Negative	T3	T_Other	N3	Positive	M0	Negative	Stage III	Stage IIIC	enrollment	LIVING	0	NA	0	0	NA	NA	NA	5	3	NA	5	NA	NA	NA
+TCGA-C8-A26V	FEMALE	47	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage III	Stage IIIA	enrollment	LIVING	9	NA	0	9	NA	NA	NA	NA	4	NA	1	NA	NA	NA
+TCGA-C8-A26W	FEMALE	58	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage II	Stage IIB	enrollment	LIVING	7	NA	0	7	NA	NA	NA	NA	1	NA	1	NA	NA	NA
+TCGA-C8-A26X	FEMALE	58	Negative	Negative	Negative	T1	T1	N1	Positive	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	11	NA	0	11	NA	NA	NA	NA	4	NA	4	NA	NA	NA
+TCGA-C8-A26Y	FEMALE	90	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage II	Stage IIA	enrollment	LIVING	13	NA	0	13	NA	NA	NA	NA	4	NA	2	NA	NA	NA
+TCGA-C8-A26Z	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	4	NA	0	4	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-C8-A273	FEMALE	29	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	6	NA	0	6	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-C8-A274	FEMALE	63	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1	NA	0	1	NA	NA	NA	NA	3	NA	2	NA	NA	NA
+TCGA-C8-A275	FEMALE	56	Not Performed	Not Performed	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1	NA	0	1	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-C8-A278	FEMALE	61	Negative	Negative	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1	NA	0	1	NA	NA	NA	NA	4	NA	4	NA	NA	NA
+TCGA-C8-A27A	FEMALE	48	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	371	NA	0	371	NA	NA	NA	5	3	NA	4	NA	NA	NA
+TCGA-C8-A27B	FEMALE	48	Negative	Negative	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	30	NA	0	30	NA	NA	NA	5	5	NA	1	NA	NA	NA
+TCGA-D8-A146	FEMALE	57	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	344	NA	0	344	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-D8-A1J9	FEMALE	48	Positive	Negative	Positive	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	248	NA	0	248	NA	NA	NA	1	3	NA	2	NA	NA	NA
+TCGA-D8-A1JA	FEMALE	60	Negative	Negative	Positive	T4	T_Other	N0	Negative	M0	Negative	Stage X	Stage IIIB	enrollment	LIVING	18	NA	0	18	NA	NA	NA	5	4	NA	1	NA	NA	NA
+TCGA-D8-A1JB	FEMALE	54	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	6	1	NA	3	NA	NA	NA
+TCGA-D8-A1JC	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	178	NA	0	178	NA	NA	NA	4	2	NA	5	NA	NA	NA
+TCGA-D8-A1JD	FEMALE	41	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	273	NA	0	273	NA	NA	NA	4	2	NA	5	NA	NA	NA
+TCGA-D8-A1JE	FEMALE	62	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	57	NA	0	57	NA	NA	NA	4	2	NA	2	NA	NA	NA
+TCGA-D8-A1JI	FEMALE	54	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	21	NA	0	21	NA	NA	NA	1	4	NA	2	NA	NA	NA
+TCGA-D8-A1JJ	FEMALE	54	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	274	NA	0	274	NA	NA	NA	4	4	NA	1	NA	NA	NA
+TCGA-D8-A1JK	FEMALE	90	Negative	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	109	NA	0	109	NA	NA	NA	4	1	NA	1	NA	NA	NA
+TCGA-D8-A1JL	FEMALE	72	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	265	NA	0	265	NA	NA	NA	2	5	NA	3	NA	NA	NA
+TCGA-D8-A1JM	FEMALE	59	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	238	NA	0	238	NA	NA	NA	NA	4	NA	1	NA	NA	NA
+TCGA-D8-A1JN	FEMALE	80	Positive	Positive	Negative	T3	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	217	NA	0	217	NA	NA	NA	3	3	NA	2	NA	NA	NA
+TCGA-D8-A1JP	FEMALE	73	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	167	NA	0	167	NA	NA	NA	6	5	NA	1	NA	NA	NA
+TCGA-D8-A1X5	FEMALE	81	Positive	Positive	Positive	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	171	NA	0	171	NA	NA	NA	5	3	NA	5	NA	NA	NA
+TCGA-D8-A1X6	FEMALE	80	Positive	Positive	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	236	NA	0	236	NA	NA	NA	5	4	NA	4	NA	NA	NA
+TCGA-D8-A1X7	FEMALE	40	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	85	NA	0	85	NA	NA	NA	6	4	NA	3	NA	NA	NA
+TCGA-D8-A1X8	FEMALE	62	Positive	Indeterminate	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIA	Stage IIIA	enrollment	LIVING	272	NA	0	272	NA	NA	NA	1	4	NA	2	NA	NA	NA
+TCGA-D8-A1X9	FEMALE	66	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	Stage IIB	enrollment	LIVING	380	NA	0	380	NA	NA	NA	NA	3	NA	5	NA	NA	NA
+TCGA-D8-A1XA	FEMALE	64	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	274	NA	0	274	NA	NA	NA	2	4	NA	1	NA	NA	NA
+TCGA-D8-A1XB	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	201	NA	0	201	NA	NA	NA	4	4	NA	4	NA	NA	NA
+TCGA-D8-A1XC	FEMALE	85	Positive	Positive	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	Stage IIIB	enrollment	LIVING	81	NA	0	81	NA	NA	NA	7	2	NA	3	NA	NA	NA
+TCGA-D8-A1XD	FEMALE	36	Positive	Positive	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	155	NA	0	155	NA	NA	NA	5	4	NA	4	NA	NA	NA
+TCGA-D8-A1XF	FEMALE	45	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	197	NA	0	197	NA	NA	NA	5	3	NA	3	NA	NA	NA
+TCGA-D8-A1XG	FEMALE	86	Positive	Negative	Negative	T4	T_Other	N1	Positive	M0	Negative	Stage IIIB	Stage IIIB	enrollment	LIVING	196	NA	0	196	NA	NA	NA	1	2	NA	3	NA	NA	NA
+TCGA-D8-A1XJ	FEMALE	76	Positive	Positive	Positive	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	352	NA	0	352	NA	NA	NA	7	3	NA	1	NA	NA	NA
+TCGA-D8-A1XK	FEMALE	55	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IB	Stage IIB	enrollment	LIVING	326	NA	0	326	NA	NA	NA	5	5	NA	1	NA	NA	NA
+TCGA-D8-A1XL	FEMALE	34	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	319	NA	0	319	NA	NA	NA	7	1	NA	1	NA	NA	NA
+TCGA-D8-A1XM	FEMALE	57	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	218	NA	0	218	NA	NA	NA	4	1	NA	3	NA	NA	NA
+TCGA-D8-A1XQ	FEMALE	69	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	177	NA	0	177	NA	NA	NA	3	5	NA	1	NA	NA	NA
+TCGA-D8-A1XR	FEMALE	56	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	168	NA	0	168	NA	NA	NA	3	2	NA	2	NA	NA	NA
+TCGA-D8-A1XU	FEMALE	56	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	149	NA	0	149	NA	NA	NA	6	3	NA	NA	NA	NA	NA
+TCGA-D8-A1XV	FEMALE	84	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	146	NA	0	146	NA	NA	NA	7	3	NA	3	NA	NA	NA
+TCGA-D8-A1XW	FEMALE	53	Negative	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	117	NA	0	117	NA	NA	NA	3	5	NA	3	NA	NA	NA
+TCGA-D8-A1XY	FEMALE	74	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	81	NA	0	81	NA	NA	NA	4	2	NA	NA	NA	NA	NA
+TCGA-D8-A1XZ	FEMALE	81	Positive	Negative	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	120	NA	0	120	NA	NA	NA	5	4	NA	1	NA	NA	NA
+TCGA-D8-A1Y0	FEMALE	65	Positive	Positive	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	166	NA	0	166	NA	NA	NA	7	4	NA	5	NA	NA	NA
+TCGA-D8-A1Y1	FEMALE	80	Positive	Positive	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	115	NA	0	115	NA	NA	NA	7	4	NA	2	NA	NA	NA
+TCGA-D8-A1Y2	FEMALE	71	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	72	NA	0	72	NA	NA	NA	NA	1	NA	4	NA	NA	NA
+TCGA-D8-A1Y3	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	124	NA	0	124	NA	NA	NA	NA	3	NA	4	NA	NA	NA
+TCGA-D8-A27E	FEMALE	66	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	182	NA	0	182	NA	NA	NA	NA	5	NA	NA	NA	NA	NA
+TCGA-D8-A27F	FEMALE	40	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	227	NA	0	227	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-D8-A27G	FEMALE	75	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	209	NA	0	209	NA	NA	NA	NA	3	NA	2	NA	NA	NA
+TCGA-D8-A27H	FEMALE	72	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	140	NA	0	140	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-D8-A27I	FEMALE	58	Positive	Positive	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	185	NA	0	185	NA	NA	NA	NA	1	NA	3	NA	NA	NA
+TCGA-D8-A27K	FEMALE	47	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	118	NA	0	118	NA	NA	NA	NA	1	NA	2	NA	NA	NA
+TCGA-D8-A27L	FEMALE	49	Positive	Positive	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIB	Stage IIIA	enrollment	LIVING	125	NA	0	125	NA	NA	NA	NA	1	NA	4	NA	NA	NA
+TCGA-D8-A27M	FEMALE	59	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IIA	Stage I	enrollment	LIVING	144	NA	0	144	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-D8-A27N	FEMALE	36	Positive	Positive	Positive	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	145	NA	0	145	NA	NA	NA	NA	4	NA	5	NA	NA	NA
+TCGA-D8-A27P	FEMALE	64	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IIA	Stage I	enrollment	LIVING	22	NA	0	22	NA	NA	NA	NA	2	NA	2	NA	NA	NA
+TCGA-D8-A27R	FEMALE	41	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	90	NA	0	90	NA	NA	NA	NA	1	NA	5	NA	NA	NA
+TCGA-D8-A27T	FEMALE	53	Positive	Positive	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	135	NA	0	135	NA	NA	NA	NA	4	NA	2	NA	NA	NA
+TCGA-D8-A27V	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	73	NA	0	73	NA	NA	NA	NA	4	NA	2	NA	NA	NA
+TCGA-D8-A27W	FEMALE	55	Positive	Positive	Positive	T4	T_Other	N0	Negative	M0	Negative	Stage IIIB	Stage IIIB	enrollment	LIVING	15	NA	0	15	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-E2-A1IE	FEMALE	61	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	983	NA	0	983	NA	NA	NA	6	3	NA	5	NA	NA	NA
+TCGA-E2-A1IF	FEMALE	74	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	956	NA	0	956	NA	NA	NA	6	5	NA	2	NA	NA	NA
+TCGA-E2-A1IG	FEMALE	45	Positive	Positive	Not Available	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	755	NA	0	755	NA	NA	NA	4	4	NA	5	NA	NA	NA
+TCGA-E2-A1IH	FEMALE	80	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	658	NA	0	658	NA	NA	NA	6	2	NA	2	NA	NA	NA
+TCGA-E2-A1II	FEMALE	51	Negative	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	850	NA	0	850	NA	NA	NA	5	5	NA	2	NA	NA	NA
+TCGA-E2-A1IJ	FEMALE	57	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	725	NA	0	725	NA	NA	NA	4	4	NA	3	NA	NA	NA
+TCGA-E2-A1IK	FEMALE	71	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	518	NA	0	518	NA	NA	NA	7	1	NA	1	NA	NA	NA
+TCGA-E2-A1IL	FEMALE	78	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	14	NA	0	14	NA	NA	NA	6	2	NA	2	NA	NA	NA
+TCGA-E2-A1IN	FEMALE	60	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	392	NA	0	392	NA	NA	NA	2	2	NA	4	NA	NA	NA
+TCGA-E2-A1IO	FEMALE	37	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	448	NA	0	448	NA	NA	NA	4	1	NA	1	NA	NA	NA
+TCGA-E2-A1IP	FEMALE	42	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	427	NA	0	427	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-E2-A1IU	FEMALE	60	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	127	NA	0	127	NA	NA	NA	2	1	NA	2	NA	NA	NA
+TCGA-E2-A1L6	FEMALE	44	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1312	NA	0	1312	NA	NA	NA	7	4	NA	2	NA	NA	NA
+TCGA-E2-A1L7	FEMALE	40	Negative	Negative	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	633	NA	0	633	NA	NA	NA	5	2	NA	1	NA	NA	NA
+TCGA-E2-A1L8	FEMALE	52	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIA	Stage IIB	enrollment	LIVING	1015	NA	0	1015	NA	NA	NA	6	4	NA	2	NA	NA	NA
+TCGA-E2-A1L9	FEMALE	40	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIB	Stage IIA	enrollment	LIVING	388	NA	0	388	NA	NA	NA	6	1	NA	3	NA	NA	NA
+TCGA-E2-A1LA	FEMALE	59	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	463	NA	0	463	NA	NA	NA	2	2	NA	5	NA	NA	NA
+TCGA-E2-A1LB	FEMALE	41	Negative	Negative	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	972	NA	0	972	NA	NA	NA	3	4	NA	1	NA	NA	NA
+TCGA-E2-A1LG	FEMALE	50	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	350	NA	0	350	NA	NA	NA	5	5	NA	2	NA	NA	NA
+TCGA-E2-A1LH	FEMALE	59	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	2875	NA	0	2875	NA	NA	NA	NA	5	NA	3	NA	NA	NA
+TCGA-E2-A1LI	FEMALE	57	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	2750	NA	0	2750	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-E2-A1LL	FEMALE	73	Negative	Negative	Negative	T3	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	1014	NA	0	1014	NA	NA	NA	4	1	NA	1	NA	NA	NA
+TCGA-E2-A1LS	FEMALE	46	Negative	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	239	NA	0	239	NA	NA	NA	NA	3	NA	NA	NA	NA	NA
+TCGA-E9-A1N3	FEMALE	70	Not Performed	Not Performed	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	4	NA	1	NA	NA	NA
+TCGA-E9-A1N4	FEMALE	41	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	7	2	NA	2	NA	NA	NA
+TCGA-E9-A1N5	FEMALE	45	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	2	4	NA	5	NA	NA	NA
+TCGA-E9-A1N6	FEMALE	52	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	4	4	NA	5	NA	NA	NA
+TCGA-E9-A1N8	FEMALE	48	Negative	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	5	5	NA	1	NA	NA	NA
+TCGA-E9-A1N9	FEMALE	58	Negative	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	5	1	NA	4	NA	NA	NA
+TCGA-E9-A1NA	FEMALE	58	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	4	3	NA	5	NA	NA	NA
+TCGA-E9-A1NC	FEMALE	61	Negative	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-E9-A1ND	FEMALE	75	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	5	5	NA	1	NA	NA	NA
+TCGA-E9-A1NE	FEMALE	28	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	6	4	NA	1	NA	NA	NA
+TCGA-E9-A1NF	FEMALE	60	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	4	4	NA	5	NA	NA	NA
+TCGA-E9-A1NG	FEMALE	62	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	4	2	NA	1	NA	NA	NA
+TCGA-E9-A1NH	FEMALE	71	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	4	4	NA	2	NA	NA	NA
+TCGA-E9-A1NI	FEMALE	51	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	4	4	NA	2	NA	NA	NA
+TCGA-E9-A1QZ	FEMALE	61	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	1	NA	3	NA	NA	NA
+TCGA-E9-A1R0	FEMALE	58	Not Performed	Not Performed	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	4	NA	2	NA	NA	NA
+TCGA-E9-A1R2	FEMALE	51	Positive	Negative	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	19	NA	0	19	NA	NA	NA	7	4	NA	5	NA	NA	NA
+TCGA-E9-A1R3	FEMALE	70	Not Performed	Not Performed	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	64	NA	0	64	NA	NA	NA	4	1	NA	2	NA	NA	NA
+TCGA-E9-A1R4	FEMALE	66	Not Performed	Not Performed	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	29	NA	0	29	NA	NA	NA	4	1	NA	1	NA	NA	NA
+TCGA-E9-A1R5	FEMALE	63	Not Performed	Not Performed	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	42	NA	0	42	NA	NA	NA	4	3	NA	2	NA	NA	NA
+TCGA-E9-A1R6	FEMALE	63	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	84	NA	0	84	NA	NA	NA	2	3	NA	4	NA	NA	NA
+TCGA-E9-A1R7	FEMALE	64	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	34	NA	0	34	NA	NA	NA	1	3	NA	5	NA	NA	NA
+TCGA-E9-A1RA	FEMALE	48	Not Performed	Not Performed	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	29	NA	0	29	NA	NA	NA	6	1	NA	3	NA	NA	NA
+TCGA-E9-A1RB	FEMALE	40	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	21	NA	0	21	NA	NA	NA	NA	1	NA	4	NA	NA	NA
+TCGA-E9-A1RC	FEMALE	56	Not Performed	Not Performed	Negative	T4	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	1228	NA	0	1228	NA	NA	NA	NA	3	NA	3	NA	NA	NA
+TCGA-E9-A1RD	FEMALE	67	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	20	NA	0	20	NA	NA	NA	NA	3	NA	2	NA	NA	NA
+TCGA-E9-A1RE	FEMALE	74	Not Performed	Not Performed	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	47	NA	0	47	NA	NA	NA	NA	3	NA	4	NA	NA	NA
+TCGA-E9-A1RF	FEMALE	68	Not Performed	Not Performed	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	38	NA	0	38	NA	NA	NA	NA	3	NA	5	NA	NA	NA
+TCGA-E9-A1RG	FEMALE	62	Not Performed	Not Performed	Negative	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	35	NA	0	35	NA	NA	NA	5	2	NA	2	NA	NA	NA
+TCGA-E9-A1RH	FEMALE	63	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	14	NA	0	14	NA	NA	NA	4	4	NA	4	NA	NA	NA
+TCGA-E9-A1RI	FEMALE	43	Not Performed	Not Performed	Not Available	T1	T1	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	48	NA	0	48	NA	NA	NA	4	1	NA	2	NA	NA	NA
+TCGA-E9-A226	FEMALE	45	Not Performed	Not Performed	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	16	NA	0	16	NA	NA	NA	NA	3	NA	2	NA	NA	NA
+TCGA-E9-A227	FEMALE	42	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	24	NA	0	24	NA	NA	NA	NA	1	NA	2	NA	NA	NA
+TCGA-E9-A228	FEMALE	58	Not Performed	Not Performed	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	3	NA	5	NA	NA	NA
+TCGA-E9-A229	FEMALE	37	Not Performed	Not Performed	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	1	NA	5	NA	NA	NA
+TCGA-E9-A22A	FEMALE	74	Positive	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	3	NA	1	NA	NA	NA
+TCGA-E9-A22B	FEMALE	71	Positive	Negative	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	3	NA	5	NA	NA	NA
+TCGA-E9-A22D	FEMALE	38	Positive	Positive	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	3	NA	5	NA	NA	NA
+TCGA-E9-A22E	FEMALE	56	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	4	NA	1	NA	NA	NA
+TCGA-E9-A22G	FEMALE	47	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIIA	Stage IIA	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	3	NA	1	NA	NA	NA
+TCGA-E9-A22H	FEMALE	42	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	0	NA	0	0	NA	NA	NA	NA	1	NA	2	NA	NA	NA
+TCGA-E9-A243	FEMALE	52	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	43	NA	0	43	NA	NA	NA	3	5	NA	3	NA	NA	NA
+TCGA-E9-A244	FEMALE	54	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	20	NA	0	20	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-E9-A245	FEMALE	47	Not Performed	Not Performed	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	25	NA	0	25	NA	NA	NA	NA	2	NA	3	NA	NA	NA
+TCGA-E9-A247	FEMALE	59	Not Performed	Not Performed	Negative	T1	T1	N0	Negative	M0	Negative	Stage IB	Stage I	enrollment	LIVING	12	NA	0	12	NA	NA	NA	NA	3	NA	4	NA	NA	NA
+TCGA-E9-A248	FEMALE	51	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	21	NA	0	21	NA	NA	NA	3	1	NA	4	NA	NA	NA
+TCGA-E9-A249	FEMALE	45	Not Performed	Not Performed	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	28	NA	0	28	NA	NA	NA	3	4	NA	2	NA	NA	NA
+TCGA-E9-A24A	FEMALE	69	Not Performed	Not Performed	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	10	NA	0	10	NA	NA	NA	2	2	NA	2	NA	NA	NA
+TCGA-EW-A1IW	FEMALE	80	Positive	Positive	Positive	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	252	NA	0	252	NA	NA	NA	4	3	NA	2	NA	NA	NA
+TCGA-EW-A1IX	FEMALE	48	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	1082	NA	0	1082	NA	NA	NA	4	1	NA	4	NA	NA	NA
+TCGA-EW-A1IY	FEMALE	38	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	258	NA	0	258	NA	NA	NA	7	1	NA	2	NA	NA	NA
+TCGA-EW-A1IZ	FEMALE	53	Positive	Positive	Negative	T2	T_Other	N2	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	260	NA	0	260	NA	NA	NA	3	2	NA	1	NA	NA	NA
+TCGA-EW-A1J1	FEMALE	38	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	282	NA	0	282	NA	NA	NA	5	2	NA	2	NA	NA	NA
+TCGA-EW-A1J2	FEMALE	50	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIB	Stage IIA	enrollment	LIVING	139	NA	0	139	NA	NA	NA	6	2	NA	2	NA	NA	NA
+TCGA-EW-A1J3	FEMALE	61	Positive	Positive	Positive	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	252	NA	0	252	NA	NA	NA	2	4	NA	2	NA	NA	NA
+TCGA-EW-A1J5	FEMALE	59	Positive	Positive	Negative	T3	T_Other	N0	Negative	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	227	NA	0	227	NA	NA	NA	7	4	NA	5	NA	NA	NA
+TCGA-EW-A1J6	FEMALE	70	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage I	Stage I	enrollment	LIVING	595	NA	0	595	NA	NA	NA	2	5	NA	4	NA	NA	NA
+TCGA-EW-A1OV	FEMALE	56	Negative	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	522	NA	0	522	NA	NA	NA	5	4	NA	1	NA	NA	NA
+TCGA-EW-A1OW	FEMALE	58	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	463	NA	0	463	NA	NA	NA	NA	5	NA	1	NA	NA	NA
+TCGA-EW-A1OX	FEMALE	43	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	562	NA	0	562	NA	NA	NA	1	3	NA	3	NA	NA	NA
+TCGA-EW-A1OY	FEMALE	63	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	593	NA	0	593	NA	NA	NA	4	2	NA	5	NA	NA	NA
+TCGA-EW-A1OZ	FEMALE	56	Positive	Negative	Positive	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	941	NA	0	941	NA	NA	NA	4	4	NA	5	NA	NA	NA
+TCGA-EW-A1P0	FEMALE	55	Positive	Negative	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	1121	NA	0	1121	NA	NA	NA	7	5	NA	4	NA	NA	NA
+TCGA-EW-A1P1	FEMALE	68	Negative	Negative	Negative	T2	T_Other	N3	Positive	M0	Negative	Stage IIIC	Stage IIIC	enrollment	LIVING	919	NA	0	919	NA	NA	NA	6	1	NA	1	NA	NA	NA
+TCGA-EW-A1P3	FEMALE	48	Positive	Positive	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	987	NA	0	987	NA	NA	NA	4	1	NA	2	NA	NA	NA
+TCGA-EW-A1P4	FEMALE	43	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	501	NA	0	501	NA	NA	NA	5	5	NA	1	NA	NA	NA
+TCGA-EW-A1P5	FEMALE	77	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	365	NA	0	365	NA	NA	NA	3	4	NA	3	NA	NA	NA
+TCGA-EW-A1P6	FEMALE	64	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	312	NA	0	312	NA	NA	NA	2	2	NA	4	NA	NA	NA
+TCGA-EW-A1P7	FEMALE	59	Negative	Negative	Negative	T2	T_Other	N0	Negative	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	635	NA	0	635	NA	NA	NA	3	5	NA	1	NA	NA	NA
+TCGA-EW-A1PA	FEMALE	59	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	267	NA	0	267	NA	NA	NA	NA	4	NA	1	NA	NA	NA
+TCGA-EW-A1PB	FEMALE	70	Negative	Negative	Negative	T3	T_Other	N1	Positive	M0	Negative	Stage IIIA	Stage IIIA	enrollment	LIVING	608	NA	0	608	NA	NA	NA	2	5	NA	3	NA	NA	NA
+TCGA-EW-A1PD	MALE	61	Positive	Positive	Positive	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	174	NA	0	174	NA	NA	NA	4	2	NA	5	NA	NA	NA
+TCGA-EW-A1PE	FEMALE	56	Positive	Positive	Negative	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	139	NA	0	139	NA	NA	NA	3	1	NA	2	NA	NA	NA
+TCGA-EW-A1PF	FEMALE	50	Positive	Positive	Negative	T1	T1	N0	Negative	M0	Negative	Stage IA	Stage I	enrollment	LIVING	139	NA	0	139	NA	NA	NA	4	1	NA	5	NA	NA	NA
+TCGA-EW-A1PG	FEMALE	53	Positive	Positive	Negative	T2	T_Other	N1	Positive	M0	Negative	Stage IIB	Stage IIB	enrollment	LIVING	875	NA	0	875	NA	NA	NA	6	1	NA	1	NA	NA	NA
+TCGA-EW-A1PH	FEMALE	52	Negative	Negative	Not Available	T1	T1	N1	Positive	M0	Negative	Stage IIA	Stage IIA	enrollment	LIVING	139	NA	0	139	NA	NA	NA	5	5	NA	1	NA	NA	NA
+TCGA-EW-A2FS	FEMALE	41	Positive	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1173	NA	0	1173	NA	NA	NA	NA	4	NA	5	NA	NA	NA
+TCGA-EW-A2FV	FEMALE	39	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	238	NA	0	238	NA	NA	NA	NA	4	NA	3	NA	NA	NA
+TCGA-EW-A2FW	FEMALE	52	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	190	NA	0	190	NA	NA	NA	NA	2	NA	3	NA	NA	NA
+TCGA-GM-A2DA	FEMALE	46	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	5909	NA	0	5909	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DB	FEMALE	62	Negative	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1615	NA	0	1615	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DC	FEMALE	57	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1628	NA	0	1628	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DD	FEMALE	53	Negative	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1309	NA	0	1309	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DF	FEMALE	53	Negative	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1299	NA	0	1299	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DH	FEMALE	58	Negative	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1286	NA	0	1286	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DI	FEMALE	52	Negative	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1883	NA	0	1883	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DK	FEMALE	58	Positive	Negative	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1896	NA	0	1896	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DL	FEMALE	50	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	2762	NA	0	2762	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DM	FEMALE	57	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	2331	NA	0	2331	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DN	FEMALE	58	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	2352	NA	0	2352	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-GM-A2DO	FEMALE	54	Positive	Positive	NA	NA	NA	NA	NA	NA	NA	NA	NA	enrollment	LIVING	1622	NA	0	1622	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+TCGA-AR-A24W	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6	1	NA	3	NA	NA	NA
+TCGA-AC-A2B8	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1	NA	2	NA	NA	NA
+TCGA-AC-A2FF	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1	NA	1	NA	NA	NA
+TCGA-AC-A2FB	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1	NA	3	NA	NA	NA
+TCGA-AC-A2FG	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1	NA	2	NA	NA	NA
+TCGA-GI-A2C8	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	NA	3	NA	NA	NA
+TCGA-E9-A295	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	NA	3	NA	NA	NA
