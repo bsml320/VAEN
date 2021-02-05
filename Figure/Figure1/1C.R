@@ -1,4 +1,4 @@
-setwd("/path/to/VAEN/result.EN/dr.CCLE/Figures/Figure1")
+setwd("/path/to/VAEN/Figures/Figure1")
 library("tsne")
 
 ###################################################################################################
