@@ -1,4 +1,4 @@
-#setwd("/path/to/VAEN/Figure/Figure7")
+setwd("/path/to/VAEN/Figure/Figure7")
 
 ################## prepare cancer mutations
 
