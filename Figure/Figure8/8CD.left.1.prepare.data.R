@@ -24,24 +24,8 @@ drug.ccle = cancer.drug.ccle
 
 #################################################################################################################################################################
 
-BRAF.mat = matrix(1, nrow=length(drugs), ncol=length(cancer.types))
-KRAS.mat = matrix(1, nrow=length(drugs), ncol=length(cancer.types))
-NRAS.mat = matrix(1, nrow=length(drugs), ncol=length(cancer.types))
-HRAS.mat = matrix(1, nrow=length(drugs), ncol=length(cancer.types))
-EGFR.mat = matrix(1, nrow=length(drugs), ncol=length(cancer.types))
-four.mat = matrix(1, nrow=length(drugs), ncol=length(cancer.types))
-rownames(BRAF.mat) = drugs; colnames(BRAF.mat) = cancer.types
-rownames(KRAS.mat) = drugs; colnames(KRAS.mat) = cancer.types
-rownames(NRAS.mat) = drugs; colnames(NRAS.mat) = cancer.types
-rownames(HRAS.mat) = drugs; colnames(HRAS.mat) = cancer.types
-rownames(EGFR.mat) = drugs; colnames(EGFR.mat) = cancer.types
-rownames(four.mat) = drugs; colnames(four.mat) = cancer.types
-
 for(k in 1:length(cancer.types)){
 	cancer = cancer.types[k]
-	target.type = "01"
-	if(cancer == "LAML")target.type = "03"
-	if(cancer == "SKCM")target.type = "06"
 	
 	if(cancer == "LAML"){
 		fn = paste("../../MC3/LAML_wustl", sep="")
@@ -58,18 +42,10 @@ for(k in 1:length(cancer.types)){
 	WT.ss = names(check[which(check==0)])
 	match(WT.ss, drug.ccle[,1]) -> ii.2; ii.2 = ii.2[!is.na(ii.2)]
 	
-	four.ii = c()
 	############
 	which(original.maf$gene == "BRAF" & grepl("V600", original.maf$Amino_Acid_Change) ) -> ii
 	MT.ss = unique(ss[ii])
-	match(MT.ss, drug.ccle[,1]) -> ii.1; ii.1 = ii.1[!is.na(ii.1)]; four.ii = c(four.ii, ii.1)
-	
-	if(length(ii.1) >= 5){
-		p = c()
-		for(k1 in 3:ncol(drug.ccle)){
-			BRAF.mat[k1-2, k] = wilcox.test(drug.ccle[ii.1, k1], drug.ccle[ii.2, k1], alternative="greater")$p.value
-		}
-	}
+	match(MT.ss, drug.ccle[,1]) -> ii.1; ii.1 = ii.1[!is.na(ii.1)];
 	
 	if(cancer == "THCA"){
 		subtype = read.delim("../../DATA/THCA.BRS.txt", as.is=T, header=F, sep="\t")
