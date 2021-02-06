@@ -1,13 +1,12 @@
 ##############################################################################################################
 ### For Figure 3A
-#setwd("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result.EN/dr.CCLE/VAEN/FIGURE/FIGURE3")
-setwd("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/FIGURE/FIGURE3")
+setwd("/path/to/VAEN/Figure/Figure3")
 
 ### load dr.ccle.models
-load("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
+load("../../result.EN/dr.CCLE/dr.CCLE.A.models.RData")
 drugs = names(dr.ccle.models)
 
-TCGA.pred = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
+TCGA.pred = read.table("../../result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
 
 #####################
 dr.ccle.mat = c()
@@ -36,11 +35,11 @@ new.mat[,3] = as.numeric(as.character(new.mat[,3]))
 write.table(new.mat, file="Figure3A.txt", row.names=F, quote=F, sep="\t")
 
 pdf("3A.pdf", width=10, height=5)
-ggplot(aes(y = ActArea, x = drug, fill = grp), data = new.mat) + geom_boxplot() + 
+g = ggplot(aes(y = ActArea, x = drug, fill = grp), data = new.mat) + geom_boxplot() + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = c(0.9, 0.9)) + 
   xlab("") + ylab("Drug response (ActArea)") +
   guides(fill=guide_legend(title=""))
-  
+print(g)
 dev.off()
 
 
