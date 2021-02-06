@@ -35,6 +35,7 @@ write.table(scaled.GSE20194.gene.mat, file=paste("GSE20194.RANK.tsv", sep=""), r
 ##########################################################################
 ##########################################################################
 library("Matrix")
+library("glmnet")
 
 load("/path/to/VAEN/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
 drug = "Paclitaxel"
@@ -49,13 +50,36 @@ print(best.index)
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE20194.pred = read.table(paste("GSE20194.RANK.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE20194.pred = read.table("GSE20194.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE20194.probabilities = predict(fit, as.matrix(GSE20194.pred[,-1]), s = 'lambda.min')
 GSE20194.pred.mat = cbind(GSE20194.pred[,1], GSE20194.probabilities)
 colnames(GSE20194.pred.mat) = c("Sample", drug)
 
 write.table(GSE20194.pred.mat, file=paste("CCLE.A.pred_GSE20194.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 
+##### plot
+library("ggplot2")
+
+give.n <- function(x){
+   return(c(y = 2.3, label = length(x)))
+}
+
+ccle = read.table("CCLE.A.pred_GSE20194.txt", as.is=T, header=T)
+load("GSE20194.RData")
+
+### all
+dat = data.frame(cbind(Response = ccle[, "Paclitaxel"], pCR = pheno.anno[,"pcr_vs_rd:ch1"]))
+dat[,1] = as.numeric(as.character(dat[,1]))
+dat[,2] <- factor(dat[,2], levels = c("RD", "pCR"))
+
+pvalue = t.test(dat[,1] ~ dat[,2])$p.value
+
+p5 = ggplot(dat, aes(x=pCR, y=Response, fill=pCR)) + geom_boxplot() + 
+     labs(title=paste("GSE20194, CCLE\n", "p = ", format(pvalue, digits=3)), x="pCR Status", y = "Predicted Response to Paclitaxel") +
+	 theme(legend.position = "none", plot.title = element_text(hjust=0.5)) +
+	 stat_summary(fun.data = give.n, geom = "text")
+
+print(p5)
 
 ##########################################################################
 ##########################################################################
@@ -66,12 +90,36 @@ res.list = dr.gdsc.models[[drug]]
 fit <- res.list$model
 best.index = res.list[[ "best_index" ]]
 
-#cmd = paste("python3 GSE20194.predict_VAE.py ", k, sep="")
-#system(cmd)
+##########################################################################
+# Go to a shell, and run VAE.prediction.py using best.index obtained above
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
+##########################################################################
 
-GSE20194.pred = read.table(paste(best.index, ".GSE20194.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE20194.pred = read.table("GSE20194.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE20194.probabilities = predict(fit, as.matrix(GSE20194.pred[,-1]), s = 'lambda.min')
 GSE20194.pred.mat = cbind(GSE20194.pred[,1], GSE20194.probabilities)
 colnames(GSE20194.pred.mat) = c("Sample", drug)
 
 write.table(GSE20194.pred.mat, file=paste("GDSC.A.pred_GSE20194.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
+
+##### plot
+gdsc = read.table("GDSC.A.pred_GSE20194.txt", as.is=T, header=T)
+load("GSE20194.RData")
+
+### all
+dat = data.frame(cbind(Response = gdsc[, "Paclitaxel"], pCR = pheno.anno[,"pcr_vs_rd:ch1"]))
+dat[,1] = as.numeric(as.character(dat[,1]))
+
+dat[,2] <- factor(dat[,2], levels = c("RD", "pCR"))
+
+pvalue = t.test(dat[,1] ~ dat[,2])$p.value
+
+p6 = ggplot(dat, aes(x=pCR, y=Response, fill=pCR)) + geom_boxplot() + 
+     labs(title=paste("GSE20194, GDSC\n", "p = ", format(pvalue, digits=3)), x="pCR Status", y = "Predicted Response to Paclitaxel") +
+	 theme(legend.position = "none", plot.title = element_text(hjust=0.5)) +
+	 stat_summary(fun.data = give.n, geom = "text")
+
+print(p6)
+
+
