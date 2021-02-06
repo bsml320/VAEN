@@ -1,4 +1,4 @@
-#setwd("/path/to/VAEN/Figure/Figure2")
+setwd("/path/to/VAEN/Figure/Figure2")
 
 ##############################################################################
 library(MASS)
