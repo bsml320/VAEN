@@ -5,7 +5,7 @@ library("RColorBrewer")
 
 ###################################################################################################
 
-latent = read.table("../../other/RANK.Sigmoid/result/1.CCLE.latent.tsv", as.is=T, header=T)
+latent = read.table("../../other/RANK.Sigmoid/1.CCLE.latent.tsv", as.is=T, header=T)
 
 tsne(latent) -> tpc
 
@@ -15,7 +15,6 @@ sapply(rownames(latent), function(x){
 }) -> tt
 tissues = sort(unique(tt))
 
-library("RColorBrewer")
 c(brewer.pal(n = 9, name = "Paired"), brewer.pal(n = 8, name = "BrBG"), brewer.pal(n = 9, name = "Set3"), brewer.pal(n = 8, name = "RdBu"), brewer.pal(n = 8, name = "RdGy"), brewer.pal(n = 8, name = "PiYG"), brewer.pal(n = 8, name = "PuBu")) -> cc
 cc = cc[1:length(tissues)]
 color = c()
@@ -40,7 +39,7 @@ dev.off()
 
 ###################################################################################################
 
-latent = read.table("../../other/RANK.ReLU/result/1.CCLE.latent.tsv", as.is=T, header=T)
+latent = read.table("../../other/RANK.ReLU/1.CCLE.latent.tsv", as.is=T, header=T)
 
 tsne(latent) -> tpc
 
@@ -74,7 +73,7 @@ dev.off()
 
 ###################################################################################################
 
-latent = read.table("../../other/SZ.Sigmoid/result/1.CCLE.latent.tsv", as.is=T, header=T)
+latent = read.table("../../other/SZ.Sigmoid/1.CCLE.latent.tsv", as.is=T, header=T)
 
 tsne(latent) -> tpc
 
@@ -108,7 +107,7 @@ dev.off()
 
 ###################################################################################################
 
-latent = read.table("../../other/SZ.ReLU/result/1.CCLE.latent.tsv", as.is=T, header=T)
+latent = read.table("../../other/SZ.ReLU/1.CCLE.latent.tsv", as.is=T, header=T)
 
 tsne(latent) -> tpc
 
@@ -118,7 +117,6 @@ sapply(rownames(latent), function(x){
 }) -> tt
 tissues = sort(unique(tt))
 
-library("RColorBrewer")
 c(brewer.pal(n = 9, name = "Paired"), brewer.pal(n = 8, name = "BrBG"), brewer.pal(n = 9, name = "Set3"), brewer.pal(n = 8, name = "RdBu"), brewer.pal(n = 8, name = "RdGy"), brewer.pal(n = 8, name = "PiYG"), brewer.pal(n = 8, name = "PuBu")) -> cc
 cc = cc[1:length(tissues)]
 color = c()
@@ -143,7 +141,7 @@ dev.off()
 
 ###################################################################################################
 
-latent = read.table("../../other/Z01.Sigmoid/result/1.CCLE.latent.tsv", as.is=T, header=T)
+latent = read.table("../../other/Z01.Sigmoid/1.CCLE.latent.tsv", as.is=T, header=T)
 
 tsne(latent) -> tpc
 
@@ -153,7 +151,6 @@ sapply(rownames(latent), function(x){
 }) -> tt
 tissues = sort(unique(tt))
 
-library("RColorBrewer")
 c(brewer.pal(n = 9, name = "Paired"), brewer.pal(n = 8, name = "BrBG"), brewer.pal(n = 9, name = "Set3"), brewer.pal(n = 8, name = "RdBu"), brewer.pal(n = 8, name = "RdGy"), brewer.pal(n = 8, name = "PiYG"), brewer.pal(n = 8, name = "PuBu")) -> cc
 cc = cc[1:length(tissues)]
 color = c()
@@ -178,7 +175,7 @@ dev.off()
 
 ###################################################################################################
 
-latent = read.table("../../other/Z01.ReLU/result/1.CCLE.latent.tsv", as.is=T, header=T)
+latent = read.table("../../other/Z01.ReLU/1.CCLE.latent.tsv", as.is=T, header=T)
 
 tsne(latent) -> tpc
 
