@@ -41,6 +41,7 @@ drug = "Paclitaxel"
 res.list = dr.ccle.models[[drug]]
 fit <- res.list$model
 best.index = res.list[[ "best_index" ]]
+print(best.index)
 
 ##########################################################################
 # Go to a shell, and run VAE.prediction.py using best.index obtained above
