@@ -73,7 +73,7 @@ dev.off()
 
 ###################################################################################################
 
-latent = read.table("../../other/SZ.Sigmoid/1.CCLE.latent.tsv", as.is=T, header=T)
+latent = read.table("../../other/ZS.Sigmoid/1.CCLE.latent.tsv", as.is=T, header=T)
 
 tsne(latent) -> tpc
 
@@ -95,7 +95,7 @@ for(k in 1:length(tissues)){
 legend("topright", fill=cc, legend=tissues)
 
 
-pdf("SZ.Sigmoid.CCLE-tSNE.pdf", width=7, height=7)
+pdf("ZS.Sigmoid.CCLE-tSNE.pdf", width=7, height=7)
 plot(tpc[,1], tpc[,2], pch=20, cex=1.5, xlab="tSNE_1", ylab="tSNE_2", col="white", main="ZS, Sigmoid")
 for(k in 1:length(tissues)){
 	which(tt == tissues[k]) -> ii
@@ -107,7 +107,7 @@ dev.off()
 
 ###################################################################################################
 
-latent = read.table("../../other/SZ.ReLU/1.CCLE.latent.tsv", as.is=T, header=T)
+latent = read.table("../../other/ZS.ReLU/1.CCLE.latent.tsv", as.is=T, header=T)
 
 tsne(latent) -> tpc
 
@@ -129,7 +129,7 @@ for(k in 1:length(tissues)){
 legend("topright", fill=cc, legend=tissues)
 
 
-pdf("SZ.ReLU.CCLE-tSNE.pdf", width=7, height=7)
+pdf("ZS.ReLU.CCLE-tSNE.pdf", width=7, height=7)
 plot(tpc[,1], tpc[,2], pch=20, cex=1.5, xlab="tSNE_1", ylab="tSNE_2", col="white", main="ZS, ReLU")
 for(k in 1:length(tissues)){
 	which(tt == tissues[k]) -> ii
