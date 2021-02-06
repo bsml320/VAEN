@@ -7,14 +7,7 @@ import os
 os.environ["KERAS_BACKEND"] = "tensorflow"
 
 import pandas as pd
-
 from keras.models import load_model
-import keras.backend as K
-import tensorflow as tf
-config = tf.ConfigProto()
-config.gpu_options.allow_growth=True
-sess = tf.Session(config=config)
-K.set_session(sess)
 
 ksigmoid = sys.argv[1]
 
