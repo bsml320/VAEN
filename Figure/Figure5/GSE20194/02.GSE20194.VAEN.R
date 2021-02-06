@@ -49,7 +49,7 @@ print(best.index)
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE20194.pred = read.table(paste("GSE20194.RANK.",best.index,".latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE20194.pred = read.table("GSE20194.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE20194.probabilities = predict(fit, as.matrix(GSE20194.pred[,-1]), s = 'lambda.min')
 GSE20194.pred.mat = cbind(GSE20194.pred[,1], GSE20194.probabilities)
 colnames(GSE20194.pred.mat) = c("Sample", drug)
