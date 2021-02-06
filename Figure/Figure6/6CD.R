@@ -1,4 +1,4 @@
-setwd("/path/to/VAEN/Figure/Figure6")
+#setwd("/path/to/VAEN/Figure/Figure6")
 library("RColorBrewer")
 library(reshape2)
 library(gplots)

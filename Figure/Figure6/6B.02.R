@@ -1,11 +1,10 @@
-setwd("/path/to/VAEN/Figure/Figure6")
+#setwd("/path/to/VAEN/Figure/Figure6")
 library("RColorBrewer")
 library("reshape2")
 library("gplots")
 
 ########################
 dat.mat = read.table("6B.CCLE.tml.ttest.txt", header=T, as.is=T)
-dat.mat = dat.mat[-which(dat.mat[,1] %in% c("THYM") ),]
 
 dat.mat[which(dat.mat[,2]=="X17.AAG"), 2] = "17-AAG"
 gsub("\\.", "-", dat.mat[,2]) -> ss

@@ -1,8 +1,8 @@
-setwd("/path/to/VAEN/Figure/Figure6")
+#setwd("/path/to/VAEN/Figure/Figure6")
 
 ###################################################################################################
 
-drug.ccle = read.table(file="../../result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
+drug.ccle = read.table(file="../../result.EN/dr.CCLE/VAEN_CCLE.MIX.pred_TCGA.txt", header=T, as.is=T, sep="\t")
 colnames(drug.ccle)[3:ncol(drug.ccle)] -> drugs
 cancer.types = unique(drug.ccle[,2])
 sample.type = substr(drug.ccle[,1], 14, 15)
