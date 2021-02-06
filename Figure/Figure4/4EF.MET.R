@@ -2,7 +2,7 @@ setwd("/path/to/VAEN/Figure/Figure4")
 
 ###################################################################################################
 
-drug.ccle = read.table("/path/to/VAEN/result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T)
+drug.ccle = read.table("../../result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T)
 cancer.types = unique(drug.ccle[,2])
 sample.type = substr(drug.ccle[,1], 14, 15)
 ss = gsub("\\.", "-", drug.ccle[,1])
@@ -103,7 +103,7 @@ multiplot(plotlist=list(p1,p3,p2,p4), layout=matrix(1:4, nrow=2))
 dev.off()
 
 ###################################################################################################################
-drug.ccle = read.table("/path/to/VAEN/result.EN/dr.GDSC/VAEN_GDSC.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
+drug.ccle = read.table("../../result.EN/dr.GDSC/VAEN_GDSC.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
 cancer.types = unique(drug.ccle[,2])
 sample.type = substr(drug.ccle[,1], 14, 15)
 ss = gsub("\\.", "-", drug.ccle[,1])

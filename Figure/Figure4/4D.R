@@ -5,7 +5,7 @@ give.n <- function(x){
 }
 
 ###################################################################################################
-drug.ccle = read.table("/path/to/VAEN/result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T)
+drug.ccle = read.table("../../result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T)
 colnames(drug.ccle)[3:ncol(drug.ccle)] -> drugs
 cancer.types = unique(drug.ccle[,2])
 sample.type = substr(drug.ccle[,1], 14, 15)

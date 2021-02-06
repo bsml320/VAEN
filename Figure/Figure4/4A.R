@@ -6,7 +6,7 @@ give.n <- function(x){
 
 ###################################################################################################
 
-drug.ccle = read.table("/path/to/VAEN/result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T)
+drug.ccle = read.table("../../result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T)
 colnames(drug.ccle)[3:ncol(drug.ccle)] -> drugs
 cancer.types = unique(drug.ccle[,2])
 ss = gsub("\\.", "-", drug.ccle[,1])
@@ -65,7 +65,7 @@ p1 = ggplot(dat4plot.ccle, aes(x=X, y=Lapatinib, fill=X)) +  geom_boxplot(outlie
 ###################################################################################################
 ###################################################################################################
 
-drug.gdsc = read.delim("/path/to/VAEN/result.EN/dr.GDSC/VAEN_GDSC.A.pred_TCGA.txt", header=T, as.is=T)
+drug.gdsc = read.delim("../../result.EN/dr.GDSC/VAEN_GDSC.A.pred_TCGA.txt", header=T, as.is=T)
 colnames(drug.gdsc)[3:ncol(drug.gdsc)] -> drugs
 cancer.types = unique(drug.gdsc[,2])
 ss = gsub("\\.", "-", drug.gdsc[,1])
@@ -121,7 +121,7 @@ p2 = ggplot(dat4plot.gdsc, aes(x=X, y=Lapatinib, fill=X)) +  geom_boxplot(outlie
   stat_summary(fun.data = give.n, geom = "text")
 
 
-
+source("../../code/multiplot.R")
 pdf("4A.ERBB2.Lapatinib.pdf", height=4, width=5)
 multiplot(plotlist=list(p1, p2), layout=matrix(c(1,2), nrow=1))
 dev.off()

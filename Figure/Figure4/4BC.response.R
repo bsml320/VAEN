@@ -1,7 +1,7 @@
 setwd("/path/to/VAEN/Figure/Figure4")
 
 ###################################################################################################
-drug.ccle = read.table("/path/to/VAEN/result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T)
+drug.ccle = read.table("../../result.EN/dr.CCLE/VAEN_CCLE.A.pred_TCGA.txt", header=T, as.is=T)
 colnames(drug.ccle)[3:ncol(drug.ccle)] -> drugs
 cancer.types = unique(drug.ccle[,2])
 sample.type = substr(drug.ccle[,1], 14, 15)
@@ -68,7 +68,7 @@ dev.off()
 
 ###################################################################################################
 
-drug.ccle = read.table(file="/path/to/VAEN/result.EN/dr.GDSC/VAEN_GDSC.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
+drug.ccle = read.table(file="../../result.EN/dr.GDSC/VAEN_GDSC.A.pred_TCGA.txt", header=T, as.is=T, sep="\t")
 
 cancer.types = unique(drug.ccle[,2])
 sample.type = substr(drug.ccle[,1], 14, 15)
@@ -122,7 +122,7 @@ coxph(Y1 ~ xvector)
 
 library("survminer")
 
-pdf("4B.GDSC.Fluorouracil.STAD.pdf", width=5, height=5)
+pdf("4B.pdf", width=5, height=5)
 g1 = ggsurvplot(fit, data=dat , risk.table = TRUE,pval = TRUE,break.time.by = 500, ggtheme = theme_minimal())
 print(g1)
 dev.off()
