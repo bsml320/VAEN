@@ -32,3 +32,4 @@ encoded_file = os.path.join(input_file[:-4]+".latent.tsv")
 encoded_df.to_csv(encoded_file, sep='\t')
 
 print('[INFO] Done !')
+
