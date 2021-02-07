@@ -70,7 +70,6 @@ encoder_file = sys.argv[8] # CCLE_encoder_onehidden_vae.hdf5
 decoder_file = sys.argv[9] # CCLE_decoder_onehidden_vae.hdf5
 
 print ("work_dir: %s" % work_dir)
-#sys.exit(1)
 
 plt.style.use('seaborn-notebook')
 sns.set(style="white", color_codes=True)
@@ -146,17 +145,17 @@ rnaseq_input = Input(shape=(original_dim, ))
 
 z_mean_dense_linear = Dense(latent_dim, kernel_initializer='glorot_uniform')(rnaseq_input)
 z_mean_dense_batchnorm = BatchNormalization()(z_mean_dense_linear)
-z_mean_encoded = Activation('relu')(z_mean_dense_batchnorm)
+z_mean_encoded = Activation('sigmoid')(z_mean_dense_batchnorm)
 
 z_log_var_dense_linear = Dense(latent_dim, kernel_initializer='glorot_uniform')(rnaseq_input)
 z_log_var_dense_batchnorm = BatchNormalization()(z_log_var_dense_linear)
-z_log_var_encoded = Activation('relu')(z_log_var_dense_batchnorm)
+z_log_var_encoded = Activation('sigmoid')(z_log_var_dense_batchnorm)
 
 z = Lambda(sampling, output_shape=(latent_dim, ))([z_mean_encoded, z_log_var_encoded])
 
 drop_layer = Dropout(rate = 0.2, noise_shape = None)(z)			####### modified added
 
-decoder_to_reconstruct = Dense(original_dim, kernel_initializer='glorot_uniform', activation='relu')
+decoder_to_reconstruct = Dense(original_dim, kernel_initializer='glorot_uniform', activation='sigmoid')
 
 rnaseq_reconstruct = decoder_to_reconstruct(drop_layer)			####### modified
 
