@@ -139,9 +139,8 @@ for(k in 1:length(drugs)){
 	CCLE.latent.data = CCLE.latent[,-1]
 	fit <- res.list$model
 	CCLE.probabilities = predict(fit, as.matrix(CCLE.latent.data), s = 'lambda.min')
-	pred.mat = cbind(pred.mat, scale(CCLE.probabilities))
 	
-	CCLE.pred.full.mat = cbind(CCLE.pred.full.mat, pred.mat)
+	CCLE.pred.full.mat = cbind(CCLE.pred.full.mat, CCLE.probabilities)
 	cat(drug, ".", sep="")
 }
 
