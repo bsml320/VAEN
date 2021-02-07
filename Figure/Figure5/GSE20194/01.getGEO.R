@@ -1,22 +1,17 @@
 setwd("/path/to/VAEN/Figure/Figure5/GSE20194")
-library(GEOquery)
-library(limma)
+library("GEOquery")
+library("limma")
+library("preprocessCore")
 
 ###################################################################################################
 # code chunk: GSE20194
 ###################################################################################################
-rm(list=ls())
 
 gse <- getGEO("GSE20194", GSEMatrix = TRUE)
 exprs(gse[[1]]) -> datExpr0
 
-########## section 1
-
-library('preprocessCore')
 normalize.quantiles(datExpr0) -> datExprLQ
 dimnames(datExprLQ) = dimnames(datExpr0)
-
-########## section 1 end
 
 ########## section 2
 

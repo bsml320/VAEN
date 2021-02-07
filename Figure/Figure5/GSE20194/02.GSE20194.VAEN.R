@@ -1,7 +1,7 @@
-setwd("/path/to/VAEN/Figure/Figure5/GSE20194")
+setwd("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/Figure/Figure5/GSE20194")
 
 ### key genes
-cur.genes = read.table("/path/to/VAEN/result/key.genes.txt", as.is=T)
+cur.genes = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result/key.genes.txt", as.is=T)
 cur.genes = cur.genes[,1]
 
 ###
@@ -38,7 +38,7 @@ write.table(scaled.GSE20194.gene.mat, file=paste("GSE20194.RANK.tsv", sep=""), r
 library("Matrix")
 library("glmnet")
 
-load("/path/to/VAEN/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
+load("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
 drug = "Paclitaxel"
 res.list = dr.ccle.models[[drug]]
 fit <- res.list$model
@@ -47,22 +47,32 @@ print(best.index)
 
 ##########################################################################
 # Go to a shell, and run VAE.prediction.py using best.index obtained above
-# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> <D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result/>
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE20194.pred = read.table("GSE20194.RANK.latent.tsv", header=T, sep="\t", as.is=T)
+GSE20194.pred =read.table(paste("result/", best.index, ".GSE20194.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 GSE20194.probabilities = predict(fit, as.matrix(GSE20194.pred[,-1]), s = 'lambda.min')
 GSE20194.pred.mat = cbind(GSE20194.pred[,1], GSE20194.probabilities)
 colnames(GSE20194.pred.mat) = c("Sample", drug)
 
 write.table(GSE20194.pred.mat, file=paste("CCLE.A.pred_GSE20194.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 
+
+
+ccle = read.table("CCLE.A.pred_GSE20194.txt", as.is=T, header=T)
+
+### all
+dat = data.frame(cbind(Response = ccle[, "Paclitaxel"], pCR=pheno.anno[,"pcr_vs_rd:ch1"]))
+dat[,1] = as.numeric(as.character(dat[,1]))
+t.test(dat[,1] ~ dat[,2])
+
+
 ##### plot
 library("ggplot2")
 
 give.n <- function(x){
-   return(c(y = 2.3, label = length(x)))
+   return(c(y = max(x), label = length(x)))
 }
 
 ccle = read.table("CCLE.A.pred_GSE20194.txt", as.is=T, header=T)
@@ -85,19 +95,19 @@ print(p5)
 ##########################################################################
 ##########################################################################
 
-load("/path/to/VAEN/result.EN/dr.GDSC/dr.GDSC.A.models.RData")
-drug = "Erlotinib"
+load("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result.EN/dr.GDSC/dr.GDSC.A.models.RData")
+drug = "Paclitaxel"
 res.list = dr.gdsc.models[[drug]]
 fit <- res.list$model
 best.index = res.list[[ "best_index" ]]
 
 ##########################################################################
 # Go to a shell, and run VAE.prediction.py using best.index obtained above
-# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> <D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result/>
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE20194.pred = read.table("GSE20194.RANK.latent.tsv", header=T, sep="\t", as.is=T)
+GSE20194.pred =read.table(paste("result/", best.index, ".GSE20194.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 GSE20194.probabilities = predict(fit, as.matrix(GSE20194.pred[,-1]), s = 'lambda.min')
 GSE20194.pred.mat = cbind(GSE20194.pred[,1], GSE20194.probabilities)
 colnames(GSE20194.pred.mat) = c("Sample", drug)
@@ -124,3 +134,7 @@ p6 = ggplot(dat, aes(x=pCR, y=Response, fill=pCR)) + geom_boxplot() +
 print(p6)
 
 
+
+pdf("5G.3.CCLE.Paclitaxel.sensitive.ggplot.pdf", width=6, height=6)
+multiplot(plotlist=list(p5,p6), layout=matrix(1:2, nrow=1))
+dev.off()
