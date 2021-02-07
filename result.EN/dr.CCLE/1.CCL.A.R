@@ -69,8 +69,8 @@ for(k in 1:length(drugs)){
 	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
 	tmp = tmp[order(tmp[,4], decreasing=T),] ### avg_CV_R2
 	holdout.R2 = rbind(holdout.R2, c(drug, tmp[1,4]) )
-	
 	best.index = tmp[1,1]
+	print(c(drug, best.index))
 	
 	load( paste("01/", best.index ,".CCLE.model.list.RData", sep="") )
 	model.list[[ drug ]] -> res.list
