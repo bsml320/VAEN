@@ -9,7 +9,7 @@ library("vegan")
 #####################################################################################
 load("/path/to/VAEN/DATA/TCGA.ss.mat.RData")
 #####################################################################################
-anno = read.csv("/path/to/VAEN/DATA/CCLE/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
+anno = read.csv("/path/to/VAEN/DATA/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
 drugs = sort(unique(anno$Compound))
 #####################################################################################
 
@@ -139,9 +139,8 @@ for(k in 1:length(drugs)){
 	CCLE.latent.data = CCLE.latent[,-1]
 	fit <- res.list$model
 	CCLE.probabilities = predict(fit, as.matrix(CCLE.latent.data), s = 'lambda.min')
-	pred.mat = cbind(pred.mat, scale(CCLE.probabilities))
 	
-	CCLE.pred.full.mat = cbind(CCLE.pred.full.mat, pred.mat)
+	CCLE.pred.full.mat = cbind(CCLE.pred.full.mat, CCLE.probabilities)
 	cat(drug, ".", sep="")
 }
 
