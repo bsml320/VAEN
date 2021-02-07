@@ -5,18 +5,18 @@ library("magrittr")
 library("glmnet")
 library("modEvA")
 library("vegan")
-
+to
 #####################################################################################
 load("../../DATA/TCGA.ss.mat.RData")
 #####################################################################################
-anno = read.csv("../../DATA/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
+anno = read.csv("../../DATA/CCLE/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
 drugs = sort(unique(anno$Compound))
 #####################################################################################
 
-all.sample.size = all.in_sample_R2.mat = all.avg_CV_R2.mat = all.F1_R2.mat = matrix(0, nrow=100, ncol=length(drugs))
-colnames(all.sample.size) = colnames(all.in_sample_R2.mat) = colnames(all.avg_CV_R2.mat) = colnames(all.F1_R2.mat) = drugs
+solid.sample.size = solid.in_sample_R2.mat = solid.avg_CV_R2.mat = solid.F1_R2.mat = matrix(0, nrow=100, ncol=length(drugs))
+colnames(solid.sample.size) = colnames(solid.in_sample_R2.mat) = colnames(solid.avg_CV_R2.mat) = colnames(solid.F1_R2.mat) = drugs
 
-all.mat = c()
+solid.mat = c()
 for(ksigmoid in 1:100){
 	load(paste("01S/", ksigmoid, ".CCLE.model.list.S.RData", sep=""))
 	for(kdrug in 1:length(drugs)){
@@ -28,32 +28,32 @@ for(ksigmoid in 1:100){
 		which(Ys[,1]!=-9) -> ii
 		Ys = Ys[ii, ]
 		if(sd(Ys[,2]) == 0)next
-		all.mat = rbind(all.mat, c(ksigmoid, res.list$model_summary, cor(Ys[,1], Ys[,2])) )
+		solid.mat = rbind(solid.mat, c(ksigmoid, res.list$model_summary, cor(Ys[,1], Ys[,2])) )
 		
 		#### way 4, PCC
 		recall    = cor(Ys[,1], Ys[,2])
 		precision = as.numeric(res.list$model_summary[5])
 		
-		all.sample.size[ksigmoid, kdrug]      = nrow(Ys)
-		all.in_sample_R2.mat[ksigmoid, kdrug] = recall
-		all.avg_CV_R2.mat[ksigmoid, kdrug]    = precision
-		all.F1_R2.mat[ksigmoid, kdrug]        = as.numeric(res.list$model_summary[7])
+		solid.sample.size[ksigmoid, kdrug]      = nrow(Ys)
+		solid.in_sample_R2.mat[ksigmoid, kdrug] = recall
+		solid.avg_CV_R2.mat[ksigmoid, kdrug]    = precision
+		solid.F1_R2.mat[ksigmoid, kdrug]        = as.numeric(res.list$model_summary[7])
 	}
 	cat(ksigmoid, ".", sep="")
 }
 
-save(all.mat, all.sample.size, all.in_sample_R2.mat, all.avg_CV_R2.mat, all.F1_R2.mat, file="CCLE.S.info.RData")
+save(solid.mat, solid.sample.size, solid.in_sample_R2.mat, solid.avg_CV_R2.mat, solid.F1_R2.mat, file="CCLE.S.info.RData")
 
 ############################################################################################
 
 pdf("CCLE.S.ROC.pdf", width=5, height=5)
 for(k in 1:length(drugs)){
 	drug = drugs[k]
-	plot(x=all.in_sample_R2.mat[,k], y=all.avg_CV_R2.mat[,k], main=drugs[k], xlab="Self in_sample PCC", ylab="avg PCC (in_sample)", col=rep("blue",200), pch=20, cex=.6 )
-	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
+	plot(x=solid.in_sample_R2.mat[,k], y=solid.avg_CV_R2.mat[,k], main=drugs[k], xlab="Self in_sample PCC", ylab="avg PCC (in_sample)", col=rep("blue",200), pch=20, cex=.6 )
+	tmp = cbind(idx = c(1:100), solid.F1_R2.mat[, drug], solid.in_sample_R2.mat[, drug], solid.avg_CV_R2.mat[, drug] )
 	tmp = tmp[order(tmp[,4], decreasing=T),]
 	idx = tmp[1:10,1]
-	points(all.in_sample_R2.mat[idx,k], all.avg_CV_R2.mat[idx,k], pch=4, col="red")
+	points(solid.in_sample_R2.mat[idx,k], solid.avg_CV_R2.mat[idx,k], pch=4, col="red")
 }
 dev.off()
 
@@ -61,12 +61,12 @@ dev.off()
 ############################################################################################
 
 TCGA.pred.mat = c()
-all.model_summary = c()
+solid.model_summary = c()
 holdout.R2 = c()
 for(k in 1:length(drugs)){
 	drug = drugs[k]
 	
-	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
+	tmp = cbind(idx = c(1:100), solid.F1_R2.mat[, drug], solid.in_sample_R2.mat[, drug], solid.avg_CV_R2.mat[, drug] )
 	tmp = tmp[order(tmp[,4], decreasing=T),] ### avg_CV_R2
 	holdout.R2 = rbind(holdout.R2, c(drug, tmp[1,4]) )
 	
@@ -100,7 +100,7 @@ for(kdrug in 1:length(drugs)){
 	if(drug == "X17.AAG")drug = "17-AAG"
 	gsub("\\.", "-", drug) -> drug
 	
-	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
+	tmp = cbind(idx = c(1:100), solid.F1_R2.mat[, drug], solid.in_sample_R2.mat[, drug], solid.avg_CV_R2.mat[, drug] )
 	tmp = tmp[order(tmp[,4], decreasing=T),]
 	
 	pred.mat = c()
@@ -126,7 +126,7 @@ CCLE.pred.full.mat = c()
 for(k in 1:length(drugs)){
 	drug = drugs[k]
 	
-	tmp = cbind(idx = c(1:100), all.F1_R2.mat[, drug], all.in_sample_R2.mat[, drug], all.avg_CV_R2.mat[, drug] )
+	tmp = cbind(idx = c(1:100), solid.F1_R2.mat[, drug], solid.in_sample_R2.mat[, drug], solid.avg_CV_R2.mat[, drug] )
 	tmp = tmp[order(tmp[,4], decreasing=T),]
 	
 	pred.mat = c()
@@ -139,8 +139,9 @@ for(k in 1:length(drugs)){
 	CCLE.latent.data = CCLE.latent[,-1]
 	fit <- res.list$model
 	CCLE.probabilities = predict(fit, as.matrix(CCLE.latent.data), s = 'lambda.min')
+	pred.mat = cbind(pred.mat, scale(CCLE.probabilities))
 	
-	CCLE.pred.full.mat = cbind(CCLE.pred.full.mat, CCLE.probabilities)
+	CCLE.pred.full.mat = cbind(CCLE.pred.full.mat, pred.mat)
 	cat(drug, ".", sep="")
 }
 
