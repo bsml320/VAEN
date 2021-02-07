@@ -1,7 +1,7 @@
-setwd("/path/to/VAEN/Figure/Figure5/GSE25055")
+setwd("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/Figure/Figure5/GSE25055")
 
 ### key genes
-cur.genes = read.table("/path/to/VAEN/result/key.genes.txt", as.is=T)
+cur.genes = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result/key.genes.txt", as.is=T)
 cur.genes = cur.genes[,1]
 
 load("GSE25055.RData")
@@ -28,6 +28,7 @@ rank.GSE25055.gene.mat = apply(rank.GSE25055.gene.mat, 1, function(u){
 })
 
 scaled.GSE25055.gene.mat = apply(rank.GSE25055.gene.mat, 2, function(u){qnorm(u)} )
+scaled.GSE20194.gene.mat[, which(is.na(ii))] = 0
 
 ##########################################################################
 write.table(t(scaled.GSE25055.gene.mat), file=paste("GSE25055.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
@@ -35,38 +36,58 @@ write.table(t(scaled.GSE25055.gene.mat), file=paste("GSE25055.RANK.tsv", sep="")
 
 ##########################################################################
 ##########################################################################
+library("Matrix")
+library("glmnet")
 
-load("/path/to/VAEN/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
+load("../../../result.EN/dr.CCLE/dr.CCLE.A.models.RData")
 drug = "Paclitaxel"
 res.list = dr.ccle.models[[drug]]
 fit <- res.list$model
 best.index = res.list[[ "best_index" ]]
+print(best.index)
 
 #cmd = paste("python3 GSE25055.predict_VAE.py ", k, sep="")
 #system(cmd)
 
-GSE25055.pred = read.table(paste(best.index, ".GSE25055.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE25055.pred = read.table(paste("result/",best.index, ".GSE25055.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 GSE25055.probabilities = predict(fit, as.matrix(GSE25055.pred[,-1]), s = 'lambda.min')
 GSE25055.pred.mat = cbind(GSE25055.pred[,1], GSE25055.probabilities)
 colnames(GSE25055.pred.mat) = c("Sample", drug)
 
 write.table(GSE25055.pred.mat, file=paste("CCLE.A.pred_GSE25055.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 
+############################################################
+ccle = read.table("CCLE.A.pred_GSE25055.txt", as.is=T, header=T)
+load("GSE25055.RData")
+
+### all
+dat = data.frame(cbind(Response = ccle[, "Paclitaxel"], pCR=pheno.anno[,"characteristics_ch1.21"]))
+dat[,1] = as.numeric(as.character(dat[,1]))
+t.test(dat[,1] ~ dat[,2])
+
 ##########################################################################
 ##########################################################################
 
-load("/path/to/VAEN/result.EN/dr.GDSC/dr.GDSC.A.models.RData")
-drug = "Erlotinib"
+load("../../../result.EN/dr.GDSC/dr.GDSC.A.models.RData")
+drug = "Paclitaxel"
 res.list = dr.gdsc.models[[drug]]
 fit <- res.list$model
 best.index = res.list[[ "best_index" ]]
+best.index
 
 #cmd = paste("python3 GSE25055.predict_VAE.py ", k, sep="")
 #system(cmd)
 
-GSE25055.pred = read.table(paste(best.index, ".GSE25055.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE25055.pred = read.table(paste("result/",best.index, ".GSE25055.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 GSE25055.probabilities = predict(fit, as.matrix(GSE25055.pred[,-1]), s = 'lambda.min')
 GSE25055.pred.mat = cbind(GSE25055.pred[,1], GSE25055.probabilities)
 colnames(GSE25055.pred.mat) = c("Sample", drug)
 
 write.table(GSE25055.pred.mat, file=paste("GDSC.A.pred_GSE25055.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
+############################################################
+gdsc = read.table("GDSC.A.pred_GSE25055.txt", as.is=T, header=T)
+
+### all
+dat = data.frame(cbind(Response = gdsc[, "Paclitaxel"], pCR=pheno.anno[,"characteristics_ch1.21"]))
+dat[,1] = as.numeric(as.character(dat[,1]))
+t.test(dat[,1] ~ dat[,2])
