@@ -128,8 +128,6 @@ for(k in 1:length(drugs)){
 	
 	tmp = cbind(idx = c(1:100), solid.F1_R2.mat[, drug], solid.in_sample_R2.mat[, drug], solid.avg_CV_R2.mat[, drug] )
 	tmp = tmp[order(tmp[,4], decreasing=T),]
-	
-	pred.mat = c()
 	best.index = tmp[1,1]
 	
 	load( paste("01S/", best.index ,".CCLE.model.list.S.RData", sep="") )
