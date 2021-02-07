@@ -1,20 +1,20 @@
-setwd("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01/MIX-F1-W5-PCC/")
+setwd("/path/to/VAEN/result.EN/dr.CCLE")
 
-library(MASS)
+library("MASS")
 library("magrittr")
 library("glmnet")
 library("modEvA")
-library(vegan)
+library("vegan")
 
 #####################################################################################
-load("D:/UTH/work/18-VAE/DATA/TCGA.ss.mat.RData")
+load("../../DATA/TCGA.ss.mat.RData")
 #####################################################################################
-anno = read.csv("D:/UTH/work/18-VAE/DATA/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
+anno = read.csv("../../DATA/CCLE/CCLE_NP24.2009_Drug_data_2015.02.24.csv", as.is=T)
 drugs = sort(unique(anno$Compound))
 #####################################################################################
 
-load("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01/F1-W5-PCC/F1-W5-PCC.info.RData")
-load("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01S/F1-W5-PCC/S.F1-W5-PCC.info.RData")
+load("CCLE.A.info.RData")
+load("CCLE.S.info.RData")
 
 ############################################################################################
 solid.drugs = c("Erlotinib", "AZD0530", "PLX4720", "TKI258", "ZD.6474")
@@ -50,8 +50,8 @@ dev.off()
 
 #####################################################################################
 
-all.TCGA.pred.mat   = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01/F1-W5-PCC/F1-W5-PCC.best.pred_TCGA.txt", as.is=T, header=T)
-solid.TCGA.pred.mat = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01S/F1-W5-PCC/S.F1-W5-PCC.best.pred_TCGA.txt", as.is=T, header=T)
+all.TCGA.pred.mat   = read.table("VAEN_CCLE.A.pred_TCGA.txt", as.is=T, header=T)
+solid.TCGA.pred.mat = read.table("VAEN_CCLE.S.pred_TCGA.txt", as.is=T, header=T)
 
 TCGA.pred.mat = all.TCGA.pred.mat
 immune.cancer = c("LAML", "DLBC", "THYM")
@@ -62,12 +62,11 @@ for(k in 1:length(solid.drugs)){
 	cat("Updated ", drug, "\n", sep="")
 	TCGA.pred.mat[ii, drug] = solid.TCGA.pred.mat[ii, drug]
 }
-write.table(TCGA.pred.mat,  file=paste("MIX-F1-W5-PCC.best.pred_TCGA.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 write.table(TCGA.pred.mat,  file=paste("VAEN_CCLE.MIX.pred_TCGA.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 
 ############################################################################################
-all.CCLE.pred.mat   = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01/F1-W5-PCC/F1-W5-PCC.best.pred_CCLE.txt", as.is=T, header=T)
-solid.CCLE.pred.mat = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01S/F1-W5-PCC/S.F1-W5-PCC.best.pred_CCLE.txt", as.is=T, header=T)
+all.CCLE.pred.mat   = read.table("VAEN_CCLE.A.pred_CCLE.txt", as.is=T, header=T)
+solid.CCLE.pred.mat = read.table("VAEN_CCLE.S.pred_CCLE.txt", as.is=T, header=T)
 
 pdf("MIX-F1-W5-PCC.obsd.vs.pred.pdf", width=8, height=4)
 par(mfrow=c(1,2), cex=1, mar=c(4,4,3,1))
@@ -75,7 +74,7 @@ for(kdrug in 1:length(drugs)){
 	drug = drugs[kdrug]
 	
 	######### all
-	load( paste("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01/1.CCLE.model.list.RData", sep="") )
+	load( paste("01/1.CCLE.model.list.RData", sep="") )
 	model.list[[ drug ]] -> res.list
 	Ys = res.list$Ys
 	which(Ys[,1]!=-9) -> ii
@@ -83,7 +82,7 @@ for(kdrug in 1:length(drugs)){
 	plot(Ys[ii, 1], all.CCLE.pred.mat[ii, kdrug+1], main=paste(drug, ", all, PCC = ", format(r, digits=3), sep=""), xlab="Observed CCLE", ylab="Predicted CCLE (all)")
 	
 	######### solid
-	load( paste("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01S/1.CCLE.model.list.S.RData", sep="") )
+	load( paste("01S/1.CCLE.model.list.S.RData", sep="") )
 	model.list[[ drug ]] -> res.list
 	Ys = res.list$Ys
 	which(Ys[,1]!=-9) -> ii
@@ -96,28 +95,26 @@ dev.off()
 ############################################################################################
 ############################################################################################
 
-all.CCLE.pred.mat   = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01/F1-W5-PCC/F1-W5-PCC.best.pred_CCLE.txt", as.is=T, header=T)
-solid.CCLE.pred.mat = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01S/F1-W5-PCC/S.F1-W5-PCC.best.pred_CCLE.txt", as.is=T, header=T)
+all.CCLE.pred.mat   = read.table("VAEN_CCLE.A.pred_CCLE.txt", as.is=T, header=T)
+solid.CCLE.pred.mat = read.table("VAEN_CCLE.S.pred_CCLE.txt", as.is=T, header=T)
 
 CCLE.pred.mat = all.CCLE.pred.mat
 for(k in 1:length(solid.drugs)){
 	drug = solid.drugs[k]
 	CCLE.pred.mat[, drug] = solid.CCLE.pred.mat[, drug]
 }
-write.table(CCLE.pred.mat,  file=paste("MIX-F1-W5-PCC.best.pred_CCLE.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 write.table(CCLE.pred.mat,  file=paste("VAEN_CCLE.MIX.pred_CCLE.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 
 ############################################################################################
 ############################################################################################
 
 
-all.CCLE.pred.mat   = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01/F1-W5-PCC/F1-W5-PCC.best.pred_CCLE.full.txt", as.is=T, header=T)
-solid.CCLE.pred.mat = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/01S/F1-W5-PCC/S.F1-W5-PCC.best.pred_CCLE.full.txt", as.is=T, header=T)
+all.CCLE.pred.mat   = read.table("VAEN_CCLE.A.pred_CCLE.full.txt", as.is=T, header=T)
+solid.CCLE.pred.mat = read.table("VAEN_CCLE.S.pred_CCLE.full.txt", as.is=T, header=T)
 
 CCLE.pred.mat = all.CCLE.pred.mat
 for(k in 1:length(solid.drugs)){
 	drug = solid.drugs[k]
 	CCLE.pred.mat[, drug] = solid.CCLE.pred.mat[, drug]
 }
-write.table(CCLE.pred.mat,  file=paste("MIX-F1-W5-PCC.best.pred_CCLE.full.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
 write.table(CCLE.pred.mat,  file=paste("VAEN_CCLE.MIX.pred_CCLE.full.txt", sep=""), quote=F, sep="\t", row.names=FALSE)
