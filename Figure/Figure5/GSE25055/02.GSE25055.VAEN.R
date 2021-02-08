@@ -1,7 +1,7 @@
-setwd("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/Figure/Figure5/GSE25055")
+setwd("/path/to/VAEN/result.EN/dr.CCLE/GitHub/Figure/Figure5/GSE25055")
 
 ### key genes
-cur.genes = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result/key.genes.txt", as.is=T)
+cur.genes = read.table("/path/to/VAEN/result/key.genes.txt", as.is=T)
 cur.genes = cur.genes[,1]
 
 load("GSE25055.RData")
