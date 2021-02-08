@@ -28,7 +28,7 @@ rank.GSE25055.gene.mat = apply(rank.GSE25055.gene.mat, 1, function(u){
 })
 
 scaled.GSE25055.gene.mat = apply(rank.GSE25055.gene.mat, 2, function(u){qnorm(u)} )
-
+scaled.GSE20194.gene.mat[, which(is.na(ii))] = 0
 ##########################################################################
 write.table(t(scaled.GSE25055.gene.mat), file=paste("GSE25055.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
 ##########################################################################
