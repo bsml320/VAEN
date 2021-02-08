@@ -47,7 +47,7 @@ print(best.index)
 
 ##########################################################################
 # Go to a shell, and run VAE.prediction.py using best.index obtained above
-# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> <D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result/>
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
