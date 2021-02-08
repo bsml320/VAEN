@@ -38,7 +38,7 @@ write.table(scaled.GSE20194.gene.mat, file=paste("GSE20194.RANK.tsv", sep=""), r
 library("Matrix")
 library("glmnet")
 
-load("/path/to/VAEN/result.EN/dr.CCLE/GitHub/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
+load("/path/to/VAEN/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
 drug = "Paclitaxel"
 res.list = dr.ccle.models[[drug]]
 fit <- res.list$model
