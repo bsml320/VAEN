@@ -30,7 +30,8 @@ rank.GSE25055.gene.mat = apply(rank.GSE25055.gene.mat, 1, function(u){
 scaled.GSE25055.gene.mat = apply(rank.GSE25055.gene.mat, 2, function(u){qnorm(u)} )
 scaled.GSE25055.gene.mat[, which(is.na(ii))] = 0
 ##########################################################################
-write.table(t(scaled.GSE25055.gene.mat), file=paste("GSE25055.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
+write.table(t(scaled.GSE25055.gene.mat), file=paste("GSE25055.RANK.T.tsv", sep=""), row.names=T, quote=F, sep="\t")
+write.table(scaled.GSE25055.gene.mat, file=paste("GSE25055.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
 ##########################################################################
 
 ##########################################################################
@@ -83,7 +84,7 @@ print(best.index)
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE25055.pred = read.table(paste("result/",best.index, ".GSE25055.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE25055.pred = read.table("GSE25055.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE25055.probabilities = predict(fit, as.matrix(GSE25055.pred[,-1]), s = 'lambda.min')
 GSE25055.pred.mat = cbind(GSE25055.pred[,1], GSE25055.probabilities)
 colnames(GSE25055.pred.mat) = c("Sample", drug)
