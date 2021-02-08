@@ -13,12 +13,12 @@ ccle = read.table("CCLE.A.pred_GSE25055.txt", as.is=T, header=T)
 
 ### all
 dat = data.frame(cbind(Response = ccle[, "Paclitaxel"], pCR=pheno.anno[,"characteristics_ch1.21"]))
-dat[,1] = as.numeric(as.character(dat[,1]))
+#dat[,1] = as.numeric(as.character(dat[,1]))
 t.test(dat[,1] ~ dat[,2])
 
-dat[which(dat[,2]=="dlda30_prediction: pCR"),2] = "pCR"
-dat[which(dat[,2]=="dlda30_prediction: RD"),2] = "RD"
-dat[,2] <- factor(dat[,2], levels = c("RD", "pCR"))
+# dat[which(dat[,2]=="dlda30_prediction: pCR"),2] = "pCR"
+# dat[which(dat[,2]=="dlda30_prediction: RD"),2] = "RD"
+# dat[,2] <- factor(dat[,2], levels = c("RD", "pCR"))
 
 pvalue = t.test(dat[,1] ~ dat[,2])$p.value
 
@@ -32,12 +32,12 @@ gdsc = read.delim("GDSC.A.pred_GSE25055.txt", as.is=T)
 
 ### all
 dat = data.frame(cbind(Response = gdsc[, "Paclitaxel"], pCR=pheno.anno[,"characteristics_ch1.21"]))
-dat[,1] = as.numeric(as.character(dat[,1]))
+#dat[,1] = as.numeric(as.character(dat[,1]))
 t.test(dat[,1] ~ dat[,2])
 
-dat[which(dat[,2]=="dlda30_prediction: pCR"),2] = "pCR"
-dat[which(dat[,2]=="dlda30_prediction: RD"),2] = "RD"
-dat[,2] <- factor(dat[,2], levels = c("RD", "pCR"))
+# dat[which(dat[,2]=="dlda30_prediction: pCR"),2] = "pCR"
+# dat[which(dat[,2]=="dlda30_prediction: RD"),2] = "RD"
+# dat[,2] <- factor(dat[,2], levels = c("RD", "pCR"))
 
 pvalue = t.test(dat[,1] ~ dat[,2])$p.value
 
