@@ -20,7 +20,8 @@ rank.GSE32989.gene.mat = apply(rank.GSE32989.gene.mat, 1, function(u){
 })
 
 scaled.GSE32989.gene.mat = apply(rank.GSE32989.gene.mat, 2, function(u){qnorm(u)} )
-write.table(t(scaled.GSE32989.gene.mat), file=paste("GSE32989.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
+write.table(t(scaled.GSE32989.gene.mat), file=paste("GSE32989.RANK.T.tsv", sep=""), row.names=T, quote=F, sep="\t")
+write.table(scaled.GSE32989.gene.mat, file=paste("GSE32989.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")			       
 
 ##########################################################################
 ##########################################################################
@@ -38,7 +39,7 @@ print(best.index)
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE32989.pred = read.table(paste("result/", best.index, ".GSE32989.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE32989.pred = read.table("GSE32989.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE32989.probabilities = predict(fit, as.matrix(GSE32989.pred[,-1]), s = 'lambda.min')
 GSE32989.pred.mat = cbind(GSE32989.pred[,1], GSE32989.probabilities)
 colnames(GSE32989.pred.mat) = c("Sample", drug)
@@ -61,7 +62,7 @@ print(best.index)
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE32989.pred = read.table(paste("result/", best.index, ".GSE32989.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE32989.pred = read.table("GSE32989.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE32989.probabilities = predict(fit, as.matrix(GSE32989.pred[,-1]), s = 'lambda.min')
 GSE32989.pred.mat = cbind(Sample=GSE32989.pred[,1], GSE32989.probabilities)
 colnames(GSE32989.pred.mat) = c("Sample", drug)
@@ -76,11 +77,14 @@ drug = "Erlotinib"
 res.list = dr.gdsc.models[[drug]]
 fit <- res.list$model
 best.index = res.list[[ "best_index" ]]
+print(best.index)
+##########################################################################
+# Go to a shell, and run VAE.prediction.py using best.index obtained above
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
+##########################################################################
 
-#cmd = paste("python3 GSE32989.predict_VAE.py ", k, sep="")
-#system(cmd)
-
-GSE32989.pred = read.table(paste("result/", best.index, ".GSE32989.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE32989.pred = read.table("GSE32989.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE32989.probabilities = predict(fit, as.matrix(GSE32989.pred[,-1]), s = 'lambda.min')
 GSE32989.pred.mat = cbind(GSE32989.pred[,1], GSE32989.probabilities)
 colnames(GSE32989.pred.mat) = c("Sample", drug)
@@ -96,10 +100,14 @@ res.list = dr.gdsc.models[[drug]]
 best.index = res.list[[ "best_index" ]]
 fit <- res.list$model
 
-#cmd = paste("python3 GSE32989.predict_VAE.py ", k, sep="")
-#system(cmd)
+print(best.index)
+##########################################################################
+# Go to a shell, and run VAE.prediction.py using best.index obtained above
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
+##########################################################################
 
-GSE32989.pred = read.table(paste("result/", best.index, ".GSE32989.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE32989.pred = read.table("GSE32989.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE32989.probabilities = predict(fit, as.matrix(GSE32989.pred[,-1]), s = 'lambda.min')
 GSE32989.pred.mat = cbind(Sample=GSE32989.pred[,1], GSE32989.probabilities)
 colnames(GSE32989.pred.mat) = c("Sample", drug)
