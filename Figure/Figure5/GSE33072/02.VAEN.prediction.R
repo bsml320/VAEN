@@ -37,8 +37,11 @@ best.index = res.list[[ "best_index" ]]
 fit <- res.list$model
 print(best.index)
 
-#cmd = paste("python3 GSE33072.predict_VAE.py ", k, sep="")
-#system(cmd)
+##########################################################################
+# Go to a shell, and run VAE.prediction.py using best.index obtained above
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
+##########################################################################
 
 GSE33072.pred = read.table(paste(best.index, ".GSE33072.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 GSE33072.probabilities = predict(fit, as.matrix(GSE33072.pred[,-1]), s = 'lambda.min')
@@ -55,8 +58,11 @@ best.index = res.list[[ "best_index" ]]
 fit <- res.list$model
 print(best.index)
 
-#cmd = paste("python3 GSE33072.predict_VAE.py ", k, sep="")
-#system(cmd)
+##########################################################################
+# Go to a shell, and run VAE.prediction.py using best.index obtained above
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
+##########################################################################
 
 GSE33072.pred = read.table(paste(best.index, ".GSE33072.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 GSE33072.probabilities = predict(fit, as.matrix(GSE33072.pred[,-1]), s = 'lambda.min')
