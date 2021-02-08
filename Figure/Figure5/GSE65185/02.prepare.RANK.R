@@ -1,8 +1,8 @@
 setwd("/path/to/VAEN/Figure/Figure5/GSE65185")
 
 ### transcriptome data
-CCLE.latent = read.table("/data1_2/jiap/projects/18-CCLE-VAE/new/V15.2/NOPEER.RANK.Sigmoid/V15.CCLE.4VAE.RANK.tsv", header=T, as.is=T)
-cur.genes = colnames(CCLE.latent)
+cur.genes = read.table("../../../result/key.genes.txt", as.is=T)
+cur.genes = cur.genes[,1]
 
 val.RPKM = read.table("GSE65185_CuffnormFPKM.txt", header=T, as.is=T)
 
