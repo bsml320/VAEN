@@ -51,7 +51,7 @@ print(best.index)
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE20194.pred =read.table(paste("result/", best.index, ".GSE20194.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE20194.pred =read.table("GSE20194.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE20194.probabilities = predict(fit, as.matrix(GSE20194.pred[,-1]), s = 'lambda.min')
 GSE20194.pred.mat = cbind(GSE20194.pred[,1], GSE20194.probabilities)
 colnames(GSE20194.pred.mat) = c("Sample", drug)
@@ -95,19 +95,20 @@ print(p5)
 ##########################################################################
 ##########################################################################
 
-load("/path/to/VAEN/result.EN/dr.CCLE/GitHub/result.EN/dr.GDSC/dr.GDSC.A.models.RData")
+load("/path/to/VAEN/result.EN/dr.GDSC/dr.GDSC.A.models.RData")
 drug = "Paclitaxel"
 res.list = dr.gdsc.models[[drug]]
 fit <- res.list$model
 best.index = res.list[[ "best_index" ]]
+print(best.index)			       
 
 ##########################################################################
 # Go to a shell, and run VAE.prediction.py using best.index obtained above
-# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> <D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result/>
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result.EN/dr.CCLE/GitHub/result/>
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE20194.pred =read.table(paste("result/", best.index, ".GSE20194.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE20194.pred =read.table("GSE20194.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE20194.probabilities = predict(fit, as.matrix(GSE20194.pred[,-1]), s = 'lambda.min')
 GSE20194.pred.mat = cbind(GSE20194.pred[,1], GSE20194.probabilities)
 colnames(GSE20194.pred.mat) = c("Sample", drug)
@@ -126,6 +127,7 @@ dat[,2] <- factor(dat[,2], levels = c("RD", "pCR"))
 
 pvalue = t.test(dat[,1] ~ dat[,2])$p.value
 
+library("ggplot2")
 p6 = ggplot(dat, aes(x=pCR, y=Response, fill=pCR)) + geom_boxplot() + 
      labs(title=paste("GSE20194, GDSC\n", "p = ", format(pvalue, digits=3)), x="pCR Status", y = "Predicted Response to Paclitaxel") +
 	 theme(legend.position = "none", plot.title = element_text(hjust=0.5)) +
@@ -134,7 +136,7 @@ p6 = ggplot(dat, aes(x=pCR, y=Response, fill=pCR)) + geom_boxplot() +
 print(p6)
 
 
-
+source("../../../code/multiplot.R")
 pdf("5G.3.CCLE.Paclitaxel.sensitive.ggplot.pdf", width=6, height=6)
 multiplot(plotlist=list(p5,p6), layout=matrix(1:2, nrow=1))
 dev.off()
