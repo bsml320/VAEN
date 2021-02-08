@@ -22,8 +22,8 @@ rownames(raw.RPKM) = cur.genes
 rank.GSE25055.gene.mat = apply(raw.RPKM, 2, function(u)rank(u)/length(u))
 rank.GSE25055.gene.mat = apply(rank.GSE25055.gene.mat, 1, function(u){
 	u[which(u==1)] = 6162.5/6163
-	#min(u) -> m
-	#u[which(u==m)] = 1/6163
+	min(u) -> m
+	u[which(u==m)] = 1/6163
 	u
 })
 
