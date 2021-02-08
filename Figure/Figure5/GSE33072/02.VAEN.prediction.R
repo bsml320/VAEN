@@ -25,8 +25,6 @@ rank.GSE33072.gene.mat = apply(rank.GSE33072.gene.mat, 1, function(u){
 
 ### p to z
 scaled.GSE33072.gene.mat = apply(rank.GSE33072.gene.mat, 2, function(u){qnorm(u)} )
-scaled.GSE32646.gene.mat[, which(is.na(ii))] = 0
-
 write.table(t(scaled.GSE33072.gene.mat), file=paste("GSE33072.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
 
 ##########################################################################
