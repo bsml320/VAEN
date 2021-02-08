@@ -1,4 +1,4 @@
-setwd("/path/to/VAEN/Figure/Figure3")
+#setwd("/path/to/VAEN/Figure/Figure3")
 
 load("3EF.data.RData")
 sapply(rownames(TCGA.sensitive.mat), function(u)gsub("\\.", "-", u)) -> new.name
@@ -121,7 +121,7 @@ p <- ggplot(dat, aes(x = Cancer, y = Prop, group = grp, fill = grp)) +
   geom_bar(stat = "identity", width = 0.75) +
   coord_flip() +
   scale_x_discrete(limits = the_order) +
-  scale_y_continuous(breaks = seq(-0.4, 0.8, 0.1), labels = abs(seq(-0.4, 0.8, 0.1))) +
+  scale_y_continuous(breaks = seq(-0.5, 1, 0.1), labels = abs(seq(-0.5, 1, 0.1))) +
   xlab("") + ylab("") + ggtitle("GDSC model") + 
   theme(legend.position = c(0.9, 0.9), legend.title = element_blank(), legend.text=element_text(size=7), 
         plot.title = element_text(hjust = 0.5, size=7),
