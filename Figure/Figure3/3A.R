@@ -1,6 +1,6 @@
 ##############################################################################################################
 ### For Figure 3A
-#setwd("/path/to/VAEN/Figure/Figure3")
+setwd("/path/to/VAEN/Figure/Figure3")
 
 ### load dr.ccle.models
 load("../../result.EN/dr.CCLE/dr.CCLE.A.models.RData")
