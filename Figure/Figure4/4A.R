@@ -54,6 +54,31 @@ dat4plot.ccle[,2] <- factor(dat4plot.ccle[,2], levels = c("Negative", "Equivocal
 summary(glm(dat4plot.ccle[,1] ~ as.numeric(dat4plot.ccle[,2]))) -> sfit
 p = coef(sfit)[2, 4]
 
+#> print(sfit)
+#
+#Call:
+#glm(formula = dat4plot.ccle[, 1] ~ as.numeric(dat4plot.ccle[, 
+#    2]))
+#
+#Deviance Residuals: 
+#     Min        1Q    Median        3Q       Max  
+#-0.98708  -0.11637   0.00865   0.12506   0.61310  
+#
+#Coefficients:
+#                               Estimate Std. Error t value Pr(>|t|)    
+#(Intercept)                    1.486556   0.014168 104.927   <2e-16 ***
+#as.numeric(dat4plot.ccle[, 2]) 0.074649   0.008121   9.192   <2e-16 ***
+#---
+#Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#
+#(Dispersion parameter for gaussian family taken to be 0.03634106)
+#
+#    Null deviance: 35.886  on 904  degrees of freedom
+#Residual deviance: 32.816  on 903  degrees of freedom
+#AIC: -427.62
+#
+#Number of Fisher Scoring iterations: 2
+
 p1 = ggplot(dat4plot.ccle, aes(x=X, y=Lapatinib, fill=X)) +  geom_boxplot(outlier.shape = NA) + 
   geom_jitter(shape=21, position = position_jitter(width = 0.3), size=0.5) + guides(colour=FALSE) +
   theme(axis.title.x=element_blank(), legend.title = element_blank() ) + 
@@ -112,6 +137,33 @@ dat4plot.gdsc[,2] <- factor(dat4plot.gdsc[,2], levels = c("Negative", "Equivocal
 
 summary(glm(dat4plot.gdsc[,1] ~ as.numeric(dat4plot.gdsc[,2]))) -> sfit
 p = coef(sfit)[2, 4]
+
+
+print(sfit)
+#> print(sfit)
+#
+#Call:
+#glm(formula = dat4plot.gdsc[, 1] ~ as.numeric(dat4plot.gdsc[, 
+#    2]))
+#
+#Deviance Residuals: 
+#     Min        1Q    Median        3Q       Max  
+#-1.57146  -0.21490   0.04283   0.25637   1.03240  
+#
+#Coefficients:
+#                               Estimate Std. Error t value Pr(>|t|)    
+#(Intercept)                    -1.68183    0.02786 -60.375  < 2e-16 ***
+#as.numeric(dat4plot.gdsc[, 2])  0.09614    0.01597   6.021 2.52e-09 ***
+#---
+#Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#
+#(Dispersion parameter for gaussian family taken to be 0.1404964)
+#
+#    Null deviance: 131.96  on 904  degrees of freedom
+#Residual deviance: 126.87  on 903  degrees of freedom
+#AIC: 796.15
+#
+#Number of Fisher Scoring iterations: 2
 
 p2 = ggplot(dat4plot.gdsc, aes(x=X, y=Lapatinib, fill=X)) +  geom_boxplot(outlier.shape = NA) + 
   geom_jitter(shape=21, position = position_jitter(width = 0.3), size=0.5) + guides(colour=FALSE) +
