@@ -31,15 +31,16 @@ print(dim(scaled.GSE65185.gene.mat))
 
 ##########################################################################
 ### dataset for NOPEER.NO01.Sigmoid
-write.table(t(scaled.GSE65185.gene.mat), file=paste("GSE65185.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
+write.table(t(scaled.GSE65185.gene.mat), file=paste("GSE65185.RANK.T.tsv", sep=""), row.names=T, quote=F, sep="\t")
+write.table(scaled.GSE65185.gene.mat, file=paste("GSE65185.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
 ##########################################################################
 
 ##########################################################################
 
-for(k in 1:100){
-	cmd = paste("python3 GSE65185.predict_VAE.py ", k, sep="")
-	system(cmd)
-}
+## for(k in 1:100){
+##	cmd = paste("python3 GSE65185.predict_VAE.py ", k, sep="")
+##	system(cmd)
+## }
 
 
 ##########################################################################
@@ -58,7 +59,7 @@ print(best.index)
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE65185.pred = read.table(paste("result/", best.index, ".GSE65185.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE65185.pred = read.table("GSE65185.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE65185.probabilities = predict(fit, as.matrix(GSE65185.pred[,-1]), s = 'lambda.min')
 GSE65185.pred.mat = cbind(Sample=GSE65185.pred[,1], GSE65185.probabilities)
 colnames(GSE65185.pred.mat) = c("Sample", drug)
@@ -83,7 +84,7 @@ print(best.index)
 # After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
 ##########################################################################
 
-GSE65185.pred = read.table(paste("result/", best.index, ".GSE65185.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
+GSE65185.pred = read.table("GSE65185.RANK.latent.tsv", header=T, sep="\t", as.is=T)
 GSE65185.probabilities = predict(fit, as.matrix(GSE65185.pred[,-1]), s = 'lambda.min')
 GSE65185.pred.mat = cbind(GSE65185.pred[,1], GSE65185.probabilities)
 colnames(GSE65185.pred.mat) = c("Sample", drug)
