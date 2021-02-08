@@ -30,10 +30,13 @@ drug = "Erlotinib"
 res.list = dr.ccle.models[[drug]]
 fit <- res.list$model
 best.index = res.list[[ "best_index" ]]
-best.index
+print(best.index)
 
-#cmd = paste("python3 GSE32989.predict_VAE.py ", k, sep="")
-#system(cmd)
+##########################################################################
+# Go to a shell, and run VAE.prediction.py using best.index obtained above
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
+##########################################################################
 
 GSE32989.pred = read.table(paste("result/", best.index, ".GSE32989.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 GSE32989.probabilities = predict(fit, as.matrix(GSE32989.pred[,-1]), s = 'lambda.min')
@@ -50,8 +53,13 @@ res.list = dr.ccle.models[[drug]]
 best.index = res.list[[ "best_index" ]]
 fit <- res.list$model
 
-#cmd = paste("python3 GSE32989.predict_VAE.py ", k, sep="")
-#system(cmd)
+print(best.index)
+
+##########################################################################
+# Go to a shell, and run VAE.prediction.py using best.index obtained above
+# python3 VAE.prediction.py <best.index> <path/to/GSE20194.RANK.tsv> </path/to/VAEN/result/>
+# After finish the above python code, a new file will be generated: GSE20194.RANK.<best.index>.latent.tsv
+##########################################################################
 
 GSE32989.pred = read.table(paste("result/", best.index, ".GSE32989.latent.tsv", sep=""), header=T, sep="\t", as.is=T)
 GSE32989.probabilities = predict(fit, as.matrix(GSE32989.pred[,-1]), s = 'lambda.min')
