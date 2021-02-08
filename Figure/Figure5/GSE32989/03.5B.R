@@ -1,4 +1,4 @@
-#setwd("/path/to/GitHub/Figure/Figure5/GSE33072")
+#setwd("/path/to/GitHub/Figure/Figure5/GSE32989")
 library(gplots)
 
 EMT = read.table("EMT.txt", as.is=T)
