@@ -4,35 +4,36 @@ setwd("/path/to/VAEN/Figure/Figure5/GSE65185")
 CCLE.latent = read.table("/data1_2/jiap/projects/18-CCLE-VAE/new/V15.2/NOPEER.RANK.Sigmoid/V15.CCLE.4VAE.RANK.tsv", header=T, as.is=T)
 cur.genes = colnames(CCLE.latent)
 
-load("GSE65185.RData")
-val.RPKM = expr.mat
+val.RPKM = read.table("GSE65185_CuffnormFPKM.txt", header=T, as.is=T)
 
-match(cur.genes, rownames(val.RPKM)) -> ii
-
+match(cur.genes, val.RPKM[,1]) -> ii
 
 #> summary(ii)
 #   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's
-#      3    4806    9911   10669   17924   23305     162
+#      4    5276   12183   12188   19338   25266      52
 
 
-new.RPKM = val.RPKM[ii, ]
+new.RPKM = val.RPKM[ii, -1]
 apply(new.RPKM, 2, function(u){u[is.na(u)] = 0; u} ) -> raw.RPKM
 rownames(raw.RPKM) = cur.genes
 
+log2.raw.RPKM = log2(raw.RPKM + 1)
 
 ### scale to z, per-sample
-rank.GSE65185.gene.mat = apply(raw.RPKM, 2, function(u)rank(u)/length(u))
+rank.GSE65185.gene.mat = apply(log2.raw.RPKM, 2, function(u)rank(u)/length(u))
 rank.GSE65185.gene.mat = apply(rank.GSE65185.gene.mat, 1, function(u){
 	u[which(u==1)] = 6162.5/6163
-	#min(u) -> m
-	#u[which(u==m)] = 1/6163
 	u
 })
 
 scaled.GSE65185.gene.mat = apply(rank.GSE65185.gene.mat, 2, function(u){qnorm(u)} )
 print(dim(scaled.GSE65185.gene.mat))
 
+##########################################################################
+### dataset for NOPEER.NO01.Sigmoid
 write.table(t(scaled.GSE65185.gene.mat), file=paste("GSE65185.RANK.tsv", sep=""), row.names=T, quote=F, sep="\t")
+##########################################################################
+
 ##########################################################################
 
 for(k in 1:100){
