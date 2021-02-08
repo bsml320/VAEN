@@ -1,7 +1,7 @@
-setwd("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/Figure/Figure5/GSE20194")
+setwd("/path/to/VAEN/Figure/Figure5/GSE20194")
 
 ### key genes
-cur.genes = read.table("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result/key.genes.txt", as.is=T)
+cur.genes = read.table("/path/to/VAEN/result/key.genes.txt", as.is=T)
 cur.genes = cur.genes[,1]
 
 ###
@@ -38,7 +38,7 @@ write.table(scaled.GSE20194.gene.mat, file=paste("GSE20194.RANK.tsv", sep=""), r
 library("Matrix")
 library("glmnet")
 
-load("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
+load("/path/to/VAEN/result.EN/dr.CCLE/GitHub/result.EN/dr.CCLE/dr.CCLE.A.models.RData")
 drug = "Paclitaxel"
 res.list = dr.ccle.models[[drug]]
 fit <- res.list$model
@@ -95,7 +95,7 @@ print(p5)
 ##########################################################################
 ##########################################################################
 
-load("D:/UTH/work/18-VAE/V15.2/NOPEER.RANK.Sigmoid/result.EN/dr.CCLE/GitHub/result.EN/dr.GDSC/dr.GDSC.A.models.RData")
+load("/path/to/VAEN/result.EN/dr.CCLE/GitHub/result.EN/dr.GDSC/dr.GDSC.A.models.RData")
 drug = "Paclitaxel"
 res.list = dr.gdsc.models[[drug]]
 fit <- res.list$model
