@@ -1,6 +1,6 @@
 #setwd("/path/to/GitHub/Figure/Figure5/GSE32989")
 library(gplots)
-library(“ggplot2”)
+library("ggplot2")
 
 EMT = read.table("EMT.txt", as.is=T)
 EMT = unique(EMT[,1])
