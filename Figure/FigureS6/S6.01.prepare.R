@@ -53,7 +53,6 @@ for(gene in genes){
 		dr.BRAF = rbind(dr.BRAF, cbind(drug=drug, dr=Y, mutation=ifelse(names(Y) %in% MT.ss, 1, 0), grp="obsd" ) )
 	}
 
-
 	###################################################################################################
 	sapply(ccle.pred[,1], function(u){
 		strsplit(u, split="\\.")[[1]] -> v; 
@@ -65,7 +64,6 @@ for(gene in genes){
 
 	pred.mut.mat = mut.mat[mut.mat[, "Broad_ID"] %in% ccle.pred.ss, ]
 	### observed
-	#gene = "BRAF"
 	gene.mutation = pred.mut.mat[pred.mut.mat[,1]==gene, ]
 	MT.ss = unique(gene.mutation[, "Broad_ID"])
 	if(length(MT.ss) < 5)next
@@ -91,7 +89,6 @@ for(gene in genes){
 	pred.full.mut.mat = mut.mat[mut.mat[, "Broad_ID"] %in% ccle.pred.ss, ]
 
 	### observed
-	#gene = "BRAF"
 	gene.mutation = pred.full.mut.mat[pred.full.mut.mat[,1]==gene, ]
 	MT.ss = unique(gene.mutation[, "Broad_ID"])
 	
