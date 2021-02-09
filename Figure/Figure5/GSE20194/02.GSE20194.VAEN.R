@@ -87,8 +87,8 @@ pvalue = t.test(dat[,1] ~ dat[,2])$p.value
 
 p5 = ggplot(dat, aes(x=pCR, y=Response, fill=pCR)) + geom_boxplot() + 
      labs(title=paste("GSE20194, CCLE\n", "p = ", format(pvalue, digits=3)), x="pCR Status", y = "Predicted Response to Paclitaxel") +
-	 theme(legend.position = "none", plot.title = element_text(hjust=0.5)) +
-	 stat_summary(fun.data = give.n, geom = "text")
+     theme(legend.position = "none", plot.title = element_text(hjust=0.5)) +
+     stat_summary(fun.data = give.n, geom = "text")
 
 print(p5)
 
@@ -130,8 +130,8 @@ pvalue = t.test(dat[,1] ~ dat[,2])$p.value
 library("ggplot2")
 p6 = ggplot(dat, aes(x=pCR, y=Response, fill=pCR)) + geom_boxplot() + 
      labs(title=paste("GSE20194, GDSC\n", "p = ", format(pvalue, digits=3)), x="pCR Status", y = "Predicted Response to Paclitaxel") +
-	 theme(legend.position = "none", plot.title = element_text(hjust=0.5)) +
-	 stat_summary(fun.data = give.n, geom = "text")
+     theme(legend.position = "none", plot.title = element_text(hjust=0.5)) +
+     stat_summary(fun.data = give.n, geom = "text")
 
 print(p6)
 
