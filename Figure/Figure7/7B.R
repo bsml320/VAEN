@@ -6,7 +6,6 @@ dSNP.gene.drug.limma.mat = read.table("Figure7A.txt", as.is=T, header=T)
 dSNP.sig = read.delim("Figure7B.txt", as.is=T)
 
 drugs = unique(dSNP.gene.drug.limma.mat[,3])
-drugs = setdiff(drugs, "LBW242")
 
 #####################
 table(dSNP.sig[,2]) -> count

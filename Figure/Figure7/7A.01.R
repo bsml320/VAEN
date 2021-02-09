@@ -1,4 +1,4 @@
-setwd("/path/to/VAEN/Figure/Figure7")
+#setwd("/path/to/VAEN/Figure/Figure7")
 
 ################## prepare cancer mutations
 
@@ -84,8 +84,7 @@ for(ct in 1:length(cancer.types)){
 	if(cancer == "LAML"){ type.code = "03" }
 	if(cancer == "SKCM"){ type.code = "06" }
 	
-	blca.ccle = drug.ccle[which(drug.ccle[,2] == cancer & sample.type == type.code), ]
-	blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
+	blca.ccle = drug.ccle[match(fixed.ss, drug.ccle[,1]),]
 	apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
 	
 	tapply(new.mut.mat.3cols[,2], new.mut.mat.3cols[,1], function(u)length(unique(u))) -> gene2ss
@@ -122,10 +121,6 @@ new.mut.mat.3cols = mut.list[[ "mut_wo_indel" ]]
 fixed.ss = mut.list[[ "ss"  ]]
 gene2WT.list = mut.list[[ "gene2WT.list" ]]
 
-blca.ccle = drug.ccle[which(drug.ccle[,2] == cancer & sample.type == "01"), ]
-blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
-apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
-
 subtype = read.delim("../../DATA/LGG.subtype.TCGA.txt", as.is=T, header=T)
 ss = substr(fixed.ss, 1, 12)
 subtype[which(subtype[,9]=="coc1"),1] -> g1
@@ -146,8 +141,7 @@ for(k in 1:length(subtype.list)){
 	tapply(subtype.mut.mat[,2], subtype.mut.mat[,1], function(u)length(unique(u))) -> gene2ss
 	candidate.genes = sort(names(gene2ss[which(gene2ss >= 10)]))
 	
-	blca.ccle = drug.ccle[which(drug.ccle[,2] == "LGG" & sample.type == "01"), ]
-	blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
+	blca.ccle = drug.ccle[match(fixed.ss, drug.ccle[,1]),]
 	apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
 	print(paste(cancer, length(candidate.genes), nrow(blca.ccle), sep=" "))
 	if(length(candidate.genes) < 1)next
@@ -180,10 +174,6 @@ new.mut.mat.3cols = mut.list[[ "mut_wo_indel" ]]
 fixed.ss = mut.list[[ "ss"  ]]
 gene2WT.list = mut.list[[ "gene2WT.list" ]]
 
-blca.ccle = drug.ccle[which(drug.ccle[,2] == cancer & sample.type == "01"), ]
-blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
-apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
-
 subtype = read.delim("../../DATA/BRCA.subtype.TCGA.txt", as.is=T, header=T, sep="\t", skip=1)
 ss = substr(fixed.ss, 1, 12)
 subtype[which(subtype$PAM50.mRNA=="Basal-like"),1] -> g1
@@ -206,8 +196,7 @@ for(k in 1:length(subtype.list)){
 	tapply(subtype.mut.mat[,2], subtype.mut.mat[,1], function(u)length(unique(u))) -> gene2ss
 	candidate.genes = sort(names(gene2ss[which(gene2ss >= 10)]))
 	
-	blca.ccle = drug.ccle[which(drug.ccle[,2] == "BRCA" & sample.type == "01"), ]
-	blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
+	blca.ccle = drug.ccle[match(fixed.ss, drug.ccle[,1]),]
 	apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
 	print(paste(cancer, length(candidate.genes), nrow(blca.ccle), sep=" "))
 	if(length(candidate.genes) < 1)next
@@ -240,10 +229,6 @@ new.mut.mat.3cols = mut.list[[ "mut_wo_indel" ]]
 fixed.ss = mut.list[[ "ss"  ]]
 gene2WT.list = mut.list[[ "gene2WT.list" ]]
 
-blca.ccle = drug.ccle[which(drug.ccle[,2] == cancer & sample.type == "01"), ]
-blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
-apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
-
 subtype = read.delim("../../DATA/THCA.BRS.txt", as.is=T, header=F, sep="\t")
 ss = substr(subtype[,1], 1, 15)
 ss[which(subtype[,2]=="Braf-like")] -> g1
@@ -251,7 +236,6 @@ ss[which(subtype[,2]=="Ras-like")] -> g2
 subtype.list = list()
 subtype.list[["THCA-Braf-like"]] = g1
 subtype.list[["THCA-Ras-like"]] = g2
-
 
 for(k in 1:length(subtype.list)){
 	cancer = names(subtype.list)[k]
@@ -262,8 +246,7 @@ for(k in 1:length(subtype.list)){
 	tapply(subtype.mut.mat[,2], subtype.mut.mat[,1], function(u)length(unique(u))) -> gene2ss
 	candidate.genes = sort(names(gene2ss[which(gene2ss >= 10)]))
 	
-	blca.ccle = drug.ccle[which(drug.ccle[,2] == "THCA" & sample.type == "01"), ]
-	blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
+	blca.ccle = drug.ccle[match(fixed.ss, drug.ccle[,1]),]
 	apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
 	print(paste(cancer, length(candidate.genes), nrow(blca.ccle), sep=" "))
 	if(length(candidate.genes) < 1)next
@@ -295,9 +278,9 @@ colnames(gene.drug.limma.mat) = c("Cancer", "Gene", "Drug", "p.twosided", "FC", 
 
 load("../../DATA/ncbiRefSeq.01252019.hg19.gene2ll.RData")
 long.genes = names(gene2ll[gene2ll > 200000])
-
-gene.drug.limma.mat = gene.drug.limma.mat[gene.drug.limma.mat[,1] != "LGG" & gene.drug.limma.mat[,1]!="BRCA" & gene.drug.limma.mat[,1]!="THCA", ]
 gene.drug.limma.mat = gene.drug.limma.mat[!gene.drug.limma.mat[,2] %in% long.genes, ]
+gene.drug.limma.mat = gene.drug.limma.mat[!gene.drug.limma.mat[,1] %in% c("BRCA", "LGG", "THCA"), ]
+
 
 gene.drug.limma.mat[which(gene.drug.limma.mat[,3]=="X17.AAG"),3] = "17-AAG"
 gsub("\\.", "", gene.drug.limma.mat[,3]) -> new.drug
@@ -321,9 +304,7 @@ for(k in 1:length(drugs)){
 ###### *****
 
 which(gene.drug.limma.mat$adjp < 0.005 & gene.drug.limma.mat$FC > 0) -> ii.1
-pos.mat = gene.drug.limma.mat[ii.1,]
 which(gene.drug.limma.mat$adjp < 0.01 & gene.drug.limma.mat$FC < 0) -> ii.2
-neg.mat = gene.drug.limma.mat[ii.2,]
 cc = rep(0, nrow(gene.drug.limma.mat)); cc[ii.1] = 2; cc[ii.2] = 1
 gene.drug.limma.mat$color = as.factor(cc)
 

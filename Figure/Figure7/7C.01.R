@@ -50,12 +50,7 @@ for(ct in 1:length(cancer.types)){
 	gene2WT.list = mut.list[[ "gene2WT.list" ]]
 	new.mut.mat.3cols = read.table(paste("cluster/", cancer, ".dSNP.4cluster.MC3.txt", sep=""), as.is=T, header=T)
 	
-	type.code = "01"
-	if(cancer == "LAML"){type.code = "03"}
-	if(cancer == "SKCM"){type.code = "06"}
-	
-	blca.ccle = drug.ccle[which(drug.ccle[,2] == cancer & sample.type==type.code), ]
-	blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
+	blca.ccle = drug.ccle[match(fixed.ss, drug.ccle[,1]),]
 	
 	tapply(new.mut.mat.3cols$Tumor_Sample_Barcode3, new.mut.mat.3cols$Gene, function(u)length(unique(u))) -> gene2ss
 	candidate.genes = sort(names(gene2ss[which(gene2ss >= 5)]))
@@ -121,11 +116,6 @@ fixed.ss = mut.list[[ "ss"  ]]
 gene2WT.list = mut.list[[ "gene2WT.list" ]]
 new.mut.mat.3cols = read.table(paste("cluster/",cancer, ".dSNP.4cluster.MC3.txt", sep=""), as.is=T, header=T)
 
-type.code = "01"
-blca.ccle = drug.ccle[which(drug.ccle[,2] == cancer & sample.type == type.code), ]
-blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
-apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
-
 subtype = read.delim("../../DATA/LGG.subtype.TCGA.txt", as.is=T, header=T)
 ss = substr(fixed.ss, 1, 12)
 subtype[which(subtype[,9]=="coc1"),1] -> g1
@@ -143,9 +133,7 @@ for(k in 1:length(subtype.list)){
 	subtype.mut.mat = new.mut.mat.3cols[new.mut.mat.3cols.ss %in% subtype.ss, ]
 	fixed.ss = unique(subtype.mut.mat[,2])
 	
-	type.code = "01"
-	blca.ccle = drug.ccle[which(drug.ccle[,2] == "LGG" & sample.type==type.code), ]
-	blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
+	blca.ccle = drug.ccle[match(fixed.ss, drug.ccle[,1]),]
 	
 	tapply(subtype.mut.mat$Tumor_Sample_Barcode3, subtype.mut.mat$Gene, function(u)length(unique(u))) -> gene2ss
 	candidate.genes = sort(names(gene2ss[which(gene2ss >= 5)]))
@@ -211,11 +199,6 @@ fixed.ss = mut.list[[ "ss"  ]]
 gene2WT.list = mut.list[[ "gene2WT.list" ]]
 new.mut.mat.3cols = read.table(paste("cluster/",cancer, ".dSNP.4cluster.MC3.txt", sep=""), as.is=T, header=T)
 
-type.code = "01"
-blca.ccle = drug.ccle[which(drug.ccle[,2] == cancer & sample.type == type.code), ]
-blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
-apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
-
 subtype = read.delim("../../DATA/BRCA.subtype.TCGA.txt", as.is=T, header=T, sep="\t", skip=1)
 ss = substr(fixed.ss, 1, 12)
 subtype[which(subtype$PAM50.mRNA=="Basal-like"),1] -> g1
@@ -235,9 +218,7 @@ for(k in 1:length(subtype.list)){
 	subtype.mut.mat = new.mut.mat.3cols[new.mut.mat.3cols.ss %in% subtype.ss, ]
 	fixed.ss = unique(subtype.mut.mat[,2])
 	
-	type.code = "01"
-	blca.ccle = drug.ccle[which(drug.ccle[,2] == "BRCA" & sample.type==type.code), ]
-	blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
+	blca.ccle = drug.ccle[match(fixed.ss, drug.ccle[,1]),]
 	
 	tapply(subtype.mut.mat$Tumor_Sample_Barcode3, subtype.mut.mat$Gene, function(u)length(unique(u))) -> gene2ss
 	candidate.genes = sort(names(gene2ss[which(gene2ss >= 5)]))
@@ -304,11 +285,6 @@ fixed.ss = mut.list[[ "ss"  ]]
 gene2WT.list = mut.list[[ "gene2WT.list" ]]
 new.mut.mat.3cols = read.table(paste("cluster/",cancer, ".dSNP.4cluster.MC3.txt", sep=""), as.is=T, header=T)
 
-type.code = "01"
-blca.ccle = drug.ccle[which(drug.ccle[,2] == cancer & sample.type == type.code), ]
-blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
-apply(blca.ccle[, 3:ncol(blca.ccle)], 2, as.numeric) -> new.ccle
-
 subtype = read.delim("../../DATA/THCA.BRS.txt", as.is=T, header=F, sep="\t")
 ss = substr(subtype[,1], 1, 15)
 ss[which(subtype[,2]=="Braf-like")] -> g1
@@ -323,9 +299,7 @@ for(k in 1:length(subtype.list)){
 	subtype.mut.mat = new.mut.mat.3cols[new.mut.mat.3cols[,2] %in% subtype.ss, ]
 	fixed.ss = unique(subtype.mut.mat[,2])
 	
-	type.code = "01"
-	blca.ccle = drug.ccle[which(drug.ccle[,2] == "THCA" & sample.type==type.code), ]
-	blca.ccle = blca.ccle[match(fixed.ss, blca.ccle[,1]),]
+	blca.ccle = drug.ccle[match(fixed.ss, drug.ccle[,1]),]
 	
 	tapply(subtype.mut.mat$Tumor_Sample_Barcode3, subtype.mut.mat$Gene, function(u)length(unique(u))) -> gene2ss
 	candidate.genes = sort(names(gene2ss[which(gene2ss >= 5)]))
@@ -422,8 +396,14 @@ which(cluster.drug.mat$adjp < 0.2 & cluster.drug.mat[,6] < 0) -> ii.2
 neg.mat = cluster.drug.mat[ii.2,]
 cc = rep(0, nrow(cluster.drug.mat)); cc[ii.1] = 2; cc[ii.2] = 1
 cluster.drug.mat$color = as.factor(cc)
-table(cc)
-sum(cc!=0)
+print(table(cc))
+print(sum(cc!=0))
+print(length(unique(cluster.drug.mat[which(cc!=0), 2])))
+print(length(unique(cluster.drug.mat[which(cc!=0), 1])))
+
+tag = paste(cluster.drug.mat[,2], cluster.drug.mat[, 8], sep="-")
+print(length(unique(tag[cc!=0])))
+#[1] 116
 
 write.table(cluster.drug.mat[which(cc!=0), ], file="Figure7C.sig.txt", row.names=F, quote=F, sep="\t")
-write.table(cluster.drug.mat, file="Figure7C.plot.txt", row.names=F, quote=F, sep="\t")
+write.table(cluster.drug.mat, file="Figure7C.txt", row.names=F, quote=F, sep="\t")

@@ -7,7 +7,9 @@ library("corrplot")
 #################################################################################################
 #################################################################################################
 
-dSNP.cluster.mat = read.table("Figure7C.plot.txt", header=T, as.is=T)
+dSNP.cluster.mat = read.table("Figure7C.txt", header=T, as.is=T)
+
+print(dSNP.cluster.mat[dSNP.cluster.mat[,2]=="FLT3",])
 
 sapply(as.character(dSNP.cluster.mat[,8]), function(u){strsplit(u, split=":")[[1]] -> v; 
 	if(length(unique(v)) > 1) {
