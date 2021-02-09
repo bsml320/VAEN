@@ -31,7 +31,6 @@ g1 = ggsurvplot(fit, data=dat , risk.table = TRUE,pval = TRUE,break.time.by = 1,
 print(g1)
 dev.off()
 
-
 ########################################################################################################
 ccle = read.delim("CCLE.S.pred_GSE33072.txt", as.is=T, header=T)
 
