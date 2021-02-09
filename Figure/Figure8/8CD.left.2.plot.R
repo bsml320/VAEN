@@ -44,10 +44,6 @@ dev.off()
 
 ########################################################################################################
 
-give.n <- function(x){
-   return(c(y = max(x) , label = length(x)))
-}
-
 load("SKCM.BRAF.plot.RData")
 tmp = unfactor(tmp)
 
