@@ -1,4 +1,4 @@
-#setwd("/path/to/GitHub/Figure/Figure5/GSE33072")
+setwd("/path/to/GitHub/Figure/Figure5/GSE33072")
 library("survminer")
 library("survival")
 
@@ -24,9 +24,9 @@ coxph(Y1 ~ xvector)
 
 
 pdf(paste("5A.CCLE.A.Erlotinib.pdf", sep=""), width=5, height=5)
-dat = data.frame(cbind(OS_YEAR, OS, xvector))
+dat = data.frame(cbind(OS_YEAR=OS_YEAR, OS=OS, X=xvector))
 dat[,1] = as.numeric(as.character(dat[,1]))
-fit = survfit( Surv(as.numeric(OS_YEAR), as.numeric(OS)) ~ xvector, data=dat)
+fit = survfit( Surv(as.numeric(OS_YEAR), as.numeric(OS)) ~ X, data=dat)
 g1 = ggsurvplot(fit, data=dat , risk.table = TRUE,pval = TRUE,break.time.by = 1, ggtheme = theme_minimal())
 print(g1)
 dev.off()
@@ -50,9 +50,9 @@ coxph(Y1 ~ xvector)
 
 
 pdf(paste("5A.CCLE.S.Erlotinib.pdf", sep=""), width=5, height=5)
-dat = data.frame(cbind(OS_YEAR, OS, xvector))
+dat = data.frame(cbind(OS_YEAR=OS_YEAR, OS=OS, X=xvector))
 dat[,1] = as.numeric(as.character(dat[,1]))
-fit = survfit( Surv(as.numeric(OS_YEAR), as.numeric(OS)) ~ xvector, data=dat)
+fit = survfit( Surv(as.numeric(OS_YEAR), as.numeric(OS)) ~ X, data=dat)
 g2 = ggsurvplot(fit, data=dat , risk.table = TRUE,pval = TRUE,break.time.by = 1, ggtheme = theme_minimal())
 print(g2)
 dev.off()
