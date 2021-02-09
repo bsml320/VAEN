@@ -31,14 +31,14 @@ for(drug in c("AZD6244", "PD-0325901", "PLX4720", "RAF265")){
 	
 	if(drug == "AZD6244"){
 		p = ggplot(dat, aes(x=grp, y=dr, fill=mutation)) + geom_boxplot(position=position_dodge(0.8), outlier.shape = NA) + geom_point(size=1, stroke=.5, alpha=0.2, position = position_jitterdodge(dodge.width = 0.8)) +
-			ggtitle( paste(drug, ", BRAF", sep="") ) + xlab("") + ylab("ActArea") + guides(fill=FALSE) + 
-			theme(text = element_text(size=8), axis.text.x=element_text(color="black", size = 8),axis.text.y=element_text(color="black", size = 8), plot.margin=unit(c(1,1,1,1), "mm"), plot.title = element_text(size = 8, hjust = 0.5))
+		    ggtitle( paste(drug, ", BRAF", sep="") ) + xlab("") + ylab("ActArea") + guides(fill=FALSE) + 
+		    theme(text = element_text(size=8), axis.text.x=element_text(color="black", size = 8),axis.text.y=element_text(color="black", size = 8), plot.margin=unit(c(1,1,1,1), "mm"), plot.title = element_text(size = 8, hjust = 0.5))
 		p1 = p + stat_compare_means(aes(group = mutation), method = "t.test", label = "p.format", label.x = 0.8, size=3) +
 		     stat_summary(fun.data = give.n, geom = "text", size=3)
 	} else {
 		p = ggplot(dat, aes(x=grp, y=dr, fill=mutation)) + geom_boxplot(position=position_dodge(0.8), outlier.shape = NA) + geom_point(size=1, stroke=.5, alpha=0.2, position = position_jitterdodge(dodge.width = 0.8)) +
-		ggtitle( paste(drug, ", BRAF", sep="") ) + xlab("") + ylab("ActArea") + guides(fill=FALSE) + 
-		theme(text = element_text(size=8), axis.text.x=element_text(color="black", size = 8),axis.text.y=element_text(color="black", size = 8), plot.margin=unit(c(1,1,1,1), "mm"), plot.title = element_text(size = 8, hjust = 0.5))
+		    ggtitle( paste(drug, ", BRAF", sep="") ) + xlab("") + ylab("ActArea") + guides(fill=FALSE) + 
+		    theme(text = element_text(size=8), axis.text.x=element_text(color="black", size = 8),axis.text.y=element_text(color="black", size = 8), plot.margin=unit(c(1,1,1,1), "mm"), plot.title = element_text(size = 8, hjust = 0.5))
 		p1 = p + stat_compare_means(aes(group = mutation), method = "t.test", label = "p.format", label.x = 0.8, size=3) + 
 		     stat_summary(fun.data = give.n, geom = "text", size=3)
 	}
@@ -73,8 +73,8 @@ for(drug in c("AZD6244", "PD-0325901", "PLX4720", "RAF265")){
 	dat$mutation = as.factor(dat$mutation)
 
 	p = ggplot(dat, aes(x=grp, y=dr, fill=mutation)) + geom_boxplot(position=position_dodge(0.8), outlier.shape = NA) + geom_point(size=1, stroke=.5, alpha=0.2, position = position_jitterdodge(dodge.width = 0.8)) +
-		ggtitle( paste(drug, ", NRAS", sep="") ) + xlab("") + ylab("ActArea") + guides(fill=FALSE) +
-		theme(text = element_text(size=8), axis.text.x=element_text(color="black", size = 8),axis.text.y=element_text(color="black", size = 8), plot.margin=unit(c(1,1,1,1), "mm"), plot.title = element_text(size = 8, hjust = 0.5))
+	    ggtitle( paste(drug, ", NRAS", sep="") ) + xlab("") + ylab("ActArea") + guides(fill=FALSE) +
+	    theme(text = element_text(size=8), axis.text.x=element_text(color="black", size = 8),axis.text.y=element_text(color="black", size = 8), plot.margin=unit(c(1,1,1,1), "mm"), plot.title = element_text(size = 8, hjust = 0.5))
 	
 	p1 = p + stat_compare_means(aes(group = mutation), method = "t.test", label = "p.format", label.x = 0.8, size=3) +
 	     stat_summary(fun.data = give.n, geom = "text", size=3)
@@ -110,10 +110,10 @@ for(drug in c("AZD6244", "PD-0325901", "PLX4720", "RAF265")){
 	dat$mutation = as.factor(dat$mutation)
 
 	p = ggplot(dat, aes(x=grp, y=dr, fill=mutation)) + geom_boxplot(position=position_dodge(0.8), outlier.shape = NA) + geom_point(size=1, stroke=1, alpha=0.2, position = position_jitterdodge(dodge.width = 0.8)) +
-		ggtitle( paste(drug, ", KRAS", sep="") ) + xlab("") + ylab("ActArea") + guides(fill=FALSE) +
-		theme(text = element_text(size=8), axis.text.x=element_text(color="black", size = 8),axis.text.y=element_text(color="black", size = 8), plot.margin=unit(c(1,1,1,1), "mm"), plot.title = element_text(size = 8, hjust = 0.5))
+	    ggtitle( paste(drug, ", KRAS", sep="") ) + xlab("") + ylab("ActArea") + guides(fill=FALSE) +
+	    theme(text = element_text(size=8), axis.text.x=element_text(color="black", size = 8),axis.text.y=element_text(color="black", size = 8), plot.margin=unit(c(1,1,1,1), "mm"), plot.title = element_text(size = 8, hjust = 0.5))
 	p1 = p + stat_compare_means(aes(group = mutation), method = "t.test", label = "p.format", label.x = 0.8, size=3) +
-	stat_summary(fun.data = give.n, geom = "text", size=3)
+	     stat_summary(fun.data = give.n, geom = "text", size=3)
 	pp.list[[paste("KRAS", drug, sep="_")]] = p1
 }
 
