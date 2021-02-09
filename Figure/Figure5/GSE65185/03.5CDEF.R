@@ -1,4 +1,4 @@
-#setwd("/path/to/VAEN/Figure/Figure5/GSE65185")
+setwd("/path/to/VAEN/Figure/Figure5/GSE65185")
 library("survminer")
 library("survival")
 
@@ -63,5 +63,3 @@ fit = survfit( Surv(as.numeric(as.character(OS_YEAR)), as.numeric(OS)) ~ X, data
 g1 = ggsurvplot(fit, data=dat , risk.table = TRUE,pval = TRUE,break.time.by = 50, ggtheme = theme_minimal())
 print(g1)
 dev.off()
-
-##############################################################################################################
