@@ -18,8 +18,8 @@ mut.mat = raw.mut.mat[!raw.mut.mat$Variant_Classification %in% silence.type, ]
 mut.mat = mut.mat[mut.mat[,2]!=0,]
 genes = unique(mut.mat[,1])
 
-ccle.pred      = read.table(file="../../result.EN/dr.CCLE/VAEM_CCLE.A.pred_CCLE.txt", header=T, as.is=T, sep="\t")
-ccle.pred.full = read.table(file="../../result.EN/dr.CCLE/VAEM_CCLE.A.pred_CCLE.full.txt", header=T, as.is=T, sep="\t")
+ccle.pred      = read.table(file="../../result.EN/dr.CCLE/VAEN_CCLE.A.pred_CCLE.txt", header=T, as.is=T, sep="\t")
+ccle.pred.full = read.table(file="../../result.EN/dr.CCLE/VAEN_CCLE.A.pred_CCLE.full.txt", header=T, as.is=T, sep="\t")
 
 #######################################
 load(paste("../../result.EN/dr.CCLE/01/1.CCLE.model.list.RData", sep=""))
