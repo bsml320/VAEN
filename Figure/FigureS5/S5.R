@@ -2,8 +2,8 @@ setwd("/path/to/VAEN/Figure/FigureS5")
 
 #####################################################################################
 
-load("../../result.EN/dr.CCLE/A.info.RData")
-load("../../result.EN/dr.CCLE/S.info.RData")
+load("../../result.EN/dr.CCLE/CCLE.A.info.RData")
+load("../../result.EN/dr.CCLE/CCLE.S.info.RData")
 
 ############################################################################################
 drugs = colnames(all.avg_CV_R2.mat)
